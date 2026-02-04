@@ -1,0 +1,9 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# IDE-specific files (for example, Visual Studio Code)
+.vscode/

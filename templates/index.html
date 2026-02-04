@@ -5,37 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Spread Analysis</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <canvas id="salaryChart" width="400" height="200"></canvas>
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-4 mb-4">Salary Spread Analysis</h1>
-        <table class="table table-striped table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Degree</th>
-                    <th>University</th>
-                    <th>Year</th>
-                    <th>IQR</th>
-                    <th>IQR Ratio</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for row in data %}
-                <tr>
-                    <td>{{ row.degree }}</td>
-                    <td>{{ row.university }}</td>
-                    <td>{{ row.year }}</td>
-                    <td>{{ row.IQR }}</td>
-                    <td>{{ row.IQR_ratio }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+    <div class="container mt-4">
+        <h1 class="mb-4">Salary Spread Analysis</h1>
+
+        <!-- Navbar with tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab1' %}active{% endif %}" href="{{ url_for('function1') }}">Tab 1: Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab2' %}active{% endif %}" href="{{ url_for('function2') }}">Tab 2: Function 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab3' %}active{% endif %}" href="{{ url_for('function3') }}">Tab 3: Function 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab4' %}active{% endif %}" href="{{ url_for('function4') }}">Tab 4: Function 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab5' %}active{% endif %}" href="{{ url_for('function5') }}">Tab 5: Function 5</a>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content mt-3">
+            <div class="tab-pane {% if active_tab == 'tab1' %}active{% endif %}" id="tab1">
+                <h3>Function 1 Content</h3>
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab2' %}active{% endif %}" id="tab2">
+                <h3>Function 2 Content</h3>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Degree</th>
+                            <th>University</th>
+                            <th>Year</th>
+                            <th>IQR</th>
+                            <th>IQR Ratio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data %}
+                        <tr>
+                            <td>{{ row.degree }}</td>
+                            <td>{{ row.university }}</td>
+                            <td>{{ row.year }}</td>
+                            <td>{{ row.IQR }}</td>
+                            <td>{{ row.IQR_ratio }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab3' %}active{% endif %}" id="tab3">
+                <h3>Function 3 Content</h3>
+                <!-- Add your Function 3 content here -->
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab4' %}active{% endif %}" id="tab4">
+                <h3>Function 4 Content</h3>
+                <!-- Add your Function 4 content here -->
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab5' %}active{% endif %}" id="tab5">
+                <h3>Function 5 Content</h3>
+                <!-- Add your Function 5 content here -->
+            </div>
+        </div>
     </div>
 
-    <!-- Optional: Add JavaScript for sorting and filtering -->
+    <!-- Optional: Add JavaScript for Bootstrap functionality -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
