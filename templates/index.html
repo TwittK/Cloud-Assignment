@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Spread Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="salaryChart" width="400" height="200"></canvas>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Salary Spread Analysis</h1>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Degree</th>
+                    <th>University</th>
+                    <th>Year</th>
+                    <th>IQR</th>
+                    <th>IQR Ratio</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row.degree }}</td>
+                    <td>{{ row.university }}</td>
+                    <td>{{ row.year }}</td>
+                    <td>{{ row.IQR }}</td>
+                    <td>{{ row.IQR_ratio }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional: Add JavaScript for sorting and filtering -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
