@@ -1,0 +1,201 @@
+degree,university,method,last_year,last_actual_median,forecast_year,predicted_median_2024,change_amount,change_percentage,trend_slope,years_used,data_range
+Business and Computing,Nanyang Technological University,Linear Trend (last 4 years: 2013-2016),2016,4600,2024,8504.6,3904.6,84.88,473.3,4,2013-2016
+Double Degree in Business and Computer Engineering/Computing,Nanyang Technological University,Linear Trend (last 3 years: 2020-2022),2022,6500,2024,7716.67,1216.67,18.72,550.0,3,2020-2022
+Law Cum Laude and above #,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,5600,2024,7700.0,2100.0,37.5,300.0,3,2015-2017
+Bachelor of Computing (Computer Science),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,6600,2024,7656.6,1056.6,16.01,556.0,5,2018-2022
+Bachelor of Engineering (Computer Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,6000,2024,7055.0,1055.0,17.58,545.0,5,2018-2022
+Law #,Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,6375,2024,6972.6,597.6,9.37,445.0,5,2018-2022
+Bachelor of Science (Data Science and Analytics),National University of Singapore,Linear Trend (last 2 years: 2021-2022),2022,5500,2024,6900.0,1400.0,25.45,700.0,2,2021-2022
+Bachelor of Laws (LLB) (Hons) #,National University of Singapore,Linear Trend (last 2 years: 2013-2014),2014,5150,2024,6650.0,1500.0,29.13,150.0,2,2013-2014
+Bachelor of Computing (Information Security) ^,National University of Singapore,Linear Trend (last 2 years: 2020-2021),2021,5400,2024,6600.0,1200.0,22.22,400.0,2,2020-2021
+Bachelor of Laws (L.L.B) (Hons) #,National University of Singapore,Linear Trend (last 2 years: 2015-2016),2016,4900,2024,6500.0,1600.0,32.65,200.0,2,2015-2016
+Law (Cum Laude and above) #,Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,6400,2024,6462.2,62.2,0.97,202.4,5,2018-2022
+Bachelor of Science with Honours ^,National University of Singapore,Linear Trend (last 3 years: 2018-2020),2020,5350,2024,6425.0,1075.0,20.09,275.0,3,2018-2020
+Bachelor of Science in Business Analytics,Singapore University of Social Sciences,Linear Trend (last 2 years: 2021-2022),2022,4660,2024,6380.0,1720.0,36.91,860.0,2,2021-2022
+Bachelor of Laws #,National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,6400,2024,6380.0,-20.0,-0.31,200.0,5,2018-2022
+Information Systems Management Cum Laude and above,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,4334,2024,6236.33,1902.33,43.89,267.0,3,2015-2017
+Business and Computing ^,Nanyang Technological University,Linear Trend (last 2 years: 2018-2019),2019,4833,2024,6123.0,1290.0,26.69,258.0,2,2018-2019
+Bachelor of Science (Business Analytics),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,5500,2024,6040.0,540.0,9.82,240.0,5,2018-2022
+Information Systems (Cum Laude and above),Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,5638,2024,6037.0,399.0,7.08,225.6,5,2018-2022
+Bachelor of Engineering (Computer Science and Design),Singapore University of Technology and Design,Linear Trend (last 2 years: 2021-2022),2022,5190,2024,5970.0,780.0,15.03,390.0,2,2021-2022
+Bachelor of Computing (Information Systems),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,5500,2024,5879.6,379.6,6.9,285.6,5,2018-2022
+Computer Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,5400,2024,5857.5,457.5,8.47,399.5,5,2019-2023
+Information Systems,Singapore Management University,Linear Trend (last 5 years: 2019-2023),2023,5400,2024,5845.8,445.8,8.26,305.8,5,2019-2023
+Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,5500,2024,5810.4,310.4,5.64,316.8,5,2018-2022
+Computer Science,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,5200,2024,5760.0,560.0,10.77,320.0,5,2019-2023
+Information Systems Management,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,4000,2024,5700.0,1700.0,42.5,250.0,3,2015-2017
+Bachelor of Engineering with Honours in Information & Communications Technology (Software Engineering),Singapore Institute of Technology,Linear Trend (last 5 years: 2019-2023),2023,5000,2024,5524.0,524.0,10.48,282.0,5,2019-2023
+Double Degree in Engineering and Economics ^,Nanyang Technological University,Linear Trend (last 3 years: 2020-2022),2022,5000,2024,5502.67,502.67,10.05,275.0,3,2020-2022
+Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,Linear Trend (last 4 years: 2019-2022),2022,4800,2024,5500.0,700.0,14.58,275.0,4,2019-2022
+Medicine #,Nanyang Technological University,Linear Trend (last 4 years: 2019-2022),2022,5600,2024,5495.0,-105.0,-1.88,-5.0,4,2019-2022
+Bachelor of Medicine and Bachelor of Surgery #,National University of Singapore,Linear Trend (last 4 years: 2014-2020),2020,5250,2024,5480.13,230.13,4.38,54.77,4,2014-2020
+Bachelor of Business Administration,National University of Singapore,Linear Trend (last 5 years: 2018-2023),2023,5167,2024,5471.06,304.06,5.88,362.55,5,2018-2023
+Bachelor of Computing (Communications and Media),National University of Singapore,Linear Trend (last 3 years: 2013-2015),2015,3500,2024,5462.67,1962.67,56.08,225.0,3,2013-2015
+Bachelor of Science in Electrical Engineering & Information Technology ^,Singapore Institute of Technology,Linear Trend (last 2 years: 2021-2022),2022,4280,2024,5440.0,1160.0,27.1,580.0,2,2021-2022
+Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,5000,2024,5439.0,439.0,8.78,271.0,5,2018-2022
+Bachelor of Science with Honours,National University of Singapore,Linear Trend (last 4 years: 2017-2023),2023,4600,2024,5386.53,786.53,17.1,178.86,4,2017-2023
+Bachelor of Engineering with Honours in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,Linear Trend (last 3 years: 2020-2022),2022,4800,2024,5374.17,574.17,11.96,307.5,3,2020-2022
+Mathematical Sciences / Mathematical Sciences and Economics,Nanyang Technological University,Linear Trend (last 2 years: 2021-2022),2022,4300,2024,5288.0,988.0,22.98,494.0,2,2021-2022
+Aerospace Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4763,2024,5284.6,521.6,10.95,292.6,5,2019-2023
+Bachelor of Science with Honours in Computing Science,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2023),2023,4800,2024,5227.91,427.91,8.91,174.42,5,2018-2023
+Cum Laude and above,Singapore Management University,Linear Trend (last 5 years: 2023-2023),2023,4875,2024,5179.0,304.0,6.24,0.0,5,2023-2023
+Information Engineering and Media,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4800,2024,5155.0,355.0,7.4,255.0,5,2019-2023
+Bachelor of Engineering with Honours in Aircraft Systems Engineering,Singapore Institute of Technology,Linear Trend (last 3 years: 2021-2023),2023,4400,2024,5133.33,733.33,16.67,550.0,3,2021-2023
+Bachelor of Engineering (Electrical Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4800,2024,5110.0,310.0,6.46,235.0,5,2018-2022
+Bachelor of Science in Computer Science & Game Design,Singapore Institute of Technology,Linear Trend (last 2 years: 2014-2016),2016,3400,2024,5100.0,1700.0,50.0,212.5,2,2014-2016
+Science (with Education) ^,Nanyang Technological University,Linear Trend (last 2 years: 2021-2022),2022,4300,2024,5092.0,792.0,18.42,396.0,2,2021-2022
+Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,Linear Trend (last 5 years: 2016-2020),2020,4500,2024,5090.8,590.8,13.13,137.7,5,2016-2020
+Bachelor of Engineering (Engineering Science) ^,National University of Singapore,Linear Trend (last 4 years: 2019-2022),2022,4450,2024,5085.0,635.0,14.27,260.0,4,2019-2022
+Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,Linear Trend (last 4 years: 2019-2022),2022,4688,2024,5074.4,386.4,8.24,261.4,4,2019-2022
+Business Management (Cum Laude and above),Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,4800,2024,5054.6,254.6,5.3,191.3,5,2018-2022
+Electrical and Electronic Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4800,2024,5051.0,251.0,5.23,287.8,5,2019-2023
+Accountancy and Business,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4650,2024,5050.5,400.5,8.61,183.7,5,2019-2023
+Bachelor of Engineering (Engineering Science),National University of Singapore,Linear Trend (last 5 years: 2013-2017),2017,3675,2024,5044.0,1369.0,37.25,169.0,5,2013-2017
+Bachelor of Engineering (Engineering Systems and Design),Singapore University of Technology and Design,Linear Trend (last 5 years: 2018-2022),2022,4500,2024,5040.0,540.0,12.0,210.0,5,2018-2022
+Economics (Cum Laude and above),Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,4500,2024,5032.4,532.4,11.83,186.2,5,2018-2022
+Economics Cum Laude and above,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,4100,2024,5019.0,919.0,22.41,125.0,3,2015-2017
+Bachelor of Business Administration (Hons),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4696,2024,4937.2,241.2,5.14,179.9,5,2018-2022
+Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,Linear Trend (last 3 years: 2020-2022),2022,4490,2024,4898.33,408.33,9.09,245.0,3,2020-2022
+Bachelor of Science in Computer Science and Game Design ^,Singapore Institute of Technology,Linear Trend (last 2 years: 2018-2019),2019,3800,2024,4800.0,1000.0,26.32,200.0,2,2018-2019
+Bachelor of Engineering with Honours in Mechanical Engineering,Singapore Institute of Technology,Linear Trend (last 2 years: 2022-2023),2023,4400,2024,4800.0,400.0,9.09,400.0,2,2022-2023
+Economics,Singapore Management University,Linear Trend (last 5 years: 2019-2023),2023,4500,2024,4797.0,297.0,6.6,190.0,5,2019-2023
+Mechanical Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4400,2024,4705.0,305.0,6.93,225.0,5,2019-2023
+Business Management,Singapore Management University,Linear Trend (last 5 years: 2019-2023),2023,4436,2024,4663.8,227.8,5.14,192.2,5,2019-2023
+Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4500,2024,4657.6,157.6,3.5,169.6,5,2018-2022
+Bachelor of Engineering (Mechanical Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4525,2024,4650.0,125.0,2.76,182.5,5,2018-2022
+Bachelor of Arts with Honours,National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4250,2024,4637.4,387.4,9.12,184.2,5,2019-2023
+Bachelor of Arts with Honours in Criminology and Security,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,4561,2024,4634.6,73.6,1.61,181.9,5,2018-2022
+Chemical and Biomolecular Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4200,2024,4598.0,398.0,9.48,170.0,5,2019-2023
+Bachelor of Music ^,National University of Singapore,Linear Trend (last 2 years: 2021-2022),2022,3590,2024,4570.0,980.0,27.3,490.0,2,2021-2022
+Bachelor of Fine Arts in Digital Arts & Animation,Singapore Institute of Technology,Linear Trend (last 3 years: 2014-2016),2016,3000,2024,4566.67,1566.67,52.22,200.0,3,2014-2016
+Bachelor of Engineering (Chemical Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4675,2024,4565.0,-110.0,-2.35,120.0,5,2018-2022
+Bachelor of Arts (Industrial Design),National University of Singapore,Linear Trend (last 5 years: 2017-2023),2023,4000,2024,4530.75,530.75,13.27,218.88,5,2017-2023
+Materials Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4200,2024,4530.0,330.0,7.86,200.0,5,2019-2023
+Bachelor of Music,National University of Singapore,Linear Trend (last 5 years: 2017-2023),2023,4000,2024,4501.65,501.65,12.54,335.14,5,2017-2023
+Bachelor of Dental Surgery,National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4550,2024,4480.0,-70.0,-1.54,70.0,5,2019-2023
+Bachelor of Science in Finance,Singapore University of Social Sciences,Linear Trend (last 5 years: 2018-2023),2023,4500,2024,4450.0,-50.0,-1.11,200.0,5,2018-2023
+Bachelor of Engineering with Honours in Aeronautical Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2016-2020),2020,3921,2024,4449.4,528.4,13.48,174.2,5,2016-2020
+Economics,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4314,2024,4441.5,127.5,2.96,203.1,5,2019-2023
+Bachelor of Arts (Architecture) #,National University of Singapore,Linear Trend (last 5 years: 2015-2022),2022,4400,2024,4416.16,16.16,0.37,46.9,5,2015-2022
+Social Sciences (Cum Laude and above),Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,4316,2024,4415.8,99.8,2.31,169.5,5,2018-2022
+Public Policy and Global Affairs,Nanyang Technological University,Linear Trend (last 5 years: 2018-2023),2023,4202,2024,4403.43,201.43,4.79,171.14,5,2018-2023
+Business,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4255,2024,4391.5,136.5,3.21,152.5,5,2019-2023
+Business Management Cum Laude and above,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,4000,2024,4370.67,370.67,9.27,66.0,3,2015-2017
+Biological and Biomedical Sciences,Nanyang Technological University,Linear Trend (last 2 years: 2022-2023),2023,3980,2024,4360.0,380.0,9.55,380.0,2,2022-2023
+Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of Technology,Linear Trend (last 5 years: 2015-2019),2019,3700,2024,4349.5,649.5,17.55,150.5,5,2015-2019
+Mathematical Science,Nanyang Technological University,Linear Trend (last 3 years: 2013-2015),2015,3240,2024,4346.67,1106.67,34.16,120.0,3,2013-2015
+Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,Linear Trend (last 4 years: 2018-2022),2022,4100,2024,4340.71,240.71,5.87,200.66,4,2018-2022
+Bachelor of Engineering (Engineering Product Development),Singapore University of Technology and Design,Linear Trend (last 5 years: 2018-2022),2022,4200,2024,4340.0,140.0,3.33,100.0,5,2018-2022
+Environmental Earth Systems Sciences ^,Nanyang Technological University,Linear Trend (last 5 years: 2018-2022),2022,4023,2024,4339.0,316.0,7.85,161.6,5,2018-2022
+History,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4200,2024,4330.0,130.0,3.1,175.0,5,2019-2023
+Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,Linear Trend (last 4 years: 2018-2022),2022,4000,2024,4327.06,327.06,8.18,106.54,4,2018-2022
+Bachelor of Science (Radiation Therapy) ^,Singapore Institute of Technology,Linear Trend (last 2 years: 2021-2022),2022,3775,2024,4325.0,550.0,14.57,275.0,2,2021-2022
+Bachelor of Arts (Industrial Design) ^,National University of Singapore,Linear Trend (last 2 years: 2019-2020),2020,3500,2024,4300.0,800.0,22.86,200.0,2,2019-2020
+Bachelor of Computing (Electronic Commerce),National University of Singapore,Linear Trend (last 3 years: 2013-2015),2015,3300,2024,4293.33,993.33,30.1,110.0,3,2013-2015
+Bioengineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4043,2024,4289.4,246.4,6.09,183.6,5,2019-2023
+Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,4100,2024,4280.0,180.0,4.39,180.0,5,2018-2022
+Bachelor of Engineering (Environmental Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4200,2024,4280.0,80.0,1.9,170.0,5,2018-2022
+Mathematics & Economics,Nanyang Technological University,Linear Trend (last 5 years: 2014-2019),2019,3700,2024,4237.44,537.44,14.53,110.06,5,2014-2019
+Accountancy (Cum Laude and above),Singapore Management University,Linear Trend (last 5 years: 2018-2022),2022,4025,2024,4233.8,208.8,5.19,120.0,5,2018-2022
+Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2022),2022,4100,2024,4216.58,116.58,2.84,151.81,5,2017-2022
+Bachelor of Engineering with Honours in Civil Engineering,Singapore Institute of Technology,Linear Trend (last 4 years: 2020-2023),2023,4050,2024,4200.0,150.0,3.7,177.5,4,2020-2023
+Electrical And Electronic Engineering,Nanyang Technological University,Linear Trend (last 2 years: 2015-2016),2016,3400,2024,4200.0,800.0,23.53,100.0,2,2015-2016
+Chemical And Biomolecular Engineering,Nanyang Technological University,Linear Trend (last 2 years: 2015-2016),2016,3400,2024,4200.0,800.0,23.53,100.0,2,2015-2016
+Environmental Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4115,2024,4193.0,78.0,1.9,166.0,5,2019-2023
+Bachelor of Arts (Hons),National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4008,2024,4186.4,178.4,4.45,151.6,5,2019-2023
+Accountancy,Singapore Management University,Linear Trend (last 5 years: 2019-2023),2023,3900,2024,4182.5,282.5,7.24,242.5,5,2019-2023
+Maritime Studies,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4200,2024,4180.0,-20.0,-0.48,164.0,5,2019-2023
+Bachelor of Environmental Studies,National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,4175.0,175.0,4.38,190.0,5,2019-2023
+Arts (with Education),Nanyang Technological University,Linear Trend (last 5 years: 2016-2022),2022,4129,2024,4170.06,41.06,0.99,82.6,5,2016-2022
+Social Sciences,Singapore Management University,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,4170.0,170.0,4.25,150.0,5,2019-2023
+Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4000,2024,4160.0,160.0,4.0,150.0,5,2018-2022
+Philosophy,Nanyang Technological University,Linear Trend (last 4 years: 2018-2023),2023,4000,2024,4151.92,151.92,3.8,182.69,4,2018-2023
+Physics and Applied Physics,Nanyang Technological University,Linear Trend (last 4 years: 2020-2023),2023,4000,2024,4150.0,150.0,3.75,130.0,4,2020-2023
+Bachelor of Science (Pharmacy) #,National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4000,2024,4149.0,149.0,3.72,86.5,5,2018-2022
+Bachelor of Science (Real Estate),National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,4142.0,142.0,3.55,142.0,5,2019-2023
+Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,3950,2024,4139.2,189.2,4.79,175.7,5,2018-2022
+Bachelor of Business Administration (Accountancy) ^,National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,3800,2024,4128.0,328.0,8.63,196.0,5,2018-2022
+Bachelor of Engineering (Biomedical Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4000,2024,4126.6,126.6,3.16,132.2,5,2018-2022
+Sociology,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4008,2024,4126.4,118.4,2.95,161.6,5,2019-2023
+Bachelor of Engineering (Civil Engineering),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,4000,2024,4118.0,118.0,2.95,110.0,5,2018-2022
+Business (3-yr direct Honours Programme),Nanyang Technological University,Linear Trend (last 3 years: 2013-2015),2015,3200,2024,4100.0,900.0,28.12,100.0,3,2013-2015
+Chinese,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4090,2024,4098.0,8.0,0.2,186.0,5,2019-2023
+Bachelor of Social Sciences,National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4015,2024,4079.5,64.5,1.61,132.5,5,2019-2023
+Science (with Education),Nanyang Technological University,Linear Trend (last 5 years: 2014-2020),2020,3800,2024,4067.52,267.52,7.04,62.04,5,2014-2020
+Bachelor of Science (Hons),National University of Singapore,Linear Trend (last 5 years: 2018-2023),2023,4000,2024,4064.27,64.27,1.61,121.46,5,2018-2023
+Bachelor of Science (Nursing) (Hons),National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,4055.0,55.0,1.38,95.0,5,2019-2023
+Bachelor of Science (Computational Biology) ^,National University of Singapore,Linear Trend (last 2 years: 2020-2021),2021,4500,2024,4050.0,-450.0,-10.0,-150.0,2,2020-2021
+English,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,3775,2024,4049.0,274.0,7.26,184.8,5,2019-2023
+Chemistry and Biological Chemistry,Nanyang Technological University,Linear Trend (last 4 years: 2020-2023),2023,3800,2024,4027.5,227.5,5.99,196.5,4,2020-2023
+Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,Linear Trend (last 5 years: 2015-2020),2020,3600,2024,4016.22,416.22,11.56,97.97,5,2015-2020
+Psychology,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,4014.0,14.0,0.35,156.8,5,2019-2023
+Bachelor of Science (Occupational Therapy),Singapore Institute of Technology,Linear Trend (last 2 years: 2021-2022),2022,3669,2024,4007.0,338.0,9.21,169.0,2,2021-2022
+Bachelor of Arts (Architecture),National University of Singapore,Linear Trend (last 2 years: 2020-2021),2021,4000,2024,4000.0,0.0,0.0,0.0,2,2020-2021
+Bachelor of Engineering with Honours in Aerospace Engineering,Singapore Institute of Technology,Linear Trend (last 2 years: 2022-2023),2023,4100,2024,4000.0,-100.0,-2.44,-100.0,2,2022-2023
+Bachelor of Science (Diagnostic Radiography),Singapore Institute of Technology,Linear Trend (last 2 years: 2021-2022),2022,3800,2024,4000.0,200.0,5.26,100.0,2,2021-2022
+Physics & Applied Physics,Nanyang Technological University,Linear Trend (last 2 years: 2018-2019),2019,3500,2024,4000.0,500.0,14.29,100.0,2,2018-2019
+Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,Linear Trend (last 4 years: 2019-2022),2022,3955,2024,3999.5,44.5,1.13,74.5,4,2019-2022
+Civil Engineering,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,4000,2024,3983.0,-17.0,-0.43,115.0,5,2019-2023
+Bachelor of Engineering with Honours in Mechatronics,Singapore Institute of Technology,Linear Trend (last 5 years: 2016-2020),2020,3600,2024,3980.0,380.0,10.56,80.0,5,2016-2020
+Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,Linear Trend (last 4 years: 2019-2022),2022,3775,2024,3965.5,190.5,5.05,100.5,4,2019-2022
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2014-2022),2022,3900,2024,3964.0,64.0,1.64,67.0,5,2014-2022
+Information Engineering And Media,Nanyang Technological University,Linear Trend (last 2 years: 2015-2016),2016,3350,2024,3950.0,600.0,17.91,75.0,2,2015-2016
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,Linear Trend (last 3 years: 2014-2016),2016,3430,2024,3945.0,515.0,15.01,65.0,3,2014-2016
+Bachelor of Engineering with Honours in Marine Engineering ^,Singapore Institute of Technology,Linear Trend (last 4 years: 2017-2021),2021,3750,2024,3941.43,191.43,5.1,77.14,4,2017-2021
+Bachelor of Science with Honours in Nursing Practice,Singapore Institute of Technology,Linear Trend (last 4 years: 2014-2017),2017,3650,2024,3935.7,285.7,7.83,40.2,4,2014-2017
+Bachelor of Engineering with Honours in Mechanical Design Engineering,Singapore Institute of Technology,Linear Trend (last 5 years: 2016-2020),2020,3500,2024,3920.0,420.0,12.0,90.0,5,2016-2020
+Bachelor of Science with Honours in Nursing,Singapore Institute of Technology,Linear Trend (last 5 years: 2019-2023),2023,3950,2024,3915.0,-35.0,-0.89,45.0,5,2019-2023
+Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2022),2022,3675,2024,3912.44,237.44,6.46,69.42,5,2017-2022
+Bachelor of Science in Supply Chain Management,Singapore University of Social Sciences,Linear Trend (last 2 years: 2021-2022),2022,3500,2024,3900.0,400.0,11.43,200.0,2,2021-2022
+Bachelor of Science (Nursing),National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,3850,2024,3896.8,46.8,1.22,108.4,5,2019-2023
+Bachelor of Human Resource Management,Singapore University of Social Sciences,Linear Trend (last 4 years: 2019-2022),2022,3588,2024,3889.4,301.4,8.4,201.4,4,2019-2022
+Bachelor of Arts,National University of Singapore,Linear Trend (last 5 years: 2019-2023),2023,3745,2024,3876.0,131.0,3.5,149.0,5,2019-2023
+Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2022),2022,4000,2024,3874.42,-125.58,-3.14,94.19,5,2017-2022
+Accountancy,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,3600,2024,3860.0,260.0,7.22,180.0,5,2019-2023
+Bachelor of Science in Marketing,Singapore University of Social Sciences,Linear Trend (last 5 years: 2019-2023),2023,3600,2024,3845.0,245.0,6.81,190.0,5,2019-2023
+Bachelor of Accountancy with Honours,Singapore Institute of Technology,Linear Trend (last 5 years: 2019-2023),2023,3620,2024,3836.0,216.0,5.97,164.0,5,2019-2023
+Bachelor of Science (Project and Facilities Management),National University of Singapore,Linear Trend (last 5 years: 2018-2022),2022,3555,2024,3828.0,273.0,7.68,133.5,5,2018-2022
+Bachelor of Accountancy,Singapore University of Social Sciences,Linear Trend (last 5 years: 2019-2023),2023,3600,2024,3820.0,220.0,6.11,180.0,5,2019-2023
+Social Sciences Cum Laude and above,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,3630,2024,3810.0,180.0,4.96,35.0,3,2015-2017
+Mathematical Sciences,Nanyang Technological University,Linear Trend (last 4 years: 2016-2020),2020,3656,2024,3804.8,148.8,4.07,35.4,4,2016-2020
+Physics / Applied Physics,Nanyang Technological University,Linear Trend (last 4 years: 2013-2016),2016,3450,2024,3785.0,335.0,9.71,55.0,4,2013-2016
+Communication Studies,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,3675,2024,3776.0,101.0,2.75,111.0,5,2019-2023
+Bachelor in Science (Physiotherapy),Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2022),2022,3674,2024,3768.49,94.49,2.57,65.35,5,2017-2022
+Bachelor of Social Work,Singapore University of Social Sciences,Linear Trend (last 3 years: 2020-2022),2022,3640,2024,3766.67,126.67,3.48,70.0,3,2020-2022
+Bachelor in Science (Diagnostic Radiography),Singapore Institute of Technology,Linear Trend (last 3 years: 2015-2020),2020,3650,2024,3756.33,106.33,2.91,22.43,3,2015-2020
+Sports Science and Management,Nanyang Technological University,Linear Trend (last 5 years: 2019-2023),2023,3850,2024,3745.0,-105.0,-2.73,105.0,5,2019-2023
+"Art, Design and Media",Nanyang Technological University,Linear Trend (last 4 years: 2020-2023),2023,3498,2024,3698.0,200.0,5.72,229.4,4,2020-2023
+Linguistics and Multilingual Studies,Nanyang Technological University,Linear Trend (last 5 years: 2014-2023),2023,3950,2024,3687.6,-262.4,-6.64,55.4,5,2014-2023
+Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,3500,2024,3687.4,187.4,5.35,145.0,5,2018-2022
+Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,Linear Trend (last 4 years: 2018-2021),2021,3875,2024,3680.0,-195.0,-5.03,-47.5,4,2018-2021
+Accountancy (3-yr direct Honours Programme),Nanyang Technological University,Linear Trend (last 3 years: 2013-2015),2015,2875,2024,3680.0,805.0,28.0,87.5,3,2013-2015
+Bachelor in Science (Occupational Therapy),Singapore Institute of Technology,Linear Trend (last 5 years: 2016-2020),2020,3400,2024,3672.0,272.0,8.0,52.5,5,2016-2020
+Bachelor of Arts in Game Design ^,Singapore Institute of Technology,Linear Trend (last 5 years: 2018-2022),2022,3600,2024,3656.0,56.0,1.56,68.0,5,2018-2022
+Chemistry & Biological Chemistry,Nanyang Technological University,Linear Trend (last 5 years: 2014-2019),2019,3400,2024,3638.35,238.35,7.01,61.65,5,2014-2019
+Bachelor of Applied Science (Hons),National University of Singapore,Linear Trend (last 5 years: 2013-2017),2017,3085,2024,3633.0,548.0,17.76,70.0,5,2013-2017
+Bachelor of Science,National University of Singapore,Linear Trend (last 5 years: 2017-2021),2021,3527,2024,3626.8,99.8,2.83,89.0,5,2017-2021
+Bachelor of Food Technology with Honours,Singapore Institute of Technology,Linear Trend (last 5 years: 2019-2023),2023,3500,2024,3620.0,120.0,3.43,135.0,5,2019-2023
+Bachelor of Early Childhood Education,Singapore University of Social Sciences,Linear Trend (last 3 years: 2021-2023),2023,3400,2024,3600.0,200.0,5.88,200.0,3,2021-2023
+Bachelor of Business Administration (Accountancy),National University of Singapore,Linear Trend (last 5 years: 2013-2017),2017,3025,2024,3572.7,547.7,18.11,77.5,5,2013-2017
+Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,Linear Trend (last 5 years: 2019-2023),2023,3500,2024,3550.0,50.0,1.43,130.0,5,2019-2023
+Bachelor of Science (Pharmacy) (Hons) #,National University of Singapore,Linear Trend (last 3 years: 2013-2015),2015,3500,2024,3543.33,43.33,1.24,-0.0,3,2013-2015
+Bachelor of Science in Early Childhood Education,Singapore Institute of Technology,Linear Trend (last 5 years: 2014-2018),2018,2925,2024,3445.0,520.0,17.78,85.0,5,2014-2018
+Biological Sciences,Nanyang Technological University,Linear Trend (last 5 years: 2015-2020),2020,3325,2024,3443.72,118.72,3.57,30.58,5,2015-2020
+Philosophy ^,Nanyang Technological University,Linear Trend (last 2 years: 2019-2022),2022,3450,2024,3416.67,-33.33,-0.97,-16.67,2,2019-2022
+Linguistics And Multilingual Studies,Nanyang Technological University,Linear Trend (last 3 years: 2015-2019),2019,3200,2024,3377.31,177.31,5.54,25.77,3,2015-2019
+Biomedical Sciences and Chinese Medicine # ^,Nanyang Technological University,Linear Trend (last 3 years: 2020-2022),2022,3175,2024,3354.17,179.17,5.64,87.5,3,2020-2022
+"Art, Design & Media",Nanyang Technological University,Linear Trend (last 5 years: 2014-2019),2019,3000,2024,3334.88,334.88,11.16,65.12,5,2014-2019
+Accountancy Cum Laude and above,Singapore Management University,Linear Trend (last 3 years: 2015-2017),2017,3200,2024,3333.33,133.33,4.17,-0.0,3,2015-2017
+Bachelor of Business Administration in Food Business Management ^,Singapore Institute of Technology,Linear Trend (last 2 years: 2019-2022),2022,3050,2024,3333.33,283.33,9.29,141.67,2,2019-2022
+Bachelor of Arts with Honours in Communication Design,Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2021),2021,3000,2024,3075.0,75.0,2.5,45.0,5,2017-2021
+Inter-Disciplinary Double Major ^,Nanyang Technological University,Linear Trend (last 2 years: 2020-2021),2021,3650,2024,3038.0,-612.0,-16.77,-204.0,2,2020-2021
+Biomedical Sciences & Chinese Medicine # ^,Nanyang Technological University,Linear Trend (last 2 years: 2018-2019),2019,3000,2024,3000.0,0.0,0.0,0.0,2,2018-2019
+Bachelor of Science (Major in Hospitality Management),Singapore Institute of Technology,Linear Trend (last 2 years: 2014-2015),2015,2548,2024,2980.0,432.0,16.95,48.0,2,2014-2015
+Bachelor of Arts with Honours in Interior Design,Singapore Institute of Technology,Linear Trend (last 5 years: 2017-2021),2021,3000,2024,2967.5,-32.5,-1.08,42.5,5,2017-2021
+Bachelor of Engineering with Honours in Mechanical Design & Manufacturing Engineering,Singapore Institute of Technology,Linear Trend (last 4 years: 2014-2017),2017,3000,2024,2870.0,-130.0,-4.33,-30.0,4,2014-2017
+Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,Linear Trend (last 3 years: 2018-2021),2021,2700,2024,2648.5,-51.5,-1.91,2.5,3,2018-2021
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,Linear Trend (last 3 years: 2014-2016),2016,3300,2024,2413.67,-886.33,-26.86,-100.0,3,2014-2016
+Bachelor of Science with Honours in Food & Human Nutrition,Singapore Institute of Technology,Linear Trend (last 4 years: 2014-2017),2017,2700,2024,2360.0,-340.0,-12.59,-40.0,4,2014-2017
+Bachelor of Engineering (Materials Science And Engineering),National University of Singapore,Linear Trend (last 2 years: 2016-2017),2017,3388,2024,2324.0,-1064.0,-31.4,-152.0,2,2016-2017
+Biomedical Science (Traditional Chinese Medicine) #,Nanyang Technological University,Linear Trend (last 2 years: 2014-2015),2015,2800,2024,1900.0,-900.0,-32.14,-100.0,2,2014-2015
+Bachelor of Professional Studies in Culinary Arts Management,Singapore Institute of Technology,Linear Trend (last 4 years: 2014-2017),2017,2300,2024,1780.0,-520.0,-22.61,-70.0,4,2014-2017

@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import pandas as pd
+from function5_projection import calculate_salary_projections
 
 from relationship_analysis import (
     employment_rate_vs_salary,
@@ -45,8 +46,8 @@ def function4():
 
 @app.route('/function5')
 def function5():
-    # If function5 needs different data, load a different CSV
-    function5_data = load_csv('../function5_data.csv')
+    # Calculate projections on-the-fly
+    function5_data = calculate_salary_projections()
     return render_template('index.html', data=function5_data.to_dict(orient='records'), active_tab='tab5')
 
 @app.route('/function6')
