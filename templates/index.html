@@ -32,6 +32,12 @@
             <li class="nav-item">
                 <a class="nav-link {% if active_tab == 'tab5' %}active{% endif %}" href="{{ url_for('function5') }}">Tab 5: Function 5</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab6' %}active{% endif %}" href="{{ url_for('function6') }}">Tab 6: Employment Rate vs Salary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_tab == 'tab7' %}active{% endif %}" href="{{ url_for('function7') }}">Tab 7: FT Perm vs Salary</a>
+            </li>
         </ul>
 
         <!-- Tab content -->
@@ -255,6 +261,68 @@
                     });
                 </script>
                 {% endif %}
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab6' %}active{% endif %}" id="tab6">
+                <h3>Employment Rate vs Salary</h3>
+                {% if correlation is not none %}
+                <p><strong>Pearson correlation:</strong> {{ correlation }}</p>
+                {% endif %}
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Year</th>
+                            <th>University</th>
+                            <th>School</th>
+                            <th>Degree</th>
+                            <th>Employment Rate Overall</th>
+                            <th>Gross Monthly Median</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data %}
+                        <tr>
+                            <td>{{ row.year }}</td>
+                            <td>{{ row.university }}</td>
+                            <td>{{ row.school }}</td>
+                            <td>{{ row.degree }}</td>
+                            <td>{{ row.employment_rate_overall }}</td>
+                            <td>{{ row.gross_monthly_median }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane {% if active_tab == 'tab7' %}active{% endif %}" id="tab7">
+                <h3>Full-Time Permanent Employment vs Salary</h3>
+                {% if correlation is not none %}
+                <p><strong>Pearson correlation:</strong> {{ correlation }}</p>
+                {% endif %}
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Year</th>
+                            <th>University</th>
+                            <th>School</th>
+                            <th>Degree</th>
+                            <th>Employment Rate FT Perm</th>
+                            <th>Gross Monthly Median</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data %}
+                        <tr>
+                            <td>{{ row.year }}</td>
+                            <td>{{ row.university }}</td>
+                            <td>{{ row.school }}</td>
+                            <td>{{ row.degree }}</td>
+                            <td>{{ row.employment_rate_ft_perm }}</td>
+                            <td>{{ row.gross_monthly_median }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
