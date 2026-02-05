@@ -155,17 +155,6 @@ def function3():
         rolling_window=3,
     )
 
-@app.route('/function4')
-def function4():
-    # If function4 needs different data, load a different CSV
-    function4_data = load_csv('../cleaned.csv')
-    return render_template('index.html', 
-                         data=function4_data.to_dict(orient='records'), 
-                         active_tab='tab4',
-                         universities=[],
-                         schools=[],
-                         degrees=[])
-
 @app.route('/function5')
 def function5():
     # Calculate projections on-the-fly
