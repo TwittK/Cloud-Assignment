@@ -200,6 +200,24 @@
     }
     tr:hover td{background: rgba(255,255,255,.03)}
     .muted{color:var(--muted)}
+    .chart-box{
+      background: rgba(0,0,0,.2);
+      padding:16px;
+      border-radius:12px;
+      border:1px solid var(--border);
+    }
+    .metric-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(0,0,0,.18);
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -635,37 +653,64 @@
       <div class="card">
         <div class="card-h">
           <h2>Employment Rate vs Salary</h2>
-          {% if correlation is not none %}
-          <span>Pearson correlation: {{ correlation }}</span>
-          {% endif %}
         </div>
         <div class="card-b">
-          <div class="table-wrap" style="max-height:70vh">
-            <table>
-              <thead>
-                <tr>
-                  <th>Year</th>
-                  <th>University</th>
-                  <th>School</th>
-                  <th>Degree</th>
-                  <th>Employment Rate Overall</th>
-                  <th>Gross Monthly Median</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for row in data %}
-                <tr>
-                  <td>{{ row.year }}</td>
-                  <td>{{ row.university }}</td>
-                  <td>{{ row.school }}</td>
-                  <td>{{ row.degree }}</td>
-                  <td>{{ row.employment_rate_overall }}</td>
-                  <td>{{ row.gross_monthly_median }}</td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
+          <form method="GET" action="{{ url_for('function6') }}" style="margin-bottom:14px">
+            <div style="display:grid; grid-template-columns:1fr 1fr auto; gap:12px; align-items:end">
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">University</label>
+                <select name="university" class="btn" style="width:100%; text-align:left">
+                  {% for uni in universities %}
+                  <option value="{{ uni }}" {% if selected_university == uni %}selected{% endif %}>{{ uni }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Degree</label>
+                <select name="degree" class="btn" style="width:100%; text-align:left">
+                  {% for deg in degrees %}
+                  <option value="{{ deg }}" {% if selected_degree == deg %}selected{% endif %}>{{ deg }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div>
+                <button type="submit" class="btn primary">Show Trend</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="chart-box">
+            <canvas id="employmentSalaryTrend"></canvas>
           </div>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="toolbar">
+          <div class="left">
+            <div class="line1">Supporting Trend Data</div>
+            <div class="line2"><span class="muted">Yearly median salary and average employment rate</span></div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:70vh">
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Employment Rate Overall</th>
+                <th>Gross Monthly Median</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for row in data %}
+              <tr>
+                <td>{{ row.year }}</td>
+                <td>{{ "%.2f"|format(row.employment_rate_overall) }}</td>
+                <td>${{ "%.2f"|format(row.gross_monthly_median) }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
         </div>
       </div>
       {% endif %}
@@ -981,6 +1026,63 @@
         plugins: {
           ...chartOptions.plugins,
           title: { display: true, text: 'Median Salary Trend', color: '#e9eefc' }
+        }
+      }
+    });
+    {% endif %}
+
+    {% if active_tab == 'tab6' and trend_data %}
+    const degreeTrend = {{ trend_data | tojson }};
+    const trendYears = degreeTrend.map(d => d.year);
+    const trendSalary = degreeTrend.map(d => d.gross_monthly_median);
+    const trendEmployment = degreeTrend.map(d => d.employment_rate_overall);
+
+    new Chart(document.getElementById('employmentSalaryTrend'), {
+      type: 'line',
+      data: {
+        labels: trendYears,
+        datasets: [{
+          label: 'Median Salary ($)',
+          data: trendSalary,
+          borderColor: '#ffc107',
+          backgroundColor: 'rgba(255, 193, 7, 0.12)',
+          tension: 0.3,
+          fill: true,
+          yAxisID: 'y'
+        }, {
+          label: 'Employment Rate (%)',
+          data: trendEmployment,
+          borderColor: '#6ea8fe',
+          backgroundColor: 'rgba(110, 168, 254, 0.12)',
+          tension: 0.3,
+          fill: false,
+          yAxisID: 'y1'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: 2.2,
+        plugins: {
+          legend: { labels: { color: '#e9eefc', font: { size: 11 } } }
+        },
+        scales: {
+          x: {
+            ticks: { color: '#a9b7da' },
+            grid: { color: 'rgba(255,255,255,0.05)' }
+          },
+          y: {
+            position: 'left',
+            title: { display: true, text: 'Median Salary ($)', color: '#a9b7da' },
+            ticks: { color: '#a9b7da' },
+            grid: { color: 'rgba(255,255,255,0.08)' }
+          },
+          y1: {
+            position: 'right',
+            title: { display: true, text: 'Employment Rate (%)', color: '#a9b7da' },
+            ticks: { color: '#a9b7da' },
+            grid: { drawOnChartArea: false }
+          }
         }
       }
     });

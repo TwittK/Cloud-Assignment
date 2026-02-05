@@ -173,18 +173,50 @@ def function5():
 @app.route('/function6')
 def function6():
     df = load_cleaned_data('../cleaned.csv')
-    rel, corr = employment_rate_vs_salary(df)
+    universities = sorted(df['university'].dropna().unique())
+    selected_university = request.args.get('university') or (universities[0] if universities else None)
+
+    degrees = []
+    if selected_university:
+        degrees = sorted(
+            df[df['university'] == selected_university]['degree']
+            .dropna()
+            .unique()
+        )
+    selected_degree = request.args.get('degree') or (degrees[0] if degrees else None)
+
+    if selected_university and selected_degree:
+        df_filtered = df[
+            (df['university'] == selected_university) &
+            (df['degree'] == selected_degree)
+        ].copy()
+    elif selected_university:
+        df_filtered = df[df['university'] == selected_university].copy()
+    else:
+        df_filtered = df.copy()
+
+    trend_data = (
+        df_filtered.groupby('year', as_index=False)
+        .agg({
+            'employment_rate_overall': 'mean',
+            'gross_monthly_median': 'median'
+        })
+        .sort_values('year')
+    )
+
+    corr = None
     return render_template(
         'index.html',
-        data=rel.to_dict(orient='records'),
+        data=trend_data.to_dict(orient='records'),
+        trend_data=trend_data.to_dict(orient='records'),
         active_tab='tab6',
         correlation=corr,
-        universities=[],
+        universities=universities,
         schools=[],
-        degrees=[],
-        selected_university=None,
+        degrees=degrees,
+        selected_university=selected_university,
         selected_school=None,
-        selected_degree=None,
+        selected_degree=selected_degree,
         rolling_window=3,
     )
 
