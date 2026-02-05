@@ -609,6 +609,54 @@
           <span>Linear trend extrapolation using last N years (N=2-5)</span>
         </div>
         <div class="card-b">
+          <!-- Filters -->
+          <form method="GET" action="{{ url_for('function5') }}" id="function5Form" style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:12px; margin-bottom:16px">
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">University (Optional)</label>
+              <select name="university" id="universitySelectF5" onchange="updateDegreesF5()" class="btn" style="width:100%; text-align:left">
+                <option value="">-- All Universities --</option>
+                {% for uni in universities %}
+                <option value="{{ uni }}" {% if selected_university == uni %}selected{% endif %}>{{ uni }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Degree (Optional)</label>
+              <select name="degree" id="degreeSelectF5" class="btn" style="width:100%; text-align:left">
+                <option value="">-- All Degrees --</option>
+                {% for deg in degrees %}
+                <option value="{{ deg }}" {% if selected_degree == deg %}selected{% endif %}>{{ deg }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Trend</label>
+              <select name="trend_filter" class="btn" style="width:100%; text-align:left">
+                <option value="all" {% if selected_trend_filter == 'all' %}selected{% endif %}>All Trends</option>
+                <option value="increasing" {% if selected_trend_filter == 'increasing' %}selected{% endif %}>Increasing Only</option>
+                <option value="decreasing" {% if selected_trend_filter == 'decreasing' %}selected{% endif %}>Decreasing Only</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Show Top</label>
+              <select name="limit" class="btn" style="width:100%; text-align:left">
+                <option value="" {% if not selected_limit %}selected{% endif %}>All Results</option>
+                <option value="10" {% if selected_limit == 10 %}selected{% endif %}>Top 10</option>
+                <option value="20" {% if selected_limit == 20 %}selected{% endif %}>Top 20</option>
+                <option value="50" {% if selected_limit == 50 %}selected{% endif %}>Top 50</option>
+              </select>
+            </div>
+            <div style="grid-column:1/-1">
+              <button type="submit" class="btn primary">Apply Filters</button>
+            </div>
+          </form>
+
+          {% if data and data|length > 0 %}
+          <!-- Chart -->
+          <div style="background:rgba(0,0,0,.2); padding:16px; border-radius:12px; border:1px solid var(--border); margin-bottom:20px">
+            <canvas id="projectionChart"></canvas>
+          </div>
+          {% endif %}
           <div class="table-wrap" style="max-height:70vh">
             <table>
               <thead>
@@ -763,6 +811,29 @@
         }
         
         const response = await fetch(url);
+        const data = await response.json();
+        
+        data.degrees.forEach(degree => {
+          const option = document.createElement('option');
+          option.value = degree;
+          option.textContent = degree;
+          degreeSelect.appendChild(option);
+        });
+      } catch (e) {
+        console.error('Error loading degrees:', e);
+      }
+    }
+
+    async function updateDegreesF5() {
+      const university = document.getElementById('universitySelectF5').value;
+      const degreeSelect = document.getElementById('degreeSelectF5');
+      
+      degreeSelect.innerHTML = '<option value="">-- All Degrees --</option>';
+      
+      if (!university) return;
+      
+      try {
+        const response = await fetch(`/api/get_degrees?university=${encodeURIComponent(university)}`);
         const data = await response.json();
         
         data.degrees.forEach(degree => {
@@ -1040,6 +1111,61 @@
             title: { display: true, text: 'Employment Rate (%)', color: '#a9b7da' },
             ticks: { color: '#a9b7da' },
             grid: { drawOnChartArea: false }
+          }
+        }
+      }
+    });
+    {% endif %}
+
+    {% if active_tab == 'tab5' and data and data|length > 0 %}
+    // Chart.js for Salary Projection
+    const projectionData = {{ data | tojson }};
+    const degreeLabels = projectionData.map(d => d.degree.substring(0, 30) + (d.degree.length > 30 ? '...' : ''));
+    const actualSalaries = projectionData.map(d => d.last_actual_median);
+    const predictedSalaries = projectionData.map(d => d.predicted_median_2024);
+
+    new Chart(document.getElementById('projectionChart'), {
+      type: 'bar',
+      data: {
+        labels: degreeLabels,
+        datasets: [{
+          label: projectionData[0].last_year + ' Actual Median ($)',
+          data: actualSalaries,
+          backgroundColor: 'rgba(110, 168, 254, 0.6)',
+          borderColor: '#6ea8fe',
+          borderWidth: 1
+        }, {
+          label: '2024 Predicted Median ($)',
+          data: predictedSalaries,
+          backgroundColor: 'rgba(49, 208, 170, 0.6)',
+          borderColor: '#31d0aa',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        aspectRatio: projectionData.length > 10 ? 1.5 : 2,
+        plugins: {
+          legend: { 
+            labels: { color: '#e9eefc', font: { size: 12 } }
+          },
+          title: {
+            display: true,
+            text: 'Salary Projections: Actual vs Predicted',
+            color: '#e9eefc',
+            font: { size: 14 }
+          }
+        },
+        scales: {
+          x: { 
+            ticks: { color: '#a9b7da', font: { size: 10 } },
+            grid: { color: 'rgba(255,255,255,0.05)' }
+          },
+          y: { 
+            ticks: { color: '#a9b7da' },
+            grid: { color: 'rgba(255,255,255,0.08)' },
+            beginAtZero: true
           }
         }
       }
