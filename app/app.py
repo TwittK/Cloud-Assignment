@@ -18,7 +18,6 @@ import os
 
 from relationship_analysis import (
     employment_rate_vs_salary,
-    ft_perm_vs_salary,
     load_cleaned_data,
 )
 
@@ -170,8 +169,8 @@ def function5():
                          selected_degree=None,
                          rolling_window=3)
 
-@app.route('/function6')
-def function6():
+@app.route('/function4')
+def function4():
     df = load_cleaned_data('../cleaned.csv')
     universities = sorted(df['university'].dropna().unique())
     selected_university = request.args.get('university') or (universities[0] if universities else None)
@@ -209,7 +208,7 @@ def function6():
         'index.html',
         data=trend_data.to_dict(orient='records'),
         trend_data=trend_data.to_dict(orient='records'),
-        active_tab='tab6',
+        active_tab='tab4',
         correlation=corr,
         universities=universities,
         schools=[],
@@ -217,24 +216,6 @@ def function6():
         selected_university=selected_university,
         selected_school=None,
         selected_degree=selected_degree,
-        rolling_window=3,
-    )
-
-@app.route('/function7')
-def function7():
-    df = load_cleaned_data('../cleaned.csv')
-    rel, corr = ft_perm_vs_salary(df)
-    return render_template(
-        'index.html',
-        data=rel.to_dict(orient='records'),
-        active_tab='tab7',
-        correlation=corr,
-        universities=[],
-        schools=[],
-        degrees=[],
-        selected_university=None,
-        selected_school=None,
-        selected_degree=None,
         rolling_window=3,
     )
 
