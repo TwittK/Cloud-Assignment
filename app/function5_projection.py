@@ -2,8 +2,15 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-def calculate_salary_projections():
-    """Calculate salary projections using linear trend extrapolation"""
+def calculate_salary_projections(university_filter=None, degree_filter=None, trend_filter='all', limit=None):
+    """Calculate salary projections using linear trend extrapolation
+    
+    Args:
+        university_filter: Filter by specific university (optional)
+        degree_filter: Filter by specific degree (optional)
+        trend_filter: 'all', 'increasing', or 'decreasing' (default: 'all')
+        limit: Maximum number of results to return (optional)
+    """
     # Load the dataset
     data = pd.read_csv('../cleaned.csv')
 
@@ -18,10 +25,10 @@ def calculate_salary_projections():
 
     for _, row in degree_university_combos.iterrows():
         degree = row['degree']
-        university = row['university']
+        uni = row['university']
         
         # Filter data for this specific degree and university
-        subset = data[(data['degree'] == degree) & (data['university'] == university)].copy()
+        subset = data[(data['degree'] == degree) & (data['university'] == uni)].copy()
         subset = subset.sort_values('year')
         
         # Get the last N years of data
@@ -56,7 +63,7 @@ def calculate_salary_projections():
         # Store results
         results.append({
             'degree': degree,
-            'university': university,
+            'university': uni,
             'method': f'Linear Trend (last {len(last_n_years)} years: {last_n_years["year"].min()}-{last_year})',
             'last_year': int(last_year),
             'last_actual_median': round(last_actual_value, 2),
@@ -72,8 +79,24 @@ def calculate_salary_projections():
     # Create DataFrame
     results_df = pd.DataFrame(results)
 
+    # Apply filters
+    if university_filter:
+        results_df = results_df[results_df['university'] == university_filter]
+    
+    if degree_filter:
+        results_df = results_df[results_df['degree'] == degree_filter]
+    
+    if trend_filter == 'increasing':
+        results_df = results_df[results_df['change_amount'] > 0]
+    elif trend_filter == 'decreasing':
+        results_df = results_df[results_df['change_amount'] < 0]
+    
     # Sort by predicted median (descending)
     results_df = results_df.sort_values('predicted_median_2024', ascending=False)
+    
+    # Apply limit
+    if limit:
+        results_df = results_df.head(limit)
     
     return results_df
 

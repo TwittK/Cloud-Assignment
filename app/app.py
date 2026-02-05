@@ -157,17 +157,48 @@ def function3():
 
 @app.route('/function5')
 def function5():
-    # Calculate projections on-the-fly
-    function5_data = calculate_salary_projections()
+    # Get filter parameters
+    university = request.args.get('university', '')
+    degree = request.args.get('degree', '')
+    trend_filter = request.args.get('trend_filter', 'all')
+    limit = request.args.get('limit', None)
+    
+    # Convert limit to int if provided
+    if limit:
+        try:
+            limit = int(limit)
+        except:
+            limit = None
+    
+    # Calculate projections with filters
+    function5_data = calculate_salary_projections(
+        university_filter=university if university else None,
+        degree_filter=degree if degree else None,
+        trend_filter=trend_filter,
+        limit=limit
+    )
+    
+    # Get unique universities for dropdown
+    df = load_csv('../cleaned.csv')
+    unique_universities = sorted(df['university'].unique().tolist())
+    
+    # Get degrees for selected university
+    if university:
+        uni_df = df[df['university'] == university]
+        unique_degrees = sorted(uni_df['degree'].unique().tolist())
+    else:
+        unique_degrees = []
+    
     return render_template('index.html', 
                          data=function5_data.to_dict(orient='records'), 
                          active_tab='tab5',
-                         universities=[],
+                         universities=unique_universities,
                          schools=[],
-                         degrees=[],
-                         selected_university=None,
-                         selected_school=None,
-                         selected_degree=None,
+                         degrees=unique_degrees,
+                         selected_university=university,
+                         selected_degree=degree,
+                         selected_trend_filter=trend_filter,
+                         selected_limit=limit,
                          rolling_window=3)
 
 @app.route('/function6')
