@@ -429,24 +429,118 @@
     <!-- Tab 2: IQR Analysis -->
     <div class="tab-pane {% if active_tab == 'tab2' %}active{% endif %}" id="tab2">
       {% if active_tab == 'tab2' %}
-      <div class="card">
-        <div class="card-h">
-          <h2>Salary Spread Analysis (IQR)</h2>
-          <span>Interquartile Range & IQR Ratio by Degree/University/Year</span>
+      <div class="grid">
+        <!-- Top 5 IQR -->
+        <div class="card">
+          <div class="card-h">
+            <div>
+              <h2>Top 5 IQR</h2>
+              <span>Highest salary spread (75th - 25th percentile)</span>
+            </div>
+            <span class="metric-badge">IQR = P75 − P25</span>
+          </div>
+          <div class="card-b">
+            <div class="table-wrap" style="max-height:55vh">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Degree</th>
+                    <th>University</th>
+                    <th>Year</th>
+                    <th>IQR</th>
+                    <th>25th</th>
+                    <th>75th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% if top_iqr and top_iqr|length > 0 %}
+                    {% for row in top_iqr %}
+                    <tr>
+                      <td>{{ row.degree }}</td>
+                      <td>{{ row.university }}</td>
+                      <td>{{ row.year }}</td>
+                      <td><strong>{{ row.IQR }}</strong></td>
+                      <td>{{ row.gross_mthly_25_percentile }}</td>
+                      <td>{{ row.gross_mthly_75_percentile }}</td>
+                    </tr>
+                    {% endfor %}
+                  {% else %}
+                    <tr>
+                      <td colspan="6" class="muted">No Top IQR data available.</td>
+                    </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <div class="card-b">
-          <div class="table-wrap" style="max-height:70vh">
-            <table>
-              <thead>
-                <tr>
-                  <th>Degree</th>
-                  <th>University</th>
-                  <th>Year</th>
-                  <th>IQR</th>
-                  <th>IQR Ratio</th>
-                </tr>
-              </thead>
-              <tbody>
+
+        <!-- Top 5 IQR Ratio -->
+        <div class="card">
+          <div class="card-h">
+            <div>
+              <h2>Top 5 IQR Ratio</h2>
+              <span>Spread relative to median salary</span>
+            </div>
+            <span class="metric-badge">IQR Ratio = IQR ÷ Median</span>
+          </div>
+          <div class="card-b">
+            <div class="table-wrap" style="max-height:55vh">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Degree</th>
+                    <th>University</th>
+                    <th>Year</th>
+                    <th>IQR Ratio</th>
+                    <th>25th</th>
+                    <th>75th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% if top_iqr_ratio and top_iqr_ratio|length > 0 %}
+                    {% for row in top_iqr_ratio %}
+                    <tr>
+                      <td>{{ row.degree }}</td>
+                      <td>{{ row.university }}</td>
+                      <td>{{ row.year }}</td>
+                      <td><strong>{{ "%.4f"|format(row.IQR_ratio) }}</strong></td>
+                      <td>{{ row.gross_mthly_25_percentile }}</td>
+                      <td>{{ row.gross_mthly_75_percentile }}</td>
+                    </tr>
+                    {% endfor %}
+                  {% else %}
+                    <tr>
+                      <td colspan="6" class="muted">No Top IQR Ratio data available.</td>
+                    </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <div class="toolbar">
+          <div class="left">
+            <div class="line1">All IQR Records</div>
+            <div class="line2"><span class="muted">Full dataset for reference</span></div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:65vh">
+          <table>
+            <thead>
+              <tr>
+                <th>Degree</th>
+                <th>University</th>
+                <th>Year</th>
+                <th>IQR</th>
+                <th>IQR Ratio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if data and data|length > 0 %}
                 {% for row in data %}
                 <tr>
                   <td>{{ row.degree }}</td>
@@ -456,13 +550,17 @@
                   <td>{{ row.IQR_ratio }}</td>
                 </tr>
                 {% endfor %}
-              </tbody>
-            </table>
-          </div>
+              {% else %}
+                <tr><td colspan="5" class="muted">No data available.</td></tr>
+              {% endif %}
+            </tbody>
+          </table>
         </div>
       </div>
+
       {% endif %}
     </div>
+
 
     <!-- Tab 3: Function 3 -->
     <div class="tab-pane {% if active_tab == 'tab3' %}active{% endif %}" id="tab3">
