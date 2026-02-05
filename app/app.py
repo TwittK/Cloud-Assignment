@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, send_file
 import pandas as pd
 import numpy as np
+from rankings import rankings
 from function5_projection import calculate_salary_projections
 from analytics import analyze_trends
 from salary_analysis import (
@@ -106,14 +107,53 @@ def function2():
 
 @app.route('/function3')
 def function3():
-    # If function3 needs different data, load a different CSV
-    function3_data = load_csv('../cleaned.csv')
-    return render_template('index.html', 
-                         data=function3_data.to_dict(orient='records'), 
-                         active_tab='tab3',
-                         universities=[],
-                         schools=[],
-                         degrees=[])
+    # Rankings
+    year = request.args.get('year')
+    n = request.args.get('n', 10)
+    mode = request.args.get('mode', 'top')  # "top" or "bottom"
+    group_by = request.args.get('group_by', 'degree')  # "degree" or "degree_university"
+    include_most_improved = request.args.get('include_most_improved') == '1'
+
+    # Choose default year if not provided (latest year in dataset)
+    csv_path = '../cleaned.csv'
+    df = load_csv(csv_path)
+    available_years = sorted(pd.to_numeric(df["year"], errors="coerce").dropna().astype(int).unique().tolist())
+    default_year = available_years[-1] if available_years else 2023
+
+    year = int(year) if year else int(default_year)
+
+    result = rankings(
+        csv_path=csv_path,
+        year=year,
+        n=int(n),
+        mode=mode,
+        group_by=group_by,
+        include_most_improved=include_most_improved,
+    )
+
+    return render_template(
+        'index.html',
+        active_tab='tab3',
+        # pass these into the template
+        rank_rows=result["rows"],
+        most_improved=result["most_improved"],
+        years=result["years"],
+        selected_year=result["year"],
+        selected_n=result["n"],
+        selected_mode=result["mode"],
+        selected_group_by=result["group_by"],
+        include_most_improved=include_most_improved,
+
+        # keep existing fields so template doesn't break
+        data=[],
+        universities=[],
+        schools=[],
+        degrees=[],
+        selected_university=None,
+        selected_school=None,
+        selected_degree=None,
+        rolling_window=3,
+    )
 
 @app.route('/function4')
 def function4():

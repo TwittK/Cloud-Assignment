@@ -219,7 +219,7 @@
       <a class="nav-tab-link {% if active_tab == 'overview' %}active{% endif %}" href="{{ url_for('index') }}">📋 Overview</a>
       <a class="nav-tab-link {% if active_tab == 'tab1' %}active{% endif %}" href="{{ url_for('function1') }}">📊 Trend Analysis</a>
       <a class="nav-tab-link {% if active_tab == 'tab2' %}active{% endif %}" href="{{ url_for('function2') }}">📈 IQR Analysis</a>
-      <a class="nav-tab-link {% if active_tab == 'tab3' %}active{% endif %}" href="{{ url_for('function3') }}">🔍 Function 3</a>
+      <a class="nav-tab-link {% if active_tab == 'tab3' %}active{% endif %}" href="{{ url_for('function3') }}">🔍 Rankings</a>
       <a class="nav-tab-link {% if active_tab == 'tab4' %}active{% endif %}" href="{{ url_for('function4') }}">📉 Function 4</a>
       <a class="nav-tab-link {% if active_tab == 'tab5' %}active{% endif %}" href="{{ url_for('function5') }}">🚀 Salary Projection</a>
       <a class="nav-tab-link {% if active_tab == 'tab6' %}active{% endif %}" href="{{ url_for('function6') }}">💼 Employment vs Salary</a>
@@ -452,10 +452,134 @@
     <div class="tab-pane {% if active_tab == 'tab3' %}active{% endif %}" id="tab3">
       <div class="card">
         <div class="card-h">
-          <h2>Function 3</h2>
+          <div>
+            <h2>Rankings</h2>
+            <span>Top/Bottom degrees by median salary and change from previous year</span>
+          </div>
         </div>
+
         <div class="card-b">
-          <p class="muted">Content for Function 3 will be added here.</p>
+          <form method="GET" action="{{ url_for('function3') }}" style="display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:14px">
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Year</label>
+              <select name="year" class="btn" style="width:100%; text-align:left">
+                {% for y in years %}
+                  <option value="{{ y }}" {% if selected_year == y %}selected{% endif %}>{{ y }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Order</label>
+              <select name="mode" class="btn" style="width:100%; text-align:left">
+                <option value="top" {% if selected_mode == 'top' %}selected{% endif %}>Highest salaries</option>
+                <option value="bottom" {% if selected_mode == 'bottom' %}selected{% endif %}>Lowest salaries</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Number of results</label>
+              <select name="n" class="btn" style="width:100%; text-align:left">
+                {% for opt in [5,10,15,20] %}
+                  <option value="{{ opt }}" {% if selected_n == opt %}selected{% endif %}>{{ opt }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <div>
+              <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Group</label>
+              <select name="group_by" class="btn" style="width:100%; text-align:left">
+                <option value="degree" {% if selected_group_by == 'degree' %}selected{% endif %}>Degree</option>
+                <option value="degree_university" {% if selected_group_by == 'degree_university' %}selected{% endif %}>Degree + University</option>
+              </select>
+            </div>
+
+            <div style="grid-column: 1 / -1; display:flex; align-items:center; margin-top:4px">
+              <label class="muted" style="display:flex; gap:8px; align-items:center; font-size:13px; margin:0">
+                <input type="checkbox" name="include_most_improved" value="1" {% if include_most_improved %}checked{% endif %}>
+                Show degree with most improved salaries
+              </label>
+              <button type="submit" class="btn primary" style="margin-left:auto">Run</button>
+            </div>
+          </form>
+
+          {% if rank_rows and rank_rows|length > 0 %}
+          <div class="table-wrap" style="max-height:55vh; margin-top:10px">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Degree</th>
+                  {% if selected_group_by == 'degree_university' %}<th>University</th>{% endif %}
+                  <th>Median Salary</th>
+                  <th>Prev Year Median</th>
+                  <th>Δrank</th>
+                  <th>% Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in rank_rows %}
+                <tr>
+                  <td><strong>{{ row.rank }}</strong></td>
+                  <td>{{ row.degree }}</td>
+                  {% if selected_group_by == 'degree_university' %}<td>{{ row.university }}</td>{% endif %}
+                  <td>${{ "%.2f"|format(row.median_salary) }}</td>
+                  <td>
+                    {% if row.prev_median_salary is not none %}
+                      ${{ "%.2f"|format(row.prev_median_salary) }}
+                    {% else %}
+                      -
+                    {% endif %}
+                  </td>
+                  <td style="color:{% if row.delta_rank is not none and row.delta_rank > 0 %}#31d0aa{% elif row.delta_rank is not none and row.delta_rank < 0 %}#ff6b6b{% else %}#a9b7da{% endif %}">
+                    {% if row.delta_rank is not none %}{{ row.delta_rank }}{% else %}-{% endif %}
+                  </td>
+                  <td style="color:{% if row.pct_change_salary is not none and row.pct_change_salary > 0 %}#31d0aa{% elif row.pct_change_salary is not none and row.pct_change_salary < 0 %}#ff6b6b{% else %}#a9b7da{% endif %}">
+                    {% if row.pct_change_salary is not none %}{{ "%.2f"|format(row.pct_change_salary) }}%{% else %}-{% endif %}
+                  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          {% else %}
+            <p class="muted">No results yet. Choose year and click Run.</p>
+          {% endif %}
+
+          {% if include_most_improved and most_improved and most_improved|length > 0 %}
+          <div style="margin-top:18px">
+            <h3 style="font-size:14px; margin:0 0 10px">Most improved</h3>
+            <div class="table-wrap" style="max-height:40vh">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Degree</th>
+                    {% if selected_group_by == 'degree_university' %}<th>University</th>{% endif %}
+                    <th>Rank</th>
+                    <th>Prev Rank</th>
+                    <th>Δrank</th>
+                    <th>Median Salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in most_improved %}
+                  <tr>
+                    <td>{{ row.degree }}</td>
+                    {% if selected_group_by == 'degree_university' %}<td>{{ row.university }}</td>{% endif %}
+                    <td>{{ row.rank }}</td>
+                    <td>{% if row.prev_rank is not none %}{{ row.prev_rank }}{% else %}-{% endif %}</td>
+                    <td style="color:#31d0aa; font-weight:700">
+                      {% if row.delta_rank is not none %}{{ row.delta_rank }}{% else %}-{% endif %}
+                    </td>
+                    <td>${{ "%.2f"|format(row.median_salary) }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {% endif %}
+
         </div>
       </div>
     </div>
