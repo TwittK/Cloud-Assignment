@@ -1,335 +1,878 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salary Spread Analysis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        #topSalariesChart, #salaryChangesChart { height: 400px !important; }
-        #comparisonChart { height: 350px !important; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GES DAaaS</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2e;
+      --card2:#0c1628;
+      --text:#e9eefc;
+      --muted:#a9b7da;
+      --border:rgba(255,255,255,.10);
+      --shadow: 0 12px 35px rgba(0,0,0,.35);
+      --accent:#6ea8fe;
+      --accent2:#9b7bff;
+      --good:#31d0aa;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(110,168,254,.22), transparent 60%),
+                  radial-gradient(1000px 700px at 80% 30%, rgba(155,123,255,.18), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 40px;}
+    .top{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+      margin-bottom:18px;
+    }
+    .title h1{margin:0; font-size:38px; letter-spacing:.2px;}
+    .title p{margin:8px 0 0; color:var(--muted); line-height:1.35}
+    .badge{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:10px 12px; border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      border-radius: 999px;
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
+    .dot{width:8px; height:8px; border-radius:99px; background:var(--good); box-shadow:0 0 0 6px rgba(49,208,170,.12);}
+
+    .nav-tabs-custom{
+      display:flex; gap:8px; flex-wrap:wrap;
+      margin-bottom:20px;
+      border-bottom:1px solid var(--border);
+      padding-bottom:10px;
+    }
+    .nav-tab-link{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius: 10px;
+      cursor:pointer;
+      font-weight:600;
+      font-size:13px;
+      text-decoration:none;
+      transition: transform .05s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .nav-tab-link:hover{background: rgba(255,255,255,.08); color:var(--text);}
+    .nav-tab-link:active{transform: translateY(1px)}
+    .nav-tab-link.active{
+      border-color: rgba(110,168,254,.65);
+      background: linear-gradient(90deg, rgba(110,168,254,.22), rgba(155,123,255,.18));
+      color:var(--text);
+    }
+    .tab-pane{display:none;}
+    .tab-pane.active{display:block;}
+
+    .grid{display:grid; grid-template-columns: 1.2fr .8fr; gap:14px; margin-bottom:14px;}
+    @media (max-width: 900px){ .grid{grid-template-columns: 1fr;} .top{flex-direction:column; align-items:flex-start;} }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-h{
+      padding:14px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      background: rgba(255,255,255,.03);
+      border-bottom:1px solid var(--border);
+    }
+    .card-h h2{margin:0; font-size:16px; font-weight:700;}
+    .card-h span{color:var(--muted); font-size:13px;}
+    .card-b{padding:14px 16px;}
+    .meta{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap:10px;
+    }
+    .pill{
+      border:1px solid var(--border);
+      background: rgba(0,0,0,.15);
+      border-radius: 14px;
+      padding:10px 12px;
+    }
+    .pill .k{color:var(--muted); font-size:12px; margin-bottom:6px;}
+    .pill .v{font-weight:700; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+    /* Tabs */
+    .tabs{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin: 10px 0 2px;
+    }
+    .tab{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight:600;
+      font-size:14px;
+      transition: transform .05s ease, background .2s ease, border-color .2s ease;
+      user-select:none;
+    }
+    .tab:hover{background: rgba(255,255,255,.07)}
+    .tab:active{transform: translateY(1px)}
+    .tab.active{
+      border-color: rgba(110,168,254,.55);
+      background: linear-gradient(90deg, rgba(110,168,254,.18), rgba(155,123,255,.14));
+    }
+    .note{color:var(--muted); font-size:13px; margin:10px 0 0;}
+
+    /* Table card */
+    .table-card{
+      margin-top:14px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .toolbar{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+    }
+    .toolbar .left{display:flex; flex-direction:column; gap:4px; min-width:0;}
+    .toolbar .left .line1{font-weight:700; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+    .toolbar .left .line2{color:var(--muted); font-size:12px;}
+    .actions{display:flex; gap:10px; align-items:center;}
+    .btn{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:9px 12px;
+      border-radius: 12px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:13px;
+      text-decoration:none;
+      transition: background .2s ease, border-color .2s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{background: rgba(255,255,255,.10)}
+    .btn.primary{
+      border-color: rgba(110,168,254,.55);
+      background: linear-gradient(90deg, rgba(110,168,254,.22), rgba(155,123,255,.18));
+    }
+    select.btn{
+      color:var(--text);
+    }
+    select.btn option{
+      background: var(--card);
+      color:var(--text);
+    }
+
+    .table-wrap{
+      max-height: 62vh;
+      overflow:auto;
+      background: rgba(0,0,0,.12);
+    }
+    table{width:100%; border-collapse:separate; border-spacing:0;}
+    th, td{
+      padding:10px 10px;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      vertical-align:top;
+      font-size:13px;
+    }
+    th{
+      position:sticky; top:0; z-index:2;
+      background: rgba(15,26,46,.95);
+      color: var(--text);
+      text-align:left;
+      font-size:12px;
+      letter-spacing:.3px;
+      text-transform: none;
+    }
+    tr:hover td{background: rgba(255,255,255,.03)}
+    .muted{color:var(--muted)}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container mt-4">
-        <h1 class="mb-4">Salary Spread Analysis</h1>
-
-        <!-- Navbar with tabs -->
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab1' %}active{% endif %}" href="{{ url_for('function1') }}">Tab 1: Overview</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab2' %}active{% endif %}" href="{{ url_for('function2') }}">Tab 2: Function 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab3' %}active{% endif %}" href="{{ url_for('function3') }}">Tab 3: Function 3</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab4' %}active{% endif %}" href="{{ url_for('function4') }}">Tab 4: Function 4</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab5' %}active{% endif %}" href="{{ url_for('function5') }}">Tab 5: Function 5</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab6' %}active{% endif %}" href="{{ url_for('function6') }}">Tab 6: Employment Rate vs Salary</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {% if active_tab == 'tab7' %}active{% endif %}" href="{{ url_for('function7') }}">Tab 7: FT Perm vs Salary</a>
-            </li>
-        </ul>
-
-        <!-- Tab content -->
-        <div class="tab-content mt-3">
-            <div class="tab-pane {% if active_tab == 'tab1' %}active{% endif %}" id="tab1">
-                <h3>Function 1 Content</h3>
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab2' %}active{% endif %}" id="tab2">
-                <h3>Function 2 Content</h3>
-                {% if active_tab == 'tab2' %}
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Degree</th>
-                            <th>University</th>
-                            <th>Year</th>
-                            <th>IQR</th>
-                            <th>IQR Ratio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in data %}
-                        <tr>
-                            <td>{{ row.degree }}</td>
-                            <td>{{ row.university }}</td>
-                            <td>{{ row.year }}</td>
-                            <td>{{ row.IQR }}</td>
-                            <td>{{ row.IQR_ratio }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-                {% endif %}
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab3' %}active{% endif %}" id="tab3">
-                <h3>Function 3 Content</h3>
-                <!-- Add your Function 3 content here -->
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab4' %}active{% endif %}" id="tab4">
-                <h3>Function 4 Content</h3>
-                <!-- Add your Function 4 content here -->
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab5' %}active{% endif %}" id="tab5">
-                <h3>Salary Projection for 2024</h3>
-                <p class="text-muted">Linear trend extrapolation using last N years (N=2-5 depending on data availability)</p>
-                {% if active_tab == 'tab5' %}
-                
-                <!-- Charts Section -->
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Top 10 Projected Salaries for 2024</h5>
-                                <canvas id="topSalariesChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Top 10 Salary Changes (%)</h5>
-                                <canvas id="salaryChangesChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row mb-4">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Top 10 Actual vs Projected Comparison</h5>
-                                <canvas id="comparisonChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Data Table -->
-                <h5 class="mt-4">Detailed Projection Data</h5>
-                <table class="table table-striped table-bordered table-sm">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Degree</th>
-                            <th>University</th>
-                            <th>Method</th>
-                            <th>Last Actual Year</th>
-                            <th>Last Actual Median ($)</th>
-                            <th>Predicted 2024 Median ($)</th>
-                            <th>Change ($)</th>
-                            <th>Change (%)</th>
-                            <th>Trend Slope</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in data %}
-                        <tr>
-                            <td>{{ row.degree }}</td>
-                            <td>{{ row.university }}</td>
-                            <td><small>{{ row.method }}</small></td>
-                            <td>{{ row.last_year }}</td>
-                            <td class="text-right">{{ "%.2f"|format(row.last_actual_median) }}</td>
-                            <td class="text-right"><strong>{{ "%.2f"|format(row.predicted_median_2024) }}</strong></td>
-                            <td class="text-right {% if row.change_amount > 0 %}text-success{% else %}text-danger{% endif %}">
-                                {{ "%.2f"|format(row.change_amount) }}
-                            </td>
-                            <td class="text-right {% if row.change_percentage > 0 %}text-success{% else %}text-danger{% endif %}">
-                                {{ "%.2f"|format(row.change_percentage) }}%
-                            </td>
-                            <td class="text-right">{{ "%.2f"|format(row.trend_slope) }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-                
-                <script>
-                    // Prepare data for charts
-                    const projectionData = {{ data|tojson }};
-                    const top10 = projectionData.slice(0, 10);
-                    
-                    // Top 10 Projected Salaries Chart
-                    const topSalariesCtx = document.getElementById('topSalariesChart').getContext('2d');
-                    new Chart(topSalariesCtx, {
-                        type: 'bar',
-                        data: {
-                            labels: top10.map(d => d.degree.substring(0, 30) + '...'),
-                            datasets: [{
-                                label: 'Projected 2024 Median Salary ($)',
-                                data: top10.map(d => d.predicted_median_2024),
-                                backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                                borderColor: 'rgba(54, 162, 235, 1)',
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            indexAxis: 'y',
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            plugins: {
-                                legend: { display: false }
-                            },
-                            scales: {
-                                x: { 
-                                    beginAtZero: true,
-                                    title: { display: true, text: 'Salary ($)' }
-                                }
-                            }
-                        }
-                    });
-                    
-                    // Top 10 Salary Changes Chart
-                    const changesCtx = document.getElementById('salaryChangesChart').getContext('2d');
-                    const sortedByChange = [...projectionData].sort((a, b) => b.change_percentage - a.change_percentage).slice(0, 10);
-                    new Chart(changesCtx, {
-                        type: 'bar',
-                        data: {
-                            labels: sortedByChange.map(d => d.degree.substring(0, 30) + '...'),
-                            datasets: [{
-                                label: 'Percentage Change (%)',
-                                data: sortedByChange.map(d => d.change_percentage),
-                                backgroundColor: sortedByChange.map(d => d.change_percentage > 0 ? 'rgba(75, 192, 192, 0.6)' : 'rgba(255, 99, 132, 0.6)'),
-                                borderColor: sortedByChange.map(d => d.change_percentage > 0 ? 'rgba(75, 192, 192, 1)' : 'rgba(255, 99, 132, 1)'),
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            indexAxis: 'y',
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            plugins: {
-                                legend: { display: false }
-                            },
-                            scales: {
-                                x: { 
-                                    title: { display: true, text: 'Change (%)' }
-                                }
-                            }
-                        }
-                    });
-                    
-                    // Comparison Chart (Actual vs Projected)
-                    const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
-                    new Chart(comparisonCtx, {
-                        type: 'bar',
-                        data: {
-                            labels: top10.map(d => d.degree.substring(0, 30) + '...'),
-                            datasets: [
-                                {
-                                    label: 'Last Actual Median',
-                                    data: top10.map(d => d.last_actual_median),
-                                    backgroundColor: 'rgba(255, 159, 64, 0.6)',
-                                    borderColor: 'rgba(255, 159, 64, 1)',
-                                    borderWidth: 1
-                                },
-                                {
-                                    label: 'Projected 2024 Median',
-                                    data: top10.map(d => d.predicted_median_2024),
-                                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
-                                    borderColor: 'rgba(54, 162, 235, 1)',
-                                    borderWidth: 1
-                                }
-                            ]
-                        },
-                        options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            plugins: {
-                                legend: { display: true, position: 'top' }
-                            },
-                            scales: {
-                                y: { 
-                                    beginAtZero: true,
-                                    title: { display: true, text: 'Salary ($)' }
-                                }
-                            }
-                        }
-                    });
-                </script>
-                {% endif %}
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab6' %}active{% endif %}" id="tab6">
-                <h3>Employment Rate vs Salary</h3>
-                {% if correlation is not none %}
-                <p><strong>Pearson correlation:</strong> {{ correlation }}</p>
-                {% endif %}
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Year</th>
-                            <th>University</th>
-                            <th>School</th>
-                            <th>Degree</th>
-                            <th>Employment Rate Overall</th>
-                            <th>Gross Monthly Median</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in data %}
-                        <tr>
-                            <td>{{ row.year }}</td>
-                            <td>{{ row.university }}</td>
-                            <td>{{ row.school }}</td>
-                            <td>{{ row.degree }}</td>
-                            <td>{{ row.employment_rate_overall }}</td>
-                            <td>{{ row.gross_monthly_median }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="tab-pane {% if active_tab == 'tab7' %}active{% endif %}" id="tab7">
-                <h3>Full-Time Permanent Employment vs Salary</h3>
-                {% if correlation is not none %}
-                <p><strong>Pearson correlation:</strong> {{ correlation }}</p>
-                {% endif %}
-                <table class="table table-striped table-bordered">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Year</th>
-                            <th>University</th>
-                            <th>School</th>
-                            <th>Degree</th>
-                            <th>Employment Rate FT Perm</th>
-                            <th>Gross Monthly Median</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in data %}
-                        <tr>
-                            <td>{{ row.year }}</td>
-                            <td>{{ row.university }}</td>
-                            <td>{{ row.school }}</td>
-                            <td>{{ row.degree }}</td>
-                            <td>{{ row.employment_rate_ft_perm }}</td>
-                            <td>{{ row.gross_monthly_median }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+  <div class="wrap">
+    <div class="top">
+      <div class="title">
+        <h1>GES DAaaS Platform</h1>
+        <p>Graduate Employment Survey - Data Analysis & Visualization</p>
+      </div>
+      <div class="badge"><span class="dot"></span> Live Analytics</div>
     </div>
 
-    <!-- Optional: Add JavaScript for Bootstrap functionality -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Navigation Tabs -->
+    {% set active_tab = active_tab or 'overview' %}
+    <div class="nav-tabs-custom">
+      <a class="nav-tab-link {% if active_tab == 'overview' %}active{% endif %}" href="{{ url_for('index') }}">📋 Overview</a>
+      <a class="nav-tab-link {% if active_tab == 'tab1' %}active{% endif %}" href="{{ url_for('function1') }}">📊 Trend Analysis</a>
+      <a class="nav-tab-link {% if active_tab == 'tab2' %}active{% endif %}" href="{{ url_for('function2') }}">📈 IQR Analysis</a>
+      <a class="nav-tab-link {% if active_tab == 'tab3' %}active{% endif %}" href="{{ url_for('function3') }}">🔍 Function 3</a>
+      <a class="nav-tab-link {% if active_tab == 'tab4' %}active{% endif %}" href="{{ url_for('function4') }}">📉 Function 4</a>
+      <a class="nav-tab-link {% if active_tab == 'tab5' %}active{% endif %}" href="{{ url_for('function5') }}">🚀 Salary Projection</a>
+      <a class="nav-tab-link {% if active_tab == 'tab6' %}active{% endif %}" href="{{ url_for('function6') }}">💼 Employment vs Salary</a>
+      <a class="nav-tab-link {% if active_tab == 'tab7' %}active{% endif %}" href="{{ url_for('function7') }}">👔 FT Perm vs Salary</a>
+    </div>
+
+    <!-- Tab Content -->
+    <!-- Overview Tab -->
+    <div class="tab-pane {% if active_tab == 'overview' %}active{% endif %}" id="overview">
+    <div class="grid">
+      <div class="card">
+        <div class="card-h">
+          <div>
+            <h2>Dataset Controls</h2>
+            <span>Choose a dataset to preview (first 50 rows).</span>
+          </div>
+        </div>
+        <div class="card-b">
+          <div class="tabs">
+            <div id="tab-processed" class="tab active" onclick="loadCSV('/data/cleaned.csv','Processed (cleaned.csv)')">
+              Processed
+            </div>
+            <div id="tab-raw" class="tab" onclick="loadCSV('/data/raw.csv','Raw (raw.csv)')">
+              Raw
+            </div>
+          </div>
+          <div class="note">Tip: Preview is limited to 50 rows for speed. Use Download for the full CSV.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-h">
+          <div>
+            <h2>File Summary</h2>
+            <span>Updates when you switch datasets.</span>
+          </div>
+        </div>
+        <div class="card-b">
+          <div class="meta">
+            <div class="pill">
+              <div class="k">Selected</div>
+              <div class="v" id="selected">Processed (cleaned.csv)</div>
+            </div>
+            <div class="pill">
+              <div class="k">File size</div>
+              <div class="v" id="filesize">—</div>
+            </div>
+            <div class="pill">
+              <div class="k">Total rows</div>
+              <div class="v" id="totalrows">—</div>
+            </div>
+          </div>
+          <div class="note" id="status">Ready.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <div class="toolbar">
+        <div class="left">
+          <div class="line1" id="tableTitle">Processed (cleaned.csv)</div>
+          <div class="line2"><span class="muted">Preview:</span> first 50 rows</div>
+        </div>
+        <div class="actions">
+          <a id="downloadBtn" class="btn primary" href="/data/cleaned.csv" download>Download CSV</a>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="table"></table>
+      </div>
+    </div>
+    </div>
+    <!-- End Overview Tab -->
+
+    <!-- Tab 1: Trend Analysis -->
+    <div class="tab-pane {% if active_tab == 'tab1' %}active{% endif %}" id="tab1">
+      <div class="card">
+        <div class="card-h">
+          <h2>Graduate Employment Trend Analysis</h2>
+          <span>Analyze employment rate and salary trends over time</span>
+        </div>
+        <div class="card-b">
+          <form method="GET" action="{{ url_for('function1') }}">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px">
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">University</label>
+                <select name="university" id="universitySelect" onchange="updateSchools()" class="btn" style="width:100%; text-align:left">
+                  <option value="">-- Select University --</option>
+                  {% for uni in universities %}
+                  <option value="{{ uni }}" {% if selected_university == uni %}selected{% endif %}>{{ uni }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">School (Optional)</label>
+                <select name="school" id="schoolSelect" onchange="updateDegrees()" class="btn" style="width:100%; text-align:left">
+                  <option value="">-- All Schools --</option>
+                  {% for sch in schools %}
+                  <option value="{{ sch }}" {% if selected_school == sch %}selected{% endif %}>{{ sch }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Degree (Optional)</label>
+                <select name="degree" id="degreeSelect" class="btn" style="width:100%; text-align:left">
+                  <option value="">-- All Degrees --</option>
+                  {% for deg in degrees %}
+                  <option value="{{ deg }}" {% if selected_degree == deg %}selected{% endif %}>{{ deg }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div>
+                <label style="display:block; color:var(--muted); font-size:12px; margin-bottom:6px">Rolling Window</label>
+                <select name="rolling_window" class="btn" style="width:100%; text-align:left">
+                  <option value="2" {% if rolling_window == 2 %}selected{% endif %}>2 years</option>
+                  <option value="3" {% if rolling_window == 3 %}selected{% endif %}>3 years</option>
+                  <option value="5" {% if rolling_window == 5 %}selected{% endif %}>5 years</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn primary">Analyze Trends</button>
+          </form>
+          
+          {% if active_tab == 'tab1' and data %}
+          <!-- Trend Charts -->
+          <div style="margin-top:24px">
+            <h3 style="font-size:16px; margin-bottom:16px">Trend Visualizations</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px">
+              <div style="background:rgba(0,0,0,.2); padding:16px; border-radius:12px; border:1px solid var(--border)">
+                <canvas id="employmentChart"></canvas>
+              </div>
+              <div style="background:rgba(0,0,0,.2); padding:16px; border-radius:12px; border:1px solid var(--border)">
+                <canvas id="ftPermChart"></canvas>
+              </div>
+            </div>
+            <div style="background:rgba(0,0,0,.2); padding:16px; border-radius:12px; border:1px solid var(--border); margin-bottom:20px">
+              <canvas id="salaryChart"></canvas>
+            </div>
+          </div>
+
+          <div style="margin-top:20px">
+            <h3 style="font-size:16px; margin-bottom:12px">Trend Data</h3>
+            <div class="table-wrap" style="max-height:60vh">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Employment Rate (%)</th>
+                    <th>YoY Change (%)</th>
+                    <th>Moving Avg</th>
+                    <th>FT Perm Rate (%)</th>
+                    <th>YoY Change (%)</th>
+                    <th>Moving Avg</th>
+                    <th>Median Salary ($)</th>
+                    <th>YoY Change ($)</th>
+                    <th>Moving Avg ($)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in data %}
+                  <tr>
+                    <td><strong>{{ row.year }}</strong></td>
+                    <td>{{ "%.2f"|format(row.employment_rate_overall) }}</td>
+                    <td style="color:{% if row.employment_rate_overall_yoy_pct > 0 %}#31d0aa{% else %}#ff6b6b{% endif %}">
+                      {{ "%.2f"|format(row.employment_rate_overall_yoy_pct) if row.employment_rate_overall_yoy_pct else '-' }}
+                    </td>
+                    <td>{{ "%.2f"|format(row['employment_rate_overall_ma' ~ rolling_window]) }}</td>
+                    <td>{{ "%.2f"|format(row.employment_rate_ft_perm) }}</td>
+                    <td style="color:{% if row.employment_rate_ft_perm_yoy_pct > 0 %}#31d0aa{% else %}#ff6b6b{% endif %}">
+                      {{ "%.2f"|format(row.employment_rate_ft_perm_yoy_pct) if row.employment_rate_ft_perm_yoy_pct else '-' }}
+                    </td>
+                    <td>{{ "%.2f"|format(row['employment_rate_ft_perm_ma' ~ rolling_window]) }}</td>
+                    <td>${{ "%.2f"|format(row.gross_monthly_median) }}</td>
+                    <td style="color:{% if row.gross_monthly_median_yoy_abs > 0 %}#31d0aa{% else %}#ff6b6b{% endif %}">
+                      ${{ "%.2f"|format(row.gross_monthly_median_yoy_abs) if row.gross_monthly_median_yoy_abs else '-' }}
+                    </td>
+                    <td>${{ "%.2f"|format(row['gross_monthly_median_ma' ~ rolling_window]) }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <!-- End Tab 1 -->
+
+    <!-- Tab 2: IQR Analysis -->
+    <div class="tab-pane {% if active_tab == 'tab2' %}active{% endif %}" id="tab2">
+      {% if active_tab == 'tab2' %}
+      <div class="card">
+        <div class="card-h">
+          <h2>Salary Spread Analysis (IQR)</h2>
+          <span>Interquartile Range & IQR Ratio by Degree/University/Year</span>
+        </div>
+        <div class="card-b">
+          <div class="table-wrap" style="max-height:70vh">
+            <table>
+              <thead>
+                <tr>
+                  <th>Degree</th>
+                  <th>University</th>
+                  <th>Year</th>
+                  <th>IQR</th>
+                  <th>IQR Ratio</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in data %}
+                <tr>
+                  <td>{{ row.degree }}</td>
+                  <td>{{ row.university }}</td>
+                  <td>{{ row.year }}</td>
+                  <td>{{ row.IQR }}</td>
+                  <td>{{ row.IQR_ratio }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Tab 3: Function 3 -->
+    <div class="tab-pane {% if active_tab == 'tab3' %}active{% endif %}" id="tab3">
+      <div class="card">
+        <div class="card-h">
+          <h2>Function 3</h2>
+        </div>
+        <div class="card-b">
+          <p class="muted">Content for Function 3 will be added here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: Function 4 -->
+    <div class="tab-pane {% if active_tab == 'tab4' %}active{% endif %}" id="tab4">
+      <div class="card">
+        <div class="card-h">
+          <h2>Function 4</h2>
+        </div>
+        <div class="card-b">
+          <p class="muted">Content for Function 4 will be added here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 5: Salary Projection -->
+    <div class="tab-pane {% if active_tab == 'tab5' %}active{% endif %}" id="tab5">
+      {% if active_tab == 'tab5' %}
+      <div class="card">
+        <div class="card-h">
+          <h2>Salary Projection for 2024</h2>
+          <span>Linear trend extrapolation using last N years (N=2-5)</span>
+        </div>
+        <div class="card-b">
+          <div class="table-wrap" style="max-height:70vh">
+            <table>
+              <thead>
+                <tr>
+                  <th>Degree</th>
+                  <th>University</th>
+                  <th>Method</th>
+                  <th>Last Year</th>
+                  <th>Last Actual Median ($)</th>
+                  <th>Predicted 2024 ($)</th>
+                  <th>Change ($)</th>
+                  <th>Change (%)</th>
+                  <th>Trend Slope</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in data %}
+                <tr>
+                  <td>{{ row.degree }}</td>
+                  <td>{{ row.university }}</td>
+                  <td><small>{{ row.method }}</small></td>
+                  <td>{{ row.last_year }}</td>
+                  <td>${{ "%.2f"|format(row.last_actual_median) }}</td>
+                  <td style="font-weight:700">${{ "%.2f"|format(row.predicted_median_2024) }}</td>
+                  <td style="color:{% if row.change_amount > 0 %}#31d0aa{% else %}#ff6b6b{% endif %}">${{ "%.2f"|format(row.change_amount) }}</td>
+                  <td style="color:{% if row.change_percentage > 0 %}#31d0aa{% else %}#ff6b6b{% endif %}">{{ "%.2f"|format(row.change_percentage) }}%</td>
+                  <td>{{ "%.2f"|format(row.trend_slope) }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Tab 6: Employment vs Salary -->
+    <div class="tab-pane {% if active_tab == 'tab6' %}active{% endif %}" id="tab6">
+      {% if active_tab == 'tab6' %}
+      <div class="card">
+        <div class="card-h">
+          <h2>Employment Rate vs Salary</h2>
+          {% if correlation is not none %}
+          <span>Pearson correlation: {{ correlation }}</span>
+          {% endif %}
+        </div>
+        <div class="card-b">
+          <div class="table-wrap" style="max-height:70vh">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>University</th>
+                  <th>School</th>
+                  <th>Degree</th>
+                  <th>Employment Rate Overall</th>
+                  <th>Gross Monthly Median</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in data %}
+                <tr>
+                  <td>{{ row.year }}</td>
+                  <td>{{ row.university }}</td>
+                  <td>{{ row.school }}</td>
+                  <td>{{ row.degree }}</td>
+                  <td>{{ row.employment_rate_overall }}</td>
+                  <td>{{ row.gross_monthly_median }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Tab 7: FT Perm vs Salary -->
+    <div class="tab-pane {% if active_tab == 'tab7' %}active{% endif %}" id="tab7">
+      {% if active_tab == 'tab7' %}
+      <div class="card">
+        <div class="card-h">
+          <h2>Full-Time Permanent Employment vs Salary</h2>
+          {% if correlation is not none %}
+          <span>Pearson correlation: {{ correlation }}</span>
+          {% endif %}
+        </div>
+        <div class="card-b">
+          <div class="table-wrap" style="max-height:70vh">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>University</th>
+                  <th>School</th>
+                  <th>Degree</th>
+                  <th>Employment Rate FT Perm</th>
+                  <th>Gross Monthly Median</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for row in data %}
+                <tr>
+                  <td>{{ row.year }}</td>
+                  <td>{{ row.university }}</td>
+                  <td>{{ row.school }}</td>
+                  <td>{{ row.degree }}</td>
+                  <td>{{ row.employment_rate_ft_perm }}</td>
+                  <td>{{ row.gross_monthly_median }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+  <!-- End wrap -->
+
+  <script>
+    // Global functions for dropdown cascading (used in tab1)
+    async function updateSchools() {
+      const university = document.getElementById('universitySelect').value;
+      const schoolSelect = document.getElementById('schoolSelect');
+      const degreeSelect = document.getElementById('degreeSelect');
+      
+      // Clear schools and degrees
+      schoolSelect.innerHTML = '<option value="">-- All Schools --</option>';
+      degreeSelect.innerHTML = '<option value="">-- All Degrees --</option>';
+      
+      if (!university) return;
+      
+      try {
+        const response = await fetch(`/api/get_schools?university=${encodeURIComponent(university)}`);
+        const data = await response.json();
+        
+        data.schools.forEach(school => {
+          const option = document.createElement('option');
+          option.value = school;
+          option.textContent = school;
+          schoolSelect.appendChild(option);
+        });
+      } catch (e) {
+        console.error('Error loading schools:', e);
+      }
+    }
+    
+    async function updateDegrees() {
+      const university = document.getElementById('universitySelect').value;
+      const school = document.getElementById('schoolSelect').value;
+      const degreeSelect = document.getElementById('degreeSelect');
+      
+      degreeSelect.innerHTML = '<option value="">-- All Degrees --</option>';
+      
+      if (!university) return;
+      
+      try {
+        let url = `/api/get_degrees?university=${encodeURIComponent(university)}`;
+        if (school) {
+          url += `&school=${encodeURIComponent(school)}`;
+        }
+        
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        data.degrees.forEach(degree => {
+          const option = document.createElement('option');
+          option.value = degree;
+          option.textContent = degree;
+          degreeSelect.appendChild(option);
+        });
+      } catch (e) {
+        console.error('Error loading degrees:', e);
+      }
+    }
+
+    {% if active_tab == 'overview' %}
+    const PREVIEW_ROWS = 50;
+
+    function setActive(tabId){
+      document.getElementById('tab-processed').classList.remove('active');
+      document.getElementById('tab-raw').classList.remove('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+
+    async function loadCSV(path, label) {
+      const status = document.getElementById('status');
+      const table = document.getElementById('table');
+      const selected = document.getElementById('selected');
+      const filesize = document.getElementById('filesize');
+      const totalrows = document.getElementById('totalrows');
+      const tableTitle = document.getElementById('tableTitle');
+      const downloadBtn = document.getElementById('downloadBtn');
+
+      if (path.includes("cleaned.csv")) setActive("tab-processed");
+      if (path.includes("raw.csv")) setActive("tab-raw");
+
+      table.innerHTML = "";
+      status.textContent = "Loading preview…";
+      selected.textContent = label;
+      tableTitle.textContent = label;
+      filesize.textContent = "—";
+      totalrows.textContent = "—";
+      downloadBtn.href = path;
+
+      try {
+        try {
+          const head = await fetch(path, { method: "HEAD" });
+          if (head.ok) {
+            const len = head.headers.get("content-length");
+            if (len) filesize.textContent = humanBytes(Number(len));
+          }
+        } catch (_) {}
+
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("HTTP " + res.status + " for " + path);
+        const text = await res.text();
+
+        const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+        const total = Math.max(0, lines.length - 1);
+        totalrows.textContent = total.toLocaleString();
+
+        const maxLines = Math.min(lines.length, PREVIEW_ROWS + 1);
+        const rows = [];
+        for (let i = 0; i < maxLines; i++) rows.push(lines[i].split(","));
+
+        const header = rows[0];
+        let html = "<thead><tr>" + header.map(h => `<th>${escapeHtml(h)}</th>`).join("") + "</tr></thead><tbody>";
+
+        for (let r = 1; r < rows.length; r++) {
+          html += "<tr>" + rows[r].map(c => `<td>${escapeHtml(c)}</td>`).join("") + "</tr>";
+        }
+        html += "</tbody>";
+        table.innerHTML = html;
+
+        status.textContent = `Loaded. Showing ${Math.max(0, rows.length - 1)} preview rows.`;
+      } catch (e) {
+        status.textContent = "Error: " + e.message;
+      }
+    }
+
+    function escapeHtml(s) {
+      return String(s ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function humanBytes(bytes) {
+      if (!Number.isFinite(bytes) || bytes < 0) return "—";
+      const units = ["B", "KB", "MB", "GB"];
+      let i = 0, n = bytes;
+      while (n >= 1024 && i < units.length - 1) { n /= 1024; i++; }
+      return `${n.toFixed(i === 0 ? 0 : 2)} ${units[i]}`;
+    }
+
+    try {
+      loadCSV('/data/cleaned.csv', 'Processed (cleaned.csv)');
+    } catch(e) {
+      console.error('Error initializing CSV preview:', e);
+    }
+    {% endif %}
+
+    {% if active_tab == 'tab1' and data %}
+    // Chart.js for Trend Analysis
+    const trendData = {{ data | tojson }};
+    const years = trendData.map(d => d.year);
+    const employmentRates = trendData.map(d => d.employment_rate_overall);
+    const ftPermRates = trendData.map(d => d.employment_rate_ft_perm);
+    const salaries = trendData.map(d => d.gross_monthly_median);
+    const employmentMA = trendData.map(d => d['employment_rate_overall_ma{{ rolling_window }}']);
+    const ftPermMA = trendData.map(d => d['employment_rate_ft_perm_ma{{ rolling_window }}']);
+    const salaryMA = trendData.map(d => d['gross_monthly_median_ma{{ rolling_window }}']);
+
+    const chartOptions = {
+      responsive: true,
+      maintainAspectRatio: true,
+      aspectRatio: 2,
+      plugins: {
+        legend: { 
+          labels: { color: '#e9eefc', font: { size: 11 } }
+        }
+      },
+      scales: {
+        x: { 
+          ticks: { color: '#a9b7da' },
+          grid: { color: 'rgba(255,255,255,0.05)' }
+        },
+        y: { 
+          ticks: { color: '#a9b7da' },
+          grid: { color: 'rgba(255,255,255,0.08)' }
+        }
+      }
+    };
+
+    // Employment Rate Chart
+    new Chart(document.getElementById('employmentChart'), {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [{
+          label: 'Employment Rate (%)',
+          data: employmentRates,
+          borderColor: '#6ea8fe',
+          backgroundColor: 'rgba(110, 168, 254, 0.1)',
+          tension: 0.3,
+          fill: true
+        }, {
+          label: '{{ rolling_window }}-Year Moving Avg',
+          data: employmentMA,
+          borderColor: '#9b7bff',
+          borderDash: [5, 5],
+          tension: 0.3,
+          fill: false
+        }]
+      },
+      options: {
+        ...chartOptions,
+        plugins: {
+          ...chartOptions.plugins,
+          title: { display: true, text: 'Employment Rate Trend', color: '#e9eefc' }
+        }
+      }
+    });
+
+    // FT Permanent Rate Chart
+    new Chart(document.getElementById('ftPermChart'), {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [{
+          label: 'FT Permanent Rate (%)',
+          data: ftPermRates,
+          borderColor: '#31d0aa',
+          backgroundColor: 'rgba(49, 208, 170, 0.1)',
+          tension: 0.3,
+          fill: true
+        }, {
+          label: '{{ rolling_window }}-Year Moving Avg',
+          data: ftPermMA,
+          borderColor: '#9b7bff',
+          borderDash: [5, 5],
+          tension: 0.3,
+          fill: false
+        }]
+      },
+      options: {
+        ...chartOptions,
+        plugins: {
+          ...chartOptions.plugins,
+          title: { display: true, text: 'FT Permanent Employment Trend', color: '#e9eefc' }
+        }
+      }
+    });
+
+    // Salary Chart
+    new Chart(document.getElementById('salaryChart'), {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [{
+          label: 'Median Salary ($)',
+          data: salaries,
+          borderColor: '#ffc107',
+          backgroundColor: 'rgba(255, 193, 7, 0.1)',
+          tension: 0.3,
+          fill: true
+        }, {
+          label: '{{ rolling_window }}-Year Moving Avg',
+          data: salaryMA,
+          borderColor: '#9b7bff',
+          borderDash: [5, 5],
+          tension: 0.3,
+          fill: false
+        }]
+      },
+      options: {
+        ...chartOptions,
+        aspectRatio: 2.5,
+        plugins: {
+          ...chartOptions.plugins,
+          title: { display: true, text: 'Median Salary Trend', color: '#e9eefc' }
+        }
+      }
+    });
+    {% endif %}
+  </script>
 </body>
 </html>
