@@ -2,6 +2,17 @@ from flask import Flask, render_template, request, jsonify, send_file
 import pandas as pd
 import numpy as np
 from function5_projection import calculate_salary_projections
+from analytics import analyze_trends
+from salary_analysis import (
+    calculate_iqr_analysis,
+    get_filtered_salary_data,
+    get_degrees_for_university,
+    get_years_for_university_degree
+)
+from data_helpers import (
+    get_schools_for_university,
+    get_degrees_for_university_school
+)
 import os
 
 from relationship_analysis import (
@@ -12,45 +23,9 @@ from relationship_analysis import (
 
 app = Flask(__name__, template_folder='../templates')
 
-# Load the full dataset
-grouped_data = pd.read_csv('../grouped_salary_analysis.csv')
-
 # Define a function to load different CSV files for each route (if needed)
 def load_csv(file_path):
     return pd.read_csv(file_path)
-
-def analyze_trends(university=None, school=None, degree=None, rolling_window=3):
-    """Analyze employment and salary trends"""
-    df = pd.read_csv('../cleaned.csv')
-    
-    # Ensure numeric types
-    df["year"] = pd.to_numeric(df["year"], errors="coerce")
-    metrics = ["employment_rate_overall", "employment_rate_ft_perm", "gross_monthly_median"]
-    for c in metrics:
-        df[c] = pd.to_numeric(df[c], errors="coerce")
-    
-    # Filter data
-    d = df.copy()
-    if university:
-        d = d[d["university"] == university].copy()
-    if school:
-        d = d[d["school"] == school].copy()
-    if degree:
-        d = d[d["degree"] == degree].copy()
-    
-    if d.empty:
-        return None
-    
-    d = d.sort_values("year")
-    d = d.groupby("year", as_index=False)[metrics].mean(numeric_only=True).sort_values("year")
-    
-    # Compute value-added stats
-    for c in metrics:
-        d[f"{c}_yoy_abs"] = d[c].diff()
-        d[f"{c}_yoy_pct"] = d[c].pct_change(fill_method=None) * 100
-        d[f"{c}_ma{rolling_window}"] = d[c].rolling(rolling_window, min_periods=1).mean()
-    
-    return d
 
 @app.route('/')
 def index():
@@ -89,7 +64,7 @@ def function1():
     
     trend_data = None
     if university:
-        trend_data = analyze_trends(university, school, degree, rolling_window)
+        trend_data = analyze_trends('../cleaned.csv', university, school, degree, rolling_window)
     
     return render_template('index.html', 
                          data=trend_data.to_dict(orient='records') if trend_data is not None else [],
@@ -104,16 +79,8 @@ def function1():
 
 @app.route('/function2')
 def function2():
-    # Load specific CSV for function2
-    function2_data = load_csv('../grouped_salary_analysis.csv')
-
-    # Calculate IQR and IQR ratio for this function
-    function2_data['IQR'] = function2_data['gross_mthly_75_percentile'] - function2_data['gross_mthly_25_percentile']
-    function2_data['IQR_ratio'] = function2_data['IQR'] / function2_data['gross_monthly_median']
-
-    # Get the top 5 entries based on IQR and IQR ratio
-    top_iqr = function2_data.nlargest(5, 'IQR')[['degree', 'university', 'year', 'IQR', 'gross_mthly_25_percentile', 'gross_mthly_75_percentile', 'gross_monthly_median']]
-    top_iqr_ratio = function2_data.nlargest(5, 'IQR_ratio')[['degree', 'university', 'year', 'IQR_ratio', 'gross_mthly_25_percentile', 'gross_mthly_75_percentile', 'gross_monthly_median']]
+    # Use salary_analysis module for IQR analysis
+    function2_data, top_iqr, top_iqr_ratio = calculate_iqr_analysis('../grouped_salary_analysis.csv')
 
     # Extract unique values for degree, university, and year
     unique_degrees = function2_data['degree'].unique()
@@ -216,61 +183,40 @@ def get_filtered_data():
     university = request.args.get('university')
     year = request.args.get('year')
 
-    print(f"Filtering data for Degree: {degree}, University: {university}, Year: {year}")  # Debugging output
+    # Use salary_analysis module for filtering
+    result = get_filtered_salary_data('../grouped_salary_analysis.csv', degree, university, year)
 
-    # Filter the data based on the selected degree, university, and year
-    filtered_data = grouped_data[(grouped_data['degree'] == degree) & 
-                                  (grouped_data['university'] == university) & 
-                                  (grouped_data['year'] == int(year))]
-
-    # Debugging print to check if data is found
-    print(f"Filtered data: {filtered_data}")  
-
-    # If no data is found, return a 404 response
-    if filtered_data.empty:
+    if result is None:
         return jsonify({'error': 'No data found for the selected filters'}), 404
-
-    # Convert the values to native Python types (int and float)
-    result = {
-        'gross_mthly_25_percentile': int(filtered_data['gross_mthly_25_percentile'].values[0]),
-        'gross_monthly_median': int(filtered_data['gross_monthly_median'].values[0]),
-        'gross_mthly_75_percentile': int(filtered_data['gross_mthly_75_percentile'].values[0]),
-        'IQR': int(filtered_data['IQR'].values[0]),
-        'IQR_ratio': float(filtered_data['IQR_ratio'].values[0])  # IQR ratio might be a float
-    }
 
     return jsonify(result)
 
-# New route to fetch degrees based on the selected university
 @app.route('/get_degrees', methods=['GET'])
 def get_degrees():
     university = request.args.get('university')
 
-    # Filter the data based on the selected university and get available degrees
-    degrees = grouped_data[grouped_data['university'] == university]['degree'].unique()
+    # Use salary_analysis module for getting degrees
+    degrees = get_degrees_for_university('../grouped_salary_analysis.csv', university)
 
-    return jsonify({'degrees': degrees.tolist()})
+    return jsonify({'degrees': degrees})
 
 @app.route('/get_years', methods=['GET'])
 def get_years():
     university = request.args.get('university')
     degree = request.args.get('degree')
 
-    # Filter the data based on the selected university and degree, then return the unique years
-    years = grouped_data[(grouped_data['university'] == university) & 
-                         (grouped_data['degree'] == degree)]['year'].unique()
+    # Use salary_analysis module for getting years
+    years = get_years_for_university_degree('../grouped_salary_analysis.csv', university, degree)
 
-    return jsonify({'years': years.tolist()})
+    return jsonify({'years': years})
 
 @app.route('/api/get_schools', methods=['GET'])
 def api_get_schools():
     """Get schools for a given university"""
     university = request.args.get('university')
-    if not university:
-        return jsonify({'schools': []})
     
-    df = load_csv('../cleaned.csv')
-    schools = sorted(df[df['university'] == university]['school'].unique().tolist())
+    # Use data_helpers module for getting schools
+    schools = get_schools_for_university('../cleaned.csv', university)
     return jsonify({'schools': schools})
 
 @app.route('/api/get_degrees', methods=['GET'])
@@ -279,16 +225,8 @@ def api_get_degrees():
     university = request.args.get('university')
     school = request.args.get('school')
     
-    if not university:
-        return jsonify({'degrees': []})
-    
-    df = load_csv('../cleaned.csv')
-    filtered = df[df['university'] == university]
-    
-    if school:
-        filtered = filtered[filtered['school'] == school]
-    
-    degrees = sorted(filtered['degree'].unique().tolist())
+    # Use data_helpers module for getting degrees
+    degrees = get_degrees_for_university_school('../cleaned.csv', university, school)
     return jsonify({'degrees': degrees})
 
 @app.route('/data/<filename>')
