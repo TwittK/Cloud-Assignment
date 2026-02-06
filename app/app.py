@@ -30,7 +30,7 @@ def load_csv(file_path):
 @app.route('/')
 def index():
     # Default tab - show overview with CSV preview
-    df = load_csv('../cleaned.csv')
+    df = load_csv('../cleaned_fixed.csv')
     return render_template('index.html', 
                          data=[], 
                          active_tab='overview',
@@ -50,7 +50,7 @@ def function1():
     degree = request.args.get('degree')
     rolling_window = int(request.args.get('rolling_window', 3))
     
-    df = load_csv('../cleaned.csv')
+    df = load_csv('../cleaned_fixed.csv')
     universities = sorted(df['university'].unique())
     schools = []
     degrees = []
@@ -64,7 +64,7 @@ def function1():
     
     trend_data = None
     if university:
-        trend_data = analyze_trends('../cleaned.csv', university, school, degree, rolling_window)
+        trend_data = analyze_trends('../cleaned_fixed.csv', university, school, degree, rolling_window)
     
     return render_template('index.html', 
                          data=trend_data.to_dict(orient='records') if trend_data is not None else [],
@@ -114,7 +114,7 @@ def function3():
     include_most_improved = request.args.get('include_most_improved') == '1'
 
     # Choose default year if not provided (latest year in dataset)
-    csv_path = '../cleaned.csv'
+    csv_path = '../cleaned_fixed.csv'
     df = load_csv(csv_path)
     available_years = sorted(pd.to_numeric(df["year"], errors="coerce").dropna().astype(int).unique().tolist())
     default_year = available_years[-1] if available_years else 2023
@@ -178,7 +178,7 @@ def function5():
     )
     
     # Get unique universities for dropdown
-    df = load_csv('../cleaned.csv')
+    df = load_csv('../cleaned_fixed.csv')
     unique_universities = sorted(df['university'].unique().tolist())
     
     # Get degrees for selected university
@@ -202,7 +202,7 @@ def function5():
 
 @app.route('/function4')
 def function4():
-    df = load_cleaned_data('../cleaned.csv')
+    df = load_cleaned_data('../cleaned_fixed.csv')
     universities = sorted(df['university'].dropna().unique())
     selected_university = request.args.get('university') or (universities[0] if universities else None)
 
@@ -289,7 +289,7 @@ def api_get_schools():
     university = request.args.get('university')
     
     # Use data_helpers module for getting schools
-    schools = get_schools_for_university('../cleaned.csv', university)
+    schools = get_schools_for_university('../cleaned_fixed.csv', university)
     return jsonify({'schools': schools})
 
 @app.route('/api/get_degrees', methods=['GET'])
@@ -299,7 +299,7 @@ def api_get_degrees():
     school = request.args.get('school')
     
     # Use data_helpers module for getting degrees
-    degrees = get_degrees_for_university_school('../cleaned.csv', university, school)
+    degrees = get_degrees_for_university_school('../cleaned_fixed.csv', university, school)
     return jsonify({'degrees': degrees})
 
 @app.route('/data/<filename>')

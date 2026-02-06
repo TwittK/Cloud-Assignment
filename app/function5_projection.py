@@ -12,7 +12,7 @@ def calculate_salary_projections(university_filter=None, degree_filter=None, tre
         limit: Maximum number of results to return (optional)
     """
     # Load the dataset
-    data = pd.read_csv('../cleaned.csv')
+    data = pd.read_csv('../cleaned_fixed.csv')
 
     # Get unique degree-university combinations
     degree_university_combos = data.groupby(['degree', 'university']).size().reset_index()[['degree', 'university']]

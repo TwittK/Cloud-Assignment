@@ -255,7 +255,7 @@
         </div>
         <div class="card-b">
           <div class="tabs">
-            <div id="tab-processed" class="tab active" onclick="loadCSV('/data/cleaned.csv','Processed (cleaned.csv)')">
+            <div id="tab-processed" class="tab active" onclick="loadCSV('/data/cleaned_fixed.csv','Processed (cleaned_fixed.csv)')">
               Processed
             </div>
             <div id="tab-raw" class="tab" onclick="loadCSV('/data/raw.csv','Raw (raw.csv)')">
@@ -277,7 +277,7 @@
           <div class="meta">
             <div class="pill">
               <div class="k">Selected</div>
-              <div class="v" id="selected">Processed (cleaned.csv)</div>
+              <div class="v" id="selected">Processed (cleaned_fixed.csv)</div>
             </div>
             <div class="pill">
               <div class="k">File size</div>
@@ -296,11 +296,11 @@
     <div class="table-card">
       <div class="toolbar">
         <div class="left">
-          <div class="line1" id="tableTitle">Processed (cleaned.csv)</div>
+          <div class="line1" id="tableTitle">Processed (cleaned_fixed.csv)</div>
           <div class="line2"><span class="muted">Preview:</span> first 50 rows</div>
         </div>
         <div class="actions">
-          <a id="downloadBtn" class="btn primary" href="/data/cleaned.csv" download>Download CSV</a>
+          <a id="downloadBtn" class="btn primary" href="/data/cleaned_fixed.csv" download>Download CSV</a>
         </div>
       </div>
 
@@ -963,7 +963,7 @@
       const tableTitle = document.getElementById('tableTitle');
       const downloadBtn = document.getElementById('downloadBtn');
 
-      if (path.includes("cleaned.csv")) setActive("tab-processed");
+      if (path.includes("cleaned_fixed.csv")) setActive("tab-processed");
       if (path.includes("raw.csv")) setActive("tab-raw");
 
       table.innerHTML = "";
@@ -1028,7 +1028,7 @@
     }
 
     try {
-      loadCSV('/data/cleaned.csv', 'Processed (cleaned.csv)');
+      loadCSV('/data/cleaned_fixed.csv', 'Processed (cleaned_fixed.csv)');
     } catch(e) {
       console.error('Error initializing CSV preview:', e);
     }

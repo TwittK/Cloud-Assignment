@@ -72,8 +72,8 @@ Arts (with Education),Nanyang Technological University,2021,3700,3900,3780.0,200
 Arts (with Education),Nanyang Technological University,2022,3750,4300,4129.0,550,0.1332041656575442
 Bachelor in Science (Diagnostic Radiography),Singapore Institute of Technology,2015,3313,3650,3488.0,337,0.09661697247706422
 Bachelor in Science (Diagnostic Radiography),Singapore Institute of Technology,2016,3400,3930,3660.0,530,0.1448087431693989
+Bachelor in Science (Diagnostic Radiography),Singapore Institute of Technology,2018,3300,3800,3350.0,500,0.14925373134328357
 Bachelor in Science (Diagnostic Radiography),Singapore Institute of Technology,2020,3400,3859,3650.0,459,0.12575342465753425
-Bachelor in Science (Diagnostic Radiography) ^,Singapore Institute of Technology,2018,3300,3800,3350.0,500,0.14925373134328357
 Bachelor in Science (Occupational Therapy),Singapore Institute of Technology,2014,3000,3338,3100.0,338,0.10903225806451614
 Bachelor in Science (Occupational Therapy),Singapore Institute of Technology,2015,3000,3225,3125.0,225,0.072
 Bachelor in Science (Occupational Therapy),Singapore Institute of Technology,2016,3100,3500,3200.0,400,0.125
@@ -89,7 +89,7 @@ Bachelor in Science (Physiotherapy),Singapore Institute of Technology,2018,3000,
 Bachelor in Science (Physiotherapy),Singapore Institute of Technology,2019,3400,3620,3400.0,220,0.06470588235294118
 Bachelor in Science (Physiotherapy),Singapore Institute of Technology,2020,3400,3700,3500.0,300,0.08571428571428572
 Bachelor in Science (Physiotherapy),Singapore Institute of Technology,2022,3500,3850,3674.0,350,0.09526401741970604
-Bachelor in Science (Radiation Therapy) ^,Singapore Institute of Technology,2020,3400,3500,3500.0,100,0.02857142857142857
+Bachelor in Science (Radiation Therapy),Singapore Institute of Technology,2020,3400,3500,3500.0,100,0.02857142857142857
 Bachelor of Accountancy,Singapore University of Social Sciences,2018,2700,3000,3000.0,300,0.1
 Bachelor of Accountancy,Singapore University of Social Sciences,2019,2750,3000,3000.0,250,0.08333333333333333
 Bachelor of Accountancy,Singapore University of Social Sciences,2020,3000,3000,3000.0,0,0.0
@@ -120,14 +120,14 @@ Bachelor of Arts,National University of Singapore,2020,2700,3600,3300.0,900,0.27
 Bachelor of Arts,National University of Singapore,2021,2850,4100,3200.0,1250,0.390625
 Bachelor of Arts,National University of Singapore,2022,3500,4000,3700.0,500,0.13513513513513514
 Bachelor of Arts,National University of Singapore,2023,3400,5000,3745.0,1600,0.4272363150867824
+Bachelor of Arts (Architecture),National University of Singapore,2014,4000,4750,4275.0,750,0.17543859649122806
+Bachelor of Arts (Architecture),National University of Singapore,2015,3700,4500,4127.0,800,0.1938454082868912
+Bachelor of Arts (Architecture),National University of Singapore,2016,3500,4250,4000.0,750,0.1875
+Bachelor of Arts (Architecture),National University of Singapore,2017,3780,4300,4000.0,520,0.13
+Bachelor of Arts (Architecture),National University of Singapore,2019,3800,4500,4100.0,700,0.17073170731707318
 Bachelor of Arts (Architecture),National University of Singapore,2020,3650,4300,4000.0,650,0.1625
 Bachelor of Arts (Architecture),National University of Singapore,2021,3600,4440,4000.0,840,0.21
-Bachelor of Arts (Architecture) #,National University of Singapore,2014,4000,4750,4275.0,750,0.17543859649122806
-Bachelor of Arts (Architecture) #,National University of Singapore,2015,3700,4500,4127.0,800,0.1938454082868912
-Bachelor of Arts (Architecture) #,National University of Singapore,2016,3500,4250,4000.0,750,0.1875
-Bachelor of Arts (Architecture) #,National University of Singapore,2017,3780,4300,4000.0,520,0.13
-Bachelor of Arts (Architecture) #,National University of Singapore,2019,3800,4500,4100.0,700,0.17073170731707318
-Bachelor of Arts (Architecture) #,National University of Singapore,2022,4000,4800,4400.0,800,0.18181818181818182
+Bachelor of Arts (Architecture),National University of Singapore,2022,4000,4800,4400.0,800,0.18181818181818182
 Bachelor of Arts (Hons),National University of Singapore,2013,2800,3500,3200.0,700,0.21875
 Bachelor of Arts (Hons),National University of Singapore,2014,3000,3600,3300.0,600,0.18181818181818182
 Bachelor of Arts (Hons),National University of Singapore,2015,3000,3625,3310.0,625,0.18882175226586104
@@ -154,19 +154,19 @@ Bachelor of Arts (Industrial Design),National University of Singapore,2015,2700,
 Bachelor of Arts (Industrial Design),National University of Singapore,2016,2900,4000,3000.0,1100,0.36666666666666664
 Bachelor of Arts (Industrial Design),National University of Singapore,2017,2600,3200,2920.0,600,0.2054794520547945
 Bachelor of Arts (Industrial Design),National University of Singapore,2018,3000,3800,3250.0,800,0.24615384615384617
+Bachelor of Arts (Industrial Design),National University of Singapore,2019,3000,3500,3300.0,500,0.15151515151515152
+Bachelor of Arts (Industrial Design),National University of Singapore,2020,3000,3500,3500.0,500,0.14285714285714285
 Bachelor of Arts (Industrial Design),National University of Singapore,2021,3200,4250,3825.0,1050,0.27450980392156865
 Bachelor of Arts (Industrial Design),National University of Singapore,2022,3500,4500,4500.0,1000,0.2222222222222222
 Bachelor of Arts (Industrial Design),National University of Singapore,2023,3600,4500,4000.0,900,0.225
-Bachelor of Arts (Industrial Design) ^,National University of Singapore,2019,3000,3500,3300.0,500,0.15151515151515152
-Bachelor of Arts (Industrial Design) ^,National University of Singapore,2020,3000,3500,3500.0,500,0.14285714285714285
 Bachelor of Arts in Game Design,Singapore Institute of Technology,2014,2575,2800,2700.0,225,0.08333333333333333
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2017,2800,3200,3000.0,400,0.13333333333333333
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2018,3196,3500,3300.0,304,0.09212121212121212
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2019,3000,3500,3220.0,500,0.15527950310559005
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2020,3100,3600,3500.0,500,0.14285714285714285
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2021,3200,3500,3300.0,300,0.09090909090909091
-Bachelor of Arts in Game Design ^,Singapore Institute of Technology,2022,3400,4250,3600.0,850,0.2361111111111111
-Bachelor of Arts in Game Design^,Singapore Institute of Technology,2023,3300,4000,3600.0,700,0.19444444444444445
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2017,2800,3200,3000.0,400,0.13333333333333333
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2018,3196,3500,3300.0,304,0.09212121212121212
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2019,3000,3500,3220.0,500,0.15527950310559005
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2020,3100,3600,3500.0,500,0.14285714285714285
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2021,3200,3500,3300.0,300,0.09090909090909091
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2022,3400,4250,3600.0,850,0.2361111111111111
+Bachelor of Arts in Game Design,Singapore Institute of Technology,2023,3300,4000,3600.0,700,0.19444444444444445
 Bachelor of Arts with Honours,National University of Singapore,2017,3075,4000,3500.0,925,0.2642857142857143
 Bachelor of Arts with Honours,National University of Singapore,2018,3275,4642,3630.0,1367,0.3765840220385675
 Bachelor of Arts with Honours,National University of Singapore,2019,3400,4567,3684.0,1167,0.31677524429967424
@@ -205,20 +205,21 @@ Bachelor of Business Administration,National University of Singapore,2016,2837,3
 Bachelor of Business Administration,National University of Singapore,2017,3000,4333,3500.0,1333,0.38085714285714284
 Bachelor of Business Administration,National University of Singapore,2018,3000,3750,3225.0,750,0.23255813953488372
 Bachelor of Business Administration,National University of Singapore,2019,3400,5500,4000.0,2100,0.525
+Bachelor of Business Administration,National University of Singapore,2020,3300,6100,4150.0,2800,0.6746987951807228
 Bachelor of Business Administration,National University of Singapore,2021,3125,7625,3700.0,4500,1.2162162162162162
 Bachelor of Business Administration,National University of Singapore,2022,4000,7000,5100.0,3000,0.5882352941176471
 Bachelor of Business Administration,National University of Singapore,2023,4077,7500,5167.0,3423,0.6624733888136249
-"Bachelor of Business Administration
-(Accountancy) (Hons)",National University of Singapore,2023,3600,5450,4200.0,1850,0.44047619047619047
-"Bachelor of Business Administration
-(Accountancy)^",National University of Singapore,2023,3520,3820,3600.0,300,0.08333333333333333
-"Bachelor of Business Administration
-(Hons)",National University of Singapore,2023,4000,5800,4800.0,1800,0.375
 Bachelor of Business Administration (Accountancy),National University of Singapore,2013,2700,3018,2700.0,318,0.11777777777777777
 Bachelor of Business Administration (Accountancy),National University of Singapore,2014,2700,3000,2838.0,300,0.10570824524312897
 Bachelor of Business Administration (Accountancy),National University of Singapore,2015,2700,2960,2850.0,260,0.0912280701754386
 Bachelor of Business Administration (Accountancy),National University of Singapore,2016,2800,3100,2963.0,300,0.10124873439082012
 Bachelor of Business Administration (Accountancy),National University of Singapore,2017,3000,3600,3025.0,600,0.19834710743801653
+Bachelor of Business Administration (Accountancy),National University of Singapore,2018,2700,3500,3020.0,800,0.26490066225165565
+Bachelor of Business Administration (Accountancy),National University of Singapore,2019,3000,3800,3000.0,800,0.26666666666666666
+Bachelor of Business Administration (Accountancy),National University of Singapore,2020,2800,5500,3500.0,2700,0.7714285714285715
+Bachelor of Business Administration (Accountancy),National University of Singapore,2021,3013,3750,3400.0,737,0.21676470588235294
+Bachelor of Business Administration (Accountancy),National University of Singapore,2022,3400,5500,3800.0,2100,0.5526315789473685
+Bachelor of Business Administration (Accountancy),National University of Singapore,2023,3520,3820,3600.0,300,0.08333333333333333
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2013,2700,3200,2800.0,500,0.17857142857142858
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2014,2800,3614,2912.0,814,0.27953296703296704
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2015,2850,3634,3000.0,784,0.2613333333333333
@@ -229,11 +230,7 @@ Bachelor of Business Administration (Accountancy) (Hons),National University of 
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2020,3000,4425,3500.0,1425,0.40714285714285714
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2021,3200,4600,3500.0,1400,0.4
 Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2022,3600,5000,4000.0,1400,0.35
-Bachelor of Business Administration (Accountancy) ^,National University of Singapore,2018,2700,3500,3020.0,800,0.26490066225165565
-Bachelor of Business Administration (Accountancy) ^,National University of Singapore,2019,3000,3800,3000.0,800,0.26666666666666666
-Bachelor of Business Administration (Accountancy) ^,National University of Singapore,2020,2800,5500,3500.0,2700,0.7714285714285715
-Bachelor of Business Administration (Accountancy) ^,National University of Singapore,2021,3013,3750,3400.0,737,0.21676470588235294
-Bachelor of Business Administration (Accountancy) ^,National University of Singapore,2022,3400,5500,3800.0,2100,0.5526315789473685
+Bachelor of Business Administration (Accountancy) (Hons),National University of Singapore,2023,3600,5450,4200.0,1850,0.44047619047619047
 Bachelor of Business Administration (Hons),National University of Singapore,2013,2800,3800,3200.0,1000,0.3125
 Bachelor of Business Administration (Hons),National University of Singapore,2014,3200,4300,3520.0,1100,0.3125
 Bachelor of Business Administration (Hons),National University of Singapore,2015,3300,4600,3800.0,1300,0.34210526315789475
@@ -244,20 +241,17 @@ Bachelor of Business Administration (Hons),National University of Singapore,2019
 Bachelor of Business Administration (Hons),National University of Singapore,2020,3600,5000,4000.0,1400,0.35
 Bachelor of Business Administration (Hons),National University of Singapore,2021,3700,5200,4347.0,1500,0.3450655624568668
 Bachelor of Business Administration (Hons),National University of Singapore,2022,4000,5938,4696.0,1938,0.4126916524701874
-Bachelor of Business Administration ^,National University of Singapore,2020,3300,6100,4150.0,2800,0.6746987951807228
-"Bachelor of Business Administration in
-Food Business Management",Singapore Institute of Technology,2023,2800,4000,3100.0,1200,0.3870967741935484
+Bachelor of Business Administration (Hons),National University of Singapore,2023,4000,5800,4800.0,1800,0.375
 Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2018,2415,3300,2663.0,885,0.33233195644010516
+Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2019,2200,3350,2625.0,1150,0.4380952380952381
 Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2020,2300,2820,2550.0,520,0.20392156862745098
 Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2021,2500,3100,2700.0,600,0.2222222222222222
-Bachelor of Business Administration in Food Business Management ^,Singapore Institute of Technology,2019,2200,3350,2625.0,1150,0.4380952380952381
-Bachelor of Business Administration in Food Business Management ^,Singapore Institute of Technology,2022,2300,3500,3050.0,1200,0.39344262295081966
+Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2022,2300,3500,3050.0,1200,0.39344262295081966
+Bachelor of Business Administration in Food Business Management,Singapore Institute of Technology,2023,2800,4000,3100.0,1200,0.3870967741935484
 Bachelor of Communication Studies (Hons),Nanyang Technological University,2017,2775,3500,3000.0,725,0.24166666666666667
 Bachelor of Computing (Communications and Media),National University of Singapore,2013,2825,3425,3050.0,600,0.19672131147540983
 Bachelor of Computing (Communications and Media),National University of Singapore,2014,2900,3300,3088.0,400,0.12953367875647667
 Bachelor of Computing (Communications and Media),National University of Singapore,2015,2800,3800,3500.0,1000,0.2857142857142857
-"Bachelor of Computing (Computer
-Science)",National University of Singapore,2023,5500,7700,6333.0,2200,0.3473867045633981
 Bachelor of Computing (Computer Science),National University of Singapore,2013,3000,4000,3425.0,1000,0.291970802919708
 Bachelor of Computing (Computer Science),National University of Singapore,2014,3300,4000,3500.0,700,0.2
 Bachelor of Computing (Computer Science),National University of Singapore,2015,3300,4400,3700.0,1100,0.2972972972972973
@@ -268,16 +262,14 @@ Bachelor of Computing (Computer Science),National University of Singapore,2019,4
 Bachelor of Computing (Computer Science),National University of Singapore,2020,4400,6316,5243.0,1916,0.3654396337974442
 Bachelor of Computing (Computer Science),National University of Singapore,2021,5000,6900,6000.0,1900,0.31666666666666665
 Bachelor of Computing (Computer Science),National University of Singapore,2022,5341,7583,6600.0,2242,0.3396969696969697
+Bachelor of Computing (Computer Science),National University of Singapore,2023,5500,7700,6333.0,2200,0.3473867045633981
 Bachelor of Computing (Electronic Commerce),National University of Singapore,2013,2800,3553,3080.0,753,0.2444805194805195
 Bachelor of Computing (Electronic Commerce),National University of Singapore,2014,3000,3500,3200.0,500,0.15625
 Bachelor of Computing (Electronic Commerce),National University of Singapore,2015,3000,3500,3300.0,500,0.15151515151515152
-"Bachelor of Computing (Information
-Security)",National University of Singapore,2023,5000,6210,5500.0,1210,0.22
-"Bachelor of Computing (Information
-Systems)",National University of Singapore,2023,5000,6000,5500.0,1000,0.18181818181818182
+Bachelor of Computing (Information Security),National University of Singapore,2020,4200,5300,5000.0,1100,0.22
+Bachelor of Computing (Information Security),National University of Singapore,2021,4305,5500,5400.0,1195,0.2212962962962963
 Bachelor of Computing (Information Security),National University of Singapore,2022,4800,6475,5500.0,1675,0.30454545454545456
-Bachelor of Computing (Information Security) ^,National University of Singapore,2020,4200,5300,5000.0,1100,0.22
-Bachelor of Computing (Information Security) ^,National University of Singapore,2021,4305,5500,5400.0,1195,0.2212962962962963
+Bachelor of Computing (Information Security),National University of Singapore,2023,5000,6210,5500.0,1210,0.22
 Bachelor of Computing (Information Systems),National University of Singapore,2013,3000,3800,3005.0,800,0.26622296173044924
 Bachelor of Computing (Information Systems),National University of Singapore,2014,3100,4039,3500.0,939,0.2682857142857143
 Bachelor of Computing (Information Systems),National University of Singapore,2015,3200,4100,3550.0,900,0.2535211267605634
@@ -288,6 +280,7 @@ Bachelor of Computing (Information Systems),National University of Singapore,201
 Bachelor of Computing (Information Systems),National University of Singapore,2020,4000,5400,4500.0,1400,0.3111111111111111
 Bachelor of Computing (Information Systems),National University of Singapore,2021,4500,5400,5000.0,900,0.18
 Bachelor of Computing (Information Systems),National University of Singapore,2022,4800,6250,5500.0,1450,0.2636363636363636
+Bachelor of Computing (Information Systems),National University of Singapore,2023,5000,6000,5500.0,1000,0.18181818181818182
 Bachelor of Dental Surgery,National University of Singapore,2013,4000,4400,4000.0,400,0.1
 Bachelor of Dental Surgery,National University of Singapore,2014,4000,4020,4000.0,20,0.005
 Bachelor of Dental Surgery,National University of Singapore,2015,4000,4400,4000.0,400,0.1
@@ -299,16 +292,12 @@ Bachelor of Dental Surgery,National University of Singapore,2020,4200,4600,4200.
 Bachelor of Dental Surgery,National University of Singapore,2021,4200,4600,4200.0,400,0.09523809523809523
 Bachelor of Dental Surgery,National University of Singapore,2022,4200,4600,4200.0,400,0.09523809523809523
 Bachelor of Dental Surgery,National University of Singapore,2023,4500,4950,4550.0,450,0.0989010989010989
+Bachelor of Early Childhood Education,Singapore University of Social Sciences,2020,2700,3016,3000.0,316,0.10533333333333333
 Bachelor of Early Childhood Education,Singapore University of Social Sciences,2021,2800,3100,3000.0,300,0.1
 Bachelor of Early Childhood Education,Singapore University of Social Sciences,2022,3000,3338,3200.0,338,0.105625
 Bachelor of Early Childhood Education,Singapore University of Social Sciences,2023,3097,3525,3400.0,428,0.12588235294117647
-Bachelor of Early Childhood Education ^,Singapore University of Social Sciences,2020,2700,3016,3000.0,316,0.10533333333333333
-"Bachelor of Engineering
-(Environmental Engineering)",National University of Singapore,2023,3900,4588,4243.0,688,0.16214942257836437
-Bachelor of Engineering  (Hons) (Chemical And Biomolecular Engineering),Nanyang Technological University,2017,3200,4000,3500.0,800,0.22857142857142856
 Bachelor of Engineering (Bioengineering),National University of Singapore,2013,2720,3250,3000.0,530,0.17666666666666667
-"Bachelor of Engineering (Biomedical
-Engineering)",National University of Singapore,2023,3740,4600,4100.0,860,0.2097560975609756
+Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2014,2700,3300,3000.0,600,0.2
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2015,3000,3500,3300.0,500,0.15151515151515152
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2016,3000,3500,3200.0,500,0.15625
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2017,3000,3700,3300.0,700,0.21212121212121213
@@ -317,9 +306,7 @@ Bachelor of Engineering (Biomedical Engineering),National University of Singapor
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2020,3300,3740,3500.0,440,0.12571428571428572
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2021,3300,4000,3600.0,700,0.19444444444444445
 Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2022,3500,5000,4000.0,1500,0.375
-Bachelor of Engineering (Biomedical Engineering) ^^,National University of Singapore,2014,2700,3300,3000.0,600,0.2
-"Bachelor of Engineering (Chemical
-Engineering)",National University of Singapore,2023,4000,4760,4405.0,760,0.17253121452894438
+Bachelor of Engineering (Biomedical Engineering),National University of Singapore,2023,3740,4600,4100.0,860,0.2097560975609756
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2013,3000,3644,3175.0,644,0.20283464566929135
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2014,3000,3650,3300.0,650,0.19696969696969696
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2015,3000,4000,3500.0,1000,0.2857142857142857
@@ -330,8 +317,7 @@ Bachelor of Engineering (Chemical Engineering),National University of Singapore,
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2020,3700,4500,4000.0,800,0.2
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2021,3600,4300,3800.0,700,0.18421052631578946
 Bachelor of Engineering (Chemical Engineering),National University of Singapore,2022,4018,5100,4675.0,1082,0.23144385026737968
-"Bachelor of Engineering (Civil
-Engineering)",National University of Singapore,2023,3800,4500,4000.0,700,0.175
+Bachelor of Engineering (Chemical Engineering),National University of Singapore,2023,4000,4760,4405.0,760,0.17253121452894438
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2013,3000,3300,3050.0,300,0.09836065573770492
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2014,3000,3500,3208.0,500,0.15586034912718205
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2015,3200,3500,3350.0,300,0.08955223880597014
@@ -342,8 +328,7 @@ Bachelor of Engineering (Civil Engineering),National University of Singapore,201
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2020,3500,4050,3590.0,550,0.1532033426183844
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2021,3500,4100,3700.0,600,0.16216216216216217
 Bachelor of Engineering (Civil Engineering),National University of Singapore,2022,3700,4400,4000.0,700,0.175
-"Bachelor of Engineering (Computer
-Engineering)",National University of Singapore,2023,4900,6355,5595.0,1455,0.26005361930294907
+Bachelor of Engineering (Civil Engineering),National University of Singapore,2023,3800,4500,4000.0,700,0.175
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2013,3000,3970,3200.0,970,0.303125
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2014,3200,4080,3500.0,880,0.25142857142857145
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2015,3325,4583,4000.0,1258,0.3145
@@ -354,10 +339,9 @@ Bachelor of Engineering (Computer Engineering),National University of Singapore,
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2020,4080,5500,5000.0,1420,0.284
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2021,4500,6200,5400.0,1700,0.3148148148148148
 Bachelor of Engineering (Computer Engineering),National University of Singapore,2022,5300,6800,6000.0,1500,0.25
+Bachelor of Engineering (Computer Engineering),National University of Singapore,2023,4900,6355,5595.0,1455,0.26005361930294907
 Bachelor of Engineering (Computer Science and Design),Singapore University of Technology and Design,2021,4400,5414,4800.0,1014,0.21125
 Bachelor of Engineering (Computer Science and Design),Singapore University of Technology and Design,2022,4600,6600,5190.0,2000,0.3853564547206166
-"Bachelor of Engineering (Electrical
-Engineering)",National University of Singapore,2023,4340,5350,4800.0,1010,0.21041666666666667
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2013,3000,3600,3200.0,600,0.1875
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2014,3000,3800,3300.0,800,0.24242424242424243
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2015,3000,3700,3300.0,700,0.21212121212121213
@@ -368,8 +352,7 @@ Bachelor of Engineering (Electrical Engineering),National University of Singapor
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2020,3800,5000,4200.0,1200,0.2857142857142857
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2021,3900,4550,4150.0,650,0.1566265060240964
 Bachelor of Engineering (Electrical Engineering),National University of Singapore,2022,4380,5500,4800.0,1120,0.23333333333333334
-"Bachelor of Engineering (Engineering
-Science)",National University of Singapore,2023,4000,5200,4500.0,1200,0.26666666666666666
+Bachelor of Engineering (Electrical Engineering),National University of Singapore,2023,4340,5350,4800.0,1010,0.21041666666666667
 Bachelor of Engineering (Engineering Product Development),Singapore University of Technology and Design,2015,3400,3800,3600.0,400,0.1111111111111111
 Bachelor of Engineering (Engineering Product Development),Singapore University of Technology and Design,2016,3300,3750,3600.0,450,0.125
 Bachelor of Engineering (Engineering Product Development),Singapore University of Technology and Design,2017,3450,3800,3600.0,350,0.09722222222222222
@@ -383,10 +366,11 @@ Bachelor of Engineering (Engineering Science),National University of Singapore,2
 Bachelor of Engineering (Engineering Science),National University of Singapore,2015,3500,4420,3800.0,920,0.24210526315789474
 Bachelor of Engineering (Engineering Science),National University of Singapore,2016,3350,4026,3740.0,676,0.18074866310160428
 Bachelor of Engineering (Engineering Science),National University of Singapore,2017,3440,4200,3675.0,760,0.20680272108843537
-Bachelor of Engineering (Engineering Science) ^,National University of Singapore,2019,3400,5200,3750.0,1800,0.48
-Bachelor of Engineering (Engineering Science) ^,National University of Singapore,2020,3765,5000,4000.0,1235,0.30875
-Bachelor of Engineering (Engineering Science) ^,National University of Singapore,2021,4000,4900,4500.0,900,0.2
-Bachelor of Engineering (Engineering Science) ^,National University of Singapore,2022,4080,5000,4450.0,920,0.20674157303370785
+Bachelor of Engineering (Engineering Science),National University of Singapore,2019,3400,5200,3750.0,1800,0.48
+Bachelor of Engineering (Engineering Science),National University of Singapore,2020,3765,5000,4000.0,1235,0.30875
+Bachelor of Engineering (Engineering Science),National University of Singapore,2021,4000,4900,4500.0,900,0.2
+Bachelor of Engineering (Engineering Science),National University of Singapore,2022,4080,5000,4450.0,920,0.20674157303370785
+Bachelor of Engineering (Engineering Science),National University of Singapore,2023,4000,5200,4500.0,1200,0.26666666666666666
 Bachelor of Engineering (Engineering Systems and Design),Singapore University of Technology and Design,2015,3190,4100,3500.0,910,0.26
 Bachelor of Engineering (Engineering Systems and Design),Singapore University of Technology and Design,2016,3550,4200,3650.0,650,0.1780821917808219
 Bachelor of Engineering (Engineering Systems and Design),Singapore University of Technology and Design,2017,3600,4210,3850.0,610,0.15844155844155844
@@ -405,8 +389,10 @@ Bachelor of Engineering (Environmental Engineering),National University of Singa
 Bachelor of Engineering (Environmental Engineering),National University of Singapore,2020,3250,3875,3500.0,625,0.17857142857142858
 Bachelor of Engineering (Environmental Engineering),National University of Singapore,2021,3300,3900,3500.0,600,0.17142857142857143
 Bachelor of Engineering (Environmental Engineering),National University of Singapore,2022,3850,5000,4200.0,1150,0.27380952380952384
+Bachelor of Engineering (Environmental Engineering),National University of Singapore,2023,3900,4588,4243.0,688,0.16214942257836437
 Bachelor of Engineering (Hons) (Aerospace Engineering),Nanyang Technological University,2017,3250,4210,3500.0,960,0.2742857142857143
 Bachelor of Engineering (Hons) (Bioengineering),Nanyang Technological University,2017,3000,3825,3419.0,825,0.2412986253290436
+Bachelor of Engineering (Hons) (Chemical And Biomolecular Engineering),Nanyang Technological University,2017,3200,4000,3500.0,800,0.22857142857142856
 Bachelor of Engineering (Hons) (Civil Engineering),Nanyang Technological University,2017,3190,3675,3400.0,485,0.1426470588235294
 Bachelor of Engineering (Hons) (Computer Engineering),Nanyang Technological University,2017,3450,3925,3600.0,475,0.13194444444444445
 Bachelor of Engineering (Hons) (Computer Science),Nanyang Technological University,2017,3500,4500,3850.0,1000,0.2597402597402597
@@ -415,8 +401,6 @@ Bachelor of Engineering (Hons) (Environmental Engineering),Nanyang Technological
 Bachelor of Engineering (Hons) (Information Engineering & Media),Nanyang Technological University,2017,3350,4200,3700.0,850,0.22972972972972974
 Bachelor of Engineering (Hons) (Materials Engineering),Nanyang Technological University,2017,3200,3700,3375.0,500,0.14814814814814814
 Bachelor of Engineering (Hons) (Mechanical Engineering),Nanyang Technological University,2017,3100,4000,3450.0,900,0.2608695652173913
-"Bachelor of Engineering (Industrial
-and Systems Engineering)",National University of Singapore,2023,4280,4990,4600.0,710,0.15434782608695652
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2013,3000,3800,3200.0,800,0.25
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2014,3200,4000,3600.0,800,0.2222222222222222
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2015,3300,4030,3500.0,730,0.20857142857142857
@@ -427,14 +411,13 @@ Bachelor of Engineering (Industrial and Systems Engineering),National University
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2020,3700,4800,4380.0,1100,0.2511415525114155
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2021,4000,4900,4500.0,900,0.2
 Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2022,4290,5650,5000.0,1360,0.272
+Bachelor of Engineering (Industrial and Systems Engineering),National University of Singapore,2023,4280,4990,4600.0,710,0.15434782608695652
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2015,3338,4450,3950.0,1112,0.28151898734177216
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2016,3500,4950,4000.0,1450,0.3625
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2017,3600,4900,4023.0,1300,0.3231419338801889
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2018,4000,5000,4400.0,1000,0.22727272727272727
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2019,3800,5000,4400.0,1200,0.2727272727272727
 Bachelor of Engineering (Information Systems Technology and Design),Singapore University of Technology and Design,2020,4000,5000,4500.0,1000,0.2222222222222222
-"Bachelor of Engineering (Materials
-Science and Engineering)",National University of Singapore,2023,4000,4700,4346.0,700,0.16106764841233318
 Bachelor of Engineering (Materials Science And Engineering),National University of Singapore,2016,3200,3900,3540.0,700,0.1977401129943503
 Bachelor of Engineering (Materials Science And Engineering),National University of Singapore,2017,3200,3950,3388.0,750,0.22136953955135774
 Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,2013,3000,3260,3000.0,260,0.08666666666666667
@@ -445,8 +428,7 @@ Bachelor of Engineering (Materials Science and Engineering),National University 
 Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,2020,3600,4200,3900.0,600,0.15384615384615385
 Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,2021,3600,4200,3896.0,600,0.1540041067761807
 Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,2022,3850,5000,4500.0,1150,0.25555555555555554
-"Bachelor of Engineering (Mechanical
-Engineering)",National University of Singapore,2023,4030,5046,4490.0,1016,0.22628062360801782
+Bachelor of Engineering (Materials Science and Engineering),National University of Singapore,2023,4000,4700,4346.0,700,0.16106764841233318
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2013,3000,3500,3225.0,500,0.15503875968992248
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2014,3000,3500,3200.0,500,0.15625
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2015,3000,3600,3300.0,600,0.18181818181818182
@@ -457,20 +439,8 @@ Bachelor of Engineering (Mechanical Engineering),National University of Singapor
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2020,3500,4200,3800.0,700,0.18421052631578946
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2021,3500,4550,3875.0,1050,0.2709677419354839
 Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2022,4000,5200,4525.0,1200,0.26519337016574585
-Bachelor of Engineering in Systems Engineering (ElectroMechanical Systems) ^,Singapore Institute of Technology,2019,3500,4470,3975.0,970,0.2440251572327044
-"Bachelor of Engineering with
-Honours in Telematics (Intelligent
-Transportation Systems Engineering)",Singapore Institute of Technology,2023,4200,4900,4725.0,700,0.14814814814814814
-"Bachelor of Engineering with Honours
-in Chemical Engineering",Singapore Institute of Technology,2023,3700,4250,4000.0,550,0.1375
-"Bachelor of Engineering with Honours
-in Electrical Power Engineering",Singapore Institute of Technology,2023,3725,4500,4000.0,775,0.19375
-"Bachelor of Engineering with Honours
-in Marine Engineering",Singapore Institute of Technology,2023,4000,5000,4400.0,1000,0.22727272727272727
-"Bachelor of Engineering with Honours
-in Naval Architecture^",Singapore Institute of Technology,2023,3700,4700,4450.0,1000,0.2247191011235955
-"Bachelor of Engineering with Honours
-in Offshore Engineering",Singapore Institute of Technology,2023,3800,4900,4200.0,1100,0.2619047619047619
+Bachelor of Engineering (Mechanical Engineering),National University of Singapore,2023,4030,5046,4490.0,1016,0.22628062360801782
+Bachelor of Engineering in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,2019,3500,4470,3975.0,970,0.2440251572327044
 Bachelor of Engineering with Honours in Aeronautical Engineering,Singapore Institute of Technology,2014,2849,4194,3000.0,1345,0.4483333333333333
 Bachelor of Engineering with Honours in Aeronautical Engineering,Singapore Institute of Technology,2015,2614,3293,3000.0,679,0.22633333333333333
 Bachelor of Engineering with Honours in Aeronautical Engineering,Singapore Institute of Technology,2016,2800,3700,3200.0,900,0.28125
@@ -486,7 +456,7 @@ Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of
 Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of Technology,2017,2625,3650,3125.0,1025,0.328
 Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of Technology,2018,3025,3875,3380.0,850,0.2514792899408284
 Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of Technology,2019,3400,4600,3700.0,1200,0.32432432432432434
-Bachelor of Engineering with Honours in Aerospace Systems ^,Singapore Institute of Technology,2020,3400,4600,3750.0,1200,0.32
+Bachelor of Engineering with Honours in Aerospace Systems,Singapore Institute of Technology,2020,3400,4600,3750.0,1200,0.32
 Bachelor of Engineering with Honours in Aircraft Systems Engineering,Singapore Institute of Technology,2021,2500,4000,3300.0,1500,0.45454545454545453
 Bachelor of Engineering with Honours in Aircraft Systems Engineering,Singapore Institute of Technology,2022,3000,4900,4400.0,1900,0.4318181818181818
 Bachelor of Engineering with Honours in Aircraft Systems Engineering,Singapore Institute of Technology,2023,3650,4800,4400.0,1150,0.26136363636363635
@@ -499,6 +469,7 @@ Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute
 Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute of Technology,2020,3000,3500,3200.0,500,0.15625
 Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute of Technology,2021,3350,4200,3700.0,850,0.22972972972972974
 Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute of Technology,2022,3785,4650,4100.0,865,0.21097560975609755
+Bachelor of Engineering with Honours in Chemical Engineering,Singapore Institute of Technology,2023,3700,4250,4000.0,550,0.1375
 Bachelor of Engineering with Honours in Civil Engineering,Singapore Institute of Technology,2020,3200,3700,3500.0,500,0.14285714285714285
 Bachelor of Engineering with Honours in Civil Engineering,Singapore Institute of Technology,2021,3500,3933,3675.0,433,0.11782312925170069
 Bachelor of Engineering with Honours in Civil Engineering,Singapore Institute of Technology,2022,3700,4300,3800.0,600,0.15789473684210525
@@ -507,17 +478,17 @@ Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore I
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2016,2800,3700,3200.0,900,0.28125
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2017,3000,3450,3200.0,450,0.140625
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2018,3050,3500,3343.0,450,0.13460963206700569
+Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2019,3250,3600,3500.0,350,0.1
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2020,3400,3850,3500.0,450,0.12857142857142856
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2021,3500,3850,3600.0,350,0.09722222222222222
 Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2022,3700,4510,4100.0,810,0.1975609756097561
-Bachelor of Engineering with Honours in Electrical Power Engineering ^,Singapore Institute of Technology,2019,3250,3600,3500.0,350,0.1
-"Bachelor of Engineering with Honours in Information & Communications
-Technology (Information Security)",Singapore Institute of Technology,2023,4750,6050,5200.0,1300,0.25
+Bachelor of Engineering with Honours in Electrical Power Engineering,Singapore Institute of Technology,2023,3725,4500,4000.0,775,0.19375
+Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2018,4000,4400,4045.0,400,0.09888751545117429
 Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2019,3900,5000,4100.0,1100,0.2682926829268293
 Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2020,3600,4630,4300.0,1030,0.23953488372093024
 Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2021,4605,5552,4950.0,947,0.19131313131313132
 Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2022,4216,5563,4800.0,1347,0.280625
-Bachelor of Engineering with Honours in Information & Communications Technology (Information Security) ^,Singapore Institute of Technology,2018,4000,4400,4045.0,400,0.09888751545117429
+Bachelor of Engineering with Honours in Information & Communications Technology (Information Security),Singapore Institute of Technology,2023,4750,6050,5200.0,1300,0.25
 Bachelor of Engineering with Honours in Information & Communications Technology (Software Engineering),Singapore Institute of Technology,2018,3600,4300,4000.0,700,0.175
 Bachelor of Engineering with Honours in Information & Communications Technology (Software Engineering),Singapore Institute of Technology,2019,3600,4550,4190.0,950,0.22673031026252982
 Bachelor of Engineering with Honours in Information & Communications Technology (Software Engineering),Singapore Institute of Technology,2020,3600,4750,4000.0,1150,0.2875
@@ -527,12 +498,13 @@ Bachelor of Engineering with Honours in Information & Communications Technology 
 Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2014,3003,3594,3260.0,591,0.18128834355828222
 Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2015,3050,3500,3225.0,450,0.13953488372093023
 Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2016,3200,4530,3840.0,1330,0.3463541666666667
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2017,3000,4000,3500.0,1000,0.2857142857142857
 Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2018,3000,3600,3250.0,600,0.18461538461538463
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2019,3200,3521,3300.0,321,0.09727272727272727
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2020,3300,4370,3750.0,1070,0.2853333333333333
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2021,3400,4250,3750.0,850,0.22666666666666666
 Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2022,3750,4400,3900.0,650,0.16666666666666666
-Bachelor of Engineering with Honours in Marine Engineering ^,Singapore Institute of Technology,2017,3000,4000,3500.0,1000,0.2857142857142857
-Bachelor of Engineering with Honours in Marine Engineering ^,Singapore Institute of Technology,2019,3200,3521,3300.0,321,0.09727272727272727
-Bachelor of Engineering with Honours in Marine Engineering ^,Singapore Institute of Technology,2020,3300,4370,3750.0,1070,0.2853333333333333
-Bachelor of Engineering with Honours in Marine Engineering ^,Singapore Institute of Technology,2021,3400,4250,3750.0,850,0.22666666666666666
+Bachelor of Engineering with Honours in Marine Engineering,Singapore Institute of Technology,2023,4000,5000,4400.0,1000,0.22727272727272727
 Bachelor of Engineering with Honours in Mechanical Design & Manufacturing Engineering,Singapore Institute of Technology,2014,3000,3338,3100.0,338,0.10903225806451614
 Bachelor of Engineering with Honours in Mechanical Design & Manufacturing Engineering,Singapore Institute of Technology,2015,3000,3500,3200.0,500,0.15625
 Bachelor of Engineering with Honours in Mechanical Design & Manufacturing Engineering,Singapore Institute of Technology,2016,2900,3575,3200.0,675,0.2109375
@@ -544,13 +516,12 @@ Bachelor of Engineering with Honours in Mechanical Design Engineering,Singapore 
 Bachelor of Engineering with Honours in Mechanical Design Engineering,Singapore Institute of Technology,2018,3100,4000,3500.0,900,0.2571428571428571
 Bachelor of Engineering with Honours in Mechanical Design Engineering,Singapore Institute of Technology,2019,3300,3800,3500.0,500,0.14285714285714285
 Bachelor of Engineering with Honours in Mechanical Design Engineering,Singapore Institute of Technology,2020,3200,3650,3500.0,450,0.12857142857142856
-"Bachelor of Engineering with Honours in Mechanical Design and
-Manufacturing Engineering",Singapore Institute of Technology,2023,4000,4600,4200.0,600,0.14285714285714285
 Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2018,3100,3600,3253.0,500,0.1537042729787888
+Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2019,3050,3500,3100.0,450,0.14516129032258066
 Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2020,3025,3925,3350.0,900,0.26865671641791045
 Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2021,3600,4000,3650.0,400,0.1095890410958904
 Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2022,3710,4500,4100.0,790,0.1926829268292683
-Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering ^,Singapore Institute of Technology,2019,3050,3500,3100.0,450,0.14516129032258066
+Bachelor of Engineering with Honours in Mechanical Design and Manufacturing Engineering,Singapore Institute of Technology,2023,4000,4600,4200.0,600,0.14285714285714285
 Bachelor of Engineering with Honours in Mechanical Engineering,Singapore Institute of Technology,2022,3800,4500,4000.0,700,0.175
 Bachelor of Engineering with Honours in Mechanical Engineering,Singapore Institute of Technology,2023,4000,4800,4400.0,800,0.18181818181818182
 Bachelor of Engineering with Honours in Mechatronics,Singapore Institute of Technology,2014,2964,3443,3100.0,479,0.15451612903225806
@@ -563,47 +534,46 @@ Bachelor of Engineering with Honours in Mechatronics,Singapore Institute of Tech
 Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2014,3233,3675,3500.0,442,0.12628571428571428
 Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2015,2900,3500,3141.0,600,0.19102196752626552
 Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2016,3000,3500,3300.0,500,0.15151515151515152
-Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,2017,3200,3500,3300.0,300,0.09090909090909091
-Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,2018,3300,3800,3400.0,500,0.14705882352941177
-Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,2020,2600,3465,3200.0,865,0.2703125
-Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,2021,3250,3850,3400.0,600,0.17647058823529413
-Bachelor of Engineering with Honours in Naval Architecture ^,Singapore Institute of Technology,2022,3800,5650,4000.0,1850,0.4625
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2017,3200,3500,3300.0,300,0.09090909090909091
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2018,3300,3800,3400.0,500,0.14705882352941177
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2020,2600,3465,3200.0,865,0.2703125
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2021,3250,3850,3400.0,600,0.17647058823529413
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2022,3800,5650,4000.0,1850,0.4625
+Bachelor of Engineering with Honours in Naval Architecture,Singapore Institute of Technology,2023,3700,4700,4450.0,1000,0.2247191011235955
 Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2014,3075,3625,3300.0,550,0.16666666666666666
 Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2015,3238,3575,3350.0,337,0.10059701492537314
 Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2016,3000,3600,3430.0,600,0.1749271137026239
-Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,2017,3300,3950,3300.0,650,0.19696969696969696
-Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,2018,3100,3850,3510.0,750,0.21367521367521367
-Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,2020,3750,4800,4000.0,1050,0.2625
-Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,2021,3350,3850,3550.0,500,0.14084507042253522
-Bachelor of Engineering with Honours in Offshore Engineering ^,Singapore Institute of Technology,2022,3500,3900,3675.0,400,0.10884353741496598
-"Bachelor of Engineering with Honours in Pharmaceutical
-Engineering",Singapore Institute of Technology,2023,3640,4700,4150.0,1060,0.25542168674698795
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2017,3300,3950,3300.0,650,0.19696969696969696
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2018,3100,3850,3510.0,750,0.21367521367521367
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2020,3750,4800,4000.0,1050,0.2625
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2021,3350,3850,3550.0,500,0.14084507042253522
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2022,3500,3900,3675.0,400,0.10884353741496598
+Bachelor of Engineering with Honours in Offshore Engineering,Singapore Institute of Technology,2023,3800,4900,4200.0,1100,0.2619047619047619
 Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,2019,3500,4044,3660.0,544,0.14863387978142076
 Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,2020,3400,4000,3740.0,600,0.16042780748663102
 Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,2021,3300,4000,3600.0,700,0.19444444444444445
 Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,2022,3503,4300,3955.0,797,0.20151706700379265
-"Bachelor of Engineering with Honours in Sustainable Infrastructure
-Engineering (Building Services)",Singapore Institute of Technology,2023,3600,4200,3800.0,600,0.15789473684210525
-"Bachelor of Engineering with Honours in Sustainable Infrastructure
-Engineering (Land)",Singapore Institute of Technology,2023,3850,4300,4200.0,450,0.10714285714285714
+Bachelor of Engineering with Honours in Pharmaceutical Engineering,Singapore Institute of Technology,2023,3640,4700,4150.0,1060,0.25542168674698795
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,2019,3200,3700,3500.0,500,0.14285714285714285
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,2020,3375,3800,3500.0,425,0.12142857142857143
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,2021,3500,3950,3680.0,450,0.12228260869565218
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,2022,3585,4050,3775.0,465,0.12317880794701987
+Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Building Services),Singapore Institute of Technology,2023,3600,4200,3800.0,600,0.15789473684210525
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2018,3400,3800,3550.0,400,0.11267605633802817
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2019,3700,4210,3842.0,510,0.13274336283185842
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2020,3650,4370,4105.0,720,0.1753958587088916
+Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2021,3485,4250,3700.0,765,0.20675675675675675
 Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2022,3700,4800,4000.0,1100,0.275
-Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land) ^,Singapore Institute of Technology,2021,3485,4250,3700.0,765,0.20675675675675675
-"Bachelor of Engineering with Honours in Systems Engineering
-(ElectroMechanical Systems)",Singapore Institute of Technology,2023,4400,5000,4705.0,600,0.1275239107332625
+Bachelor of Engineering with Honours in Sustainable Infrastructure Engineering (Land),Singapore Institute of Technology,2023,3850,4300,4200.0,450,0.10714285714285714
 Bachelor of Engineering with Honours in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,2020,3750,4250,4185.0,500,0.11947431302270012
 Bachelor of Engineering with Honours in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,2021,3700,4900,4370.0,1200,0.2745995423340961
 Bachelor of Engineering with Honours in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,2022,4574,5500,4800.0,926,0.19291666666666665
+Bachelor of Engineering with Honours in Systems Engineering (ElectroMechanical Systems),Singapore Institute of Technology,2023,4400,5000,4705.0,600,0.1275239107332625
 Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,2019,3500,4000,3750.0,500,0.13333333333333333
 Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,2020,3380,4800,4200.0,1420,0.3380952380952381
 Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,2021,3850,4500,4000.0,650,0.1625
 Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,2022,4033,4800,4688.0,767,0.16360921501706485
+Bachelor of Engineering with Honours in Telematics (Intelligent Transportation Systems Engineering),Singapore Institute of Technology,2023,4200,4900,4725.0,700,0.14814814814814814
 Bachelor of Environmental Studies,National University of Singapore,2015,3238,3550,3500.0,312,0.08914285714285715
 Bachelor of Environmental Studies,National University of Singapore,2016,3000,3500,3300.0,500,0.15151515151515152
 Bachelor of Environmental Studies,National University of Singapore,2017,3000,3600,3300.0,600,0.18181818181818182
@@ -614,68 +584,66 @@ Bachelor of Environmental Studies,National University of Singapore,2021,3100,399
 Bachelor of Environmental Studies,National University of Singapore,2022,3500,4000,3800.0,500,0.13157894736842105
 Bachelor of Environmental Studies,National University of Singapore,2023,3600,4400,4000.0,800,0.2
 Bachelor of Fine Arts (Hons),Nanyang Technological University,2017,2500,3200,2800.0,700,0.25
-"Bachelor of Fine Arts in Digital Art and
-Animation",Singapore Institute of Technology,2023,3000,3300,3200.0,300,0.09375
 Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2018,2600,3000,2800.0,400,0.14285714285714285
 Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2019,2750,3275,3150.0,525,0.16666666666666666
 Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2020,2675,3000,2887.0,325,0.11257360581918947
 Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2021,2835,3500,3200.0,665,0.2078125
 Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2022,3000,3825,3500.0,825,0.2357142857142857
+Bachelor of Fine Arts in Digital Art and Animation,Singapore Institute of Technology,2023,3000,3300,3200.0,300,0.09375
 Bachelor of Fine Arts in Digital Arts & Animation,Singapore Institute of Technology,2014,2300,2885,2600.0,585,0.225
 Bachelor of Fine Arts in Digital Arts & Animation,Singapore Institute of Technology,2015,2500,2800,2700.0,300,0.1111111111111111
 Bachelor of Fine Arts in Digital Arts & Animation,Singapore Institute of Technology,2016,2700,3016,3000.0,316,0.10533333333333333
-Bachelor of Fine Arts in Digital Arts & Animation ^,Singapore Institute of Technology,2017,2700,3000,2875.0,300,0.10434782608695652
+Bachelor of Fine Arts in Digital Arts & Animation,Singapore Institute of Technology,2017,2700,3000,2875.0,300,0.10434782608695652
 Bachelor of Food Technology with Honours,Singapore Institute of Technology,2019,2750,3250,2975.0,500,0.16806722689075632
 Bachelor of Food Technology with Honours,Singapore Institute of Technology,2020,2770,3400,3000.0,630,0.21
 Bachelor of Food Technology with Honours,Singapore Institute of Technology,2021,3000,3500,3300.0,500,0.15151515151515152
 Bachelor of Food Technology with Honours,Singapore Institute of Technology,2022,3050,3600,3300.0,550,0.16666666666666666
 Bachelor of Food Technology with Honours,Singapore Institute of Technology,2023,3200,4000,3500.0,800,0.22857142857142856
+Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2017,2500,3100,2800.0,600,0.21428571428571427
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2018,2600,3175,2825.0,575,0.20353982300884957
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2019,2800,3270,3000.0,470,0.15666666666666668
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2020,2800,3400,3000.0,600,0.2
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2021,2800,3500,3000.0,700,0.23333333333333334
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2022,3000,3740,3300.0,740,0.22424242424242424
 Bachelor of Hospitality Business with Honours,Singapore Institute of Technology,2023,3089,3900,3500.0,811,0.2317142857142857
-Bachelor of Hospitality Business with Honours ^,Singapore Institute of Technology,2017,2500,3100,2800.0,600,0.21428571428571427
-"Bachelor of Human Resource
-Management",Singapore University of Social Sciences,2023,3310,3904,3500.0,594,0.1697142857142857
 Bachelor of Human Resource Management,Singapore University of Social Sciences,2019,2800,3300,3000.0,500,0.16666666666666666
 Bachelor of Human Resource Management,Singapore University of Social Sciences,2020,2650,3300,2950.0,650,0.22033898305084745
 Bachelor of Human Resource Management,Singapore University of Social Sciences,2021,3000,3500,3200.0,500,0.15625
 Bachelor of Human Resource Management,Singapore University of Social Sciences,2022,3250,4000,3588.0,750,0.20903010033444816
-Bachelor of Landscape Architecture^,National University of Singapore,2023,3350,3500,3450.0,150,0.043478260869565216
-Bachelor of Laws #,National University of Singapore,2017,4500,5600,5000.0,1100,0.22
-Bachelor of Laws #,National University of Singapore,2018,4500,5840,5500.0,1340,0.24363636363636362
-Bachelor of Laws #,National University of Singapore,2019,4500,5800,5400.0,1300,0.24074074074074073
-Bachelor of Laws #,National University of Singapore,2020,4400,5600,5000.0,1200,0.24
-Bachelor of Laws #,National University of Singapore,2021,4500,6000,5600.0,1500,0.26785714285714285
-Bachelor of Laws #,National University of Singapore,2022,5500,6800,6400.0,1300,0.203125
-Bachelor of Laws (L.L.B) (Hons) #,National University of Singapore,2015,4200,5800,4700.0,1600,0.3404255319148936
-Bachelor of Laws (L.L.B) (Hons) #,National University of Singapore,2016,4200,5600,4900.0,1400,0.2857142857142857
-Bachelor of Laws (LLB) (Hons) #,National University of Singapore,2013,4500,5800,5000.0,1300,0.26
-Bachelor of Laws (LLB) (Hons) #,National University of Singapore,2014,4800,5800,5150.0,1000,0.1941747572815534
-Bachelor of Laws#,National University of Singapore,2023,6000,7100,7000.0,1100,0.15714285714285714
-Bachelor of Medicine And Bachelor Of Surgery #,National University of Singapore,2017,4500,5305,5000.0,805,0.161
-Bachelor of Medicine and Bachelor Of Surgery #,National University of Singapore,2016,4500,5200,5000.0,700,0.14
-Bachelor of Medicine and Bachelor of Surgery #,National University of Singapore,2014,4500,5200,5000.0,700,0.14
-Bachelor of Medicine and Bachelor of Surgery #,National University of Singapore,2015,4500,5000,4900.0,500,0.10204081632653061
-Bachelor of Medicine and Bachelor of Surgery #,National University of Singapore,2019,4950,5657,5237.0,707,0.13500095474508306
-Bachelor of Medicine and Bachelor of Surgery #,National University of Singapore,2020,5000,5800,5250.0,800,0.1523809523809524
-Bachelor of Medicine and Bachelor of Surgery (MBBS) #,National University of Singapore,2013,4500,5200,4500.0,700,0.15555555555555556
+Bachelor of Human Resource Management,Singapore University of Social Sciences,2023,3310,3904,3500.0,594,0.1697142857142857
+Bachelor of Landscape Architecture,National University of Singapore,2023,3350,3500,3450.0,150,0.043478260869565216
+Bachelor of Laws,National University of Singapore,2017,4500,5600,5000.0,1100,0.22
+Bachelor of Laws,National University of Singapore,2018,4500,5840,5500.0,1340,0.24363636363636362
+Bachelor of Laws,National University of Singapore,2019,4500,5800,5400.0,1300,0.24074074074074073
+Bachelor of Laws,National University of Singapore,2020,4400,5600,5000.0,1200,0.24
+Bachelor of Laws,National University of Singapore,2021,4500,6000,5600.0,1500,0.26785714285714285
+Bachelor of Laws,National University of Singapore,2022,5500,6800,6400.0,1300,0.203125
+Bachelor of Laws,National University of Singapore,2023,6000,7100,7000.0,1100,0.15714285714285714
+Bachelor of Laws (L.L.B) (Hons),National University of Singapore,2015,4200,5800,4700.0,1600,0.3404255319148936
+Bachelor of Laws (L.L.B) (Hons),National University of Singapore,2016,4200,5600,4900.0,1400,0.2857142857142857
+Bachelor of Laws (LLB) (Hons),National University of Singapore,2013,4500,5800,5000.0,1300,0.26
+Bachelor of Laws (LLB) (Hons),National University of Singapore,2014,4800,5800,5150.0,1000,0.1941747572815534
+Bachelor of Medicine And Bachelor Of Surgery,National University of Singapore,2017,4500,5305,5000.0,805,0.161
+Bachelor of Medicine and Bachelor Of Surgery,National University of Singapore,2016,4500,5200,5000.0,700,0.14
+Bachelor of Medicine and Bachelor of Surgery,National University of Singapore,2014,4500,5200,5000.0,700,0.14
+Bachelor of Medicine and Bachelor of Surgery,National University of Singapore,2015,4500,5000,4900.0,500,0.10204081632653061
+Bachelor of Medicine and Bachelor of Surgery,National University of Singapore,2019,4950,5657,5237.0,707,0.13500095474508306
+Bachelor of Medicine and Bachelor of Surgery,National University of Singapore,2020,5000,5800,5250.0,800,0.1523809523809524
+Bachelor of Medicine and Bachelor of Surgery (MBBS),National University of Singapore,2013,4500,5200,4500.0,700,0.15555555555555556
 Bachelor of Music,National University of Singapore,2015,3000,3600,3300.0,600,0.18181818181818182
 Bachelor of Music,National University of Singapore,2016,2999,3500,3250.0,501,0.15415384615384614
 Bachelor of Music,National University of Singapore,2017,2050,2950,2225.0,900,0.4044943820224719
 Bachelor of Music,National University of Singapore,2018,1500,2700,1800.0,1200,0.6666666666666666
 Bachelor of Music,National University of Singapore,2019,2875,3900,3500.0,1025,0.29285714285714287
 Bachelor of Music,National University of Singapore,2020,3125,3350,3275.0,225,0.06870229007633588
+Bachelor of Music,National University of Singapore,2021,2915,3600,3100.0,685,0.22096774193548388
+Bachelor of Music,National University of Singapore,2022,3350,3973,3590.0,623,0.1735376044568245
 Bachelor of Music,National University of Singapore,2023,3400,4500,4000.0,1100,0.275
-Bachelor of Music ^,National University of Singapore,2021,2915,3600,3100.0,685,0.22096774193548388
-Bachelor of Music ^,National University of Singapore,2022,3350,3973,3590.0,623,0.1735376044568245
 Bachelor of Professional Studies in Culinary Arts Management,Singapore Institute of Technology,2014,2200,2600,2500.0,400,0.16
 Bachelor of Professional Studies in Culinary Arts Management,Singapore Institute of Technology,2015,2000,2800,2400.0,800,0.3333333333333333
 Bachelor of Professional Studies in Culinary Arts Management,Singapore Institute of Technology,2016,2000,2500,2300.0,500,0.21739130434782608
 Bachelor of Professional Studies in Culinary Arts Management,Singapore Institute of Technology,2017,2200,3259,2300.0,1059,0.46043478260869564
-Bachelor of Public Safety and Security^,Singapore University of Social Sciences,2023,3875,5300,4691.0,1425,0.30377318269025794
+Bachelor of Public Safety and Security,Singapore University of Social Sciences,2023,3875,5300,4691.0,1425,0.30377318269025794
 Bachelor of Science,National University of Singapore,2013,2600,3000,2800.0,400,0.14285714285714285
 Bachelor of Science,National University of Singapore,2014,2700,3200,3000.0,500,0.16666666666666666
 Bachelor of Science,National University of Singapore,2015,2620,3200,3000.0,580,0.19333333333333333
@@ -685,27 +653,27 @@ Bachelor of Science,National University of Singapore,2018,2900,3850,3100.0,950,0
 Bachelor of Science,National University of Singapore,2019,2900,3600,3100.0,700,0.22580645161290322
 Bachelor of Science,National University of Singapore,2020,3000,3650,3100.0,650,0.20967741935483872
 Bachelor of Science,National University of Singapore,2021,3100,4000,3527.0,900,0.25517436915225405
+Bachelor of Science,National University of Singapore,2022,3500,4000,3600.0,500,0.1388888888888889
+Bachelor of Science,National University of Singapore,2023,3650,4800,4250.0,1150,0.27058823529411763
 Bachelor of Science (Air Transport Management),Singapore Institute of Technology,2022,3501,4365,3980.0,864,0.21708542713567838
 Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,2018,3600,4215,4000.0,615,0.15375
 Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,2019,3600,4100,3900.0,500,0.1282051282051282
 Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,2020,3500,4070,3800.0,570,0.15
 Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,2021,3430,4200,3875.0,770,0.19870967741935483
-Bachelor of Science (Architecture and Sustainable Design) ###,Singapore University of Technology and Design,2022,3900,4500,4100.0,600,0.14634146341463414
-"Bachelor of Science (Business
-Analytics)",National University of Singapore,2023,5000,6600,5500.0,1600,0.2909090909090909
+Bachelor of Science (Architecture and Sustainable Design),Singapore University of Technology and Design,2022,3900,4500,4100.0,600,0.14634146341463414
 Bachelor of Science (Business Analytics),National University of Singapore,2017,3500,4766,4000.0,1266,0.3165
 Bachelor of Science (Business Analytics),National University of Singapore,2018,4000,5000,4500.0,1000,0.2222222222222222
 Bachelor of Science (Business Analytics),National University of Singapore,2019,4050,5200,5000.0,1150,0.23
 Bachelor of Science (Business Analytics),National University of Singapore,2020,4480,5800,5000.0,1320,0.264
 Bachelor of Science (Business Analytics),National University of Singapore,2021,4800,6125,5400.0,1325,0.24537037037037038
 Bachelor of Science (Business Analytics),National University of Singapore,2022,5000,6600,5500.0,1600,0.2909090909090909
-Bachelor of Science (Computational Biology) ^,National University of Singapore,2020,4250,5000,4650.0,750,0.16129032258064516
-Bachelor of Science (Computational Biology) ^,National University of Singapore,2021,4000,5000,4500.0,1000,0.2222222222222222
-"Bachelor of Science (Data Science
-and Analytics)",National University of Singapore,2023,4500,5500,5000.0,1000,0.2
+Bachelor of Science (Business Analytics),National University of Singapore,2023,5000,6600,5500.0,1600,0.2909090909090909
+Bachelor of Science (Computational Biology),National University of Singapore,2020,4250,5000,4650.0,750,0.16129032258064516
+Bachelor of Science (Computational Biology),National University of Singapore,2021,4000,5000,4500.0,1000,0.2222222222222222
+Bachelor of Science (Data Science and Analytics),National University of Singapore,2020,3900,4900,4125.0,1000,0.24242424242424243
 Bachelor of Science (Data Science and Analytics),National University of Singapore,2021,4200,5400,4800.0,1200,0.25
 Bachelor of Science (Data Science and Analytics),National University of Singapore,2022,4628,6100,5500.0,1472,0.2676363636363636
-Bachelor of Science (Data Science and Analytics) ^,National University of Singapore,2020,3900,4900,4125.0,1000,0.24242424242424243
+Bachelor of Science (Data Science and Analytics),National University of Singapore,2023,4500,5500,5000.0,1000,0.2
 Bachelor of Science (Diagnostic Radiography),Singapore Institute of Technology,2021,3500,4025,3700.0,525,0.14189189189189189
 Bachelor of Science (Diagnostic Radiography),Singapore Institute of Technology,2022,3650,3990,3800.0,340,0.08947368421052632
 Bachelor of Science (Hons),National University of Singapore,2013,2868,3500,3100.0,632,0.20387096774193547
@@ -714,6 +682,7 @@ Bachelor of Science (Hons),National University of Singapore,2015,3000,3600,3300.
 Bachelor of Science (Hons),National University of Singapore,2016,3000,3650,3300.0,650,0.19696969696969696
 Bachelor of Science (Hons),National University of Singapore,2017,3000,3700,3300.0,700,0.21212121212121213
 Bachelor of Science (Hons),National University of Singapore,2018,3000,3725,3400.0,725,0.21323529411764705
+Bachelor of Science (Hons),National University of Singapore,2019,3100,3800,3500.0,700,0.2
 Bachelor of Science (Hons),National University of Singapore,2020,3300,4000,3528.0,700,0.1984126984126984
 Bachelor of Science (Hons),National University of Singapore,2021,3400,4000,3600.0,600,0.16666666666666666
 Bachelor of Science (Hons),National University of Singapore,2022,3500,4500,3850.0,1000,0.2597402597402597
@@ -721,7 +690,6 @@ Bachelor of Science (Hons),National University of Singapore,2023,3600,4500,4000.
 Bachelor of Science (Hons) (Education),Nanyang Technological University,2017,3500,3958,3701.0,458,0.12375033774655499
 Bachelor of Science (Hons) (Maritime Studies),Nanyang Technological University,2017,3000,3500,3320.0,500,0.15060240963855423
 Bachelor of Science (Hons) (Sport Science & Management),Nanyang Technological University,2017,2800,4000,3450.0,1200,0.34782608695652173
-Bachelor of Science (Hons) ^,National University of Singapore,2019,3100,3800,3500.0,700,0.2
 Bachelor of Science (Hons) in Biological Sciences,Nanyang Technological University,2017,3000,3500,3200.0,500,0.15625
 Bachelor of Science (Hons) in Chemistry & Biological Chemistry,Nanyang Technological University,2017,2800,3488,3100.0,688,0.22193548387096773
 Bachelor of Science (Hons) in Mathematical Sciences,Nanyang Technological University,2017,3100,3800,3500.0,700,0.2
@@ -753,22 +721,19 @@ Bachelor of Science (Nursing) (Hons),National University of Singapore,2022,3650,
 Bachelor of Science (Nursing) (Hons),National University of Singapore,2023,3700,4250,4000.0,550,0.1375
 Bachelor of Science (Occupational Therapy),Singapore Institute of Technology,2021,3400,3690,3500.0,290,0.08285714285714285
 Bachelor of Science (Occupational Therapy),Singapore Institute of Technology,2022,3500,3800,3669.0,300,0.08176614881439084
-"Bachelor of Science (Pharmaceutical
-Science) (Hons)",National University of Singapore,2023,3625,4200,3900.0,575,0.14743589743589744
-Bachelor of Science (Pharmaceutical Science) (Hons) ^,National University of Singapore,2022,3400,4350,3700.0,950,0.25675675675675674
-Bachelor of Science (Pharmacy) #,National University of Singapore,2017,3500,3800,3600.0,300,0.08333333333333333
-Bachelor of Science (Pharmacy) #,National University of Singapore,2018,3500,3900,3650.0,400,0.1095890410958904
-Bachelor of Science (Pharmacy) #,National University of Singapore,2019,3500,4000,3750.0,500,0.13333333333333333
-Bachelor of Science (Pharmacy) #,National University of Singapore,2020,3500,3950,3700.0,450,0.12162162162162163
-Bachelor of Science (Pharmacy) #,National University of Singapore,2021,3636,4200,3915.0,564,0.14406130268199233
-Bachelor of Science (Pharmacy) #,National University of Singapore,2022,3750,4250,4000.0,500,0.125
-Bachelor of Science (Pharmacy) (Hons) #,National University of Singapore,2013,3350,3750,3500.0,400,0.11428571428571428
-Bachelor of Science (Pharmacy) (Hons) #,National University of Singapore,2014,3470,4000,3630.0,530,0.14600550964187328
-Bachelor of Science (Pharmacy) (Hons) #,National University of Singapore,2015,3400,3929,3500.0,529,0.15114285714285713
-Bachelor of Science (Pharmacy)(Hons) #,National University of Singapore,2016,3300,3950,3600.0,650,0.18055555555555555
+Bachelor of Science (Pharmaceutical Science) (Hons),National University of Singapore,2022,3400,4350,3700.0,950,0.25675675675675674
+Bachelor of Science (Pharmaceutical Science) (Hons),National University of Singapore,2023,3625,4200,3900.0,575,0.14743589743589744
+Bachelor of Science (Pharmacy),National University of Singapore,2017,3500,3800,3600.0,300,0.08333333333333333
+Bachelor of Science (Pharmacy),National University of Singapore,2018,3500,3900,3650.0,400,0.1095890410958904
+Bachelor of Science (Pharmacy),National University of Singapore,2019,3500,4000,3750.0,500,0.13333333333333333
+Bachelor of Science (Pharmacy),National University of Singapore,2020,3500,3950,3700.0,450,0.12162162162162163
+Bachelor of Science (Pharmacy),National University of Singapore,2021,3636,4200,3915.0,564,0.14406130268199233
+Bachelor of Science (Pharmacy),National University of Singapore,2022,3750,4250,4000.0,500,0.125
+Bachelor of Science (Pharmacy) (Hons),National University of Singapore,2013,3350,3750,3500.0,400,0.11428571428571428
+Bachelor of Science (Pharmacy) (Hons),National University of Singapore,2014,3470,4000,3630.0,530,0.14600550964187328
+Bachelor of Science (Pharmacy) (Hons),National University of Singapore,2015,3400,3929,3500.0,529,0.15114285714285713
+Bachelor of Science (Pharmacy)(Hons),National University of Singapore,2016,3300,3950,3600.0,650,0.18055555555555555
 Bachelor of Science (Physiotherapy),Singapore Institute of Technology,2021,3400,3800,3525.0,400,0.11347517730496454
-"Bachelor of Science (Project and
-Facilities Management)",National University of Singapore,2023,3650,4299,3855.0,649,0.16835278858625163
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2013,2800,3200,3000.0,400,0.13333333333333333
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2014,2900,3360,3000.0,460,0.15333333333333332
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2015,2800,3215,3000.0,415,0.13833333333333334
@@ -779,8 +744,9 @@ Bachelor of Science (Project and Facilities Management),National University of S
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2020,3000,3500,3200.0,500,0.15625
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2021,3200,3700,3500.0,500,0.14285714285714285
 Bachelor of Science (Project and Facilities Management),National University of Singapore,2022,3375,3855,3555.0,480,0.1350210970464135
-Bachelor of Science (Radiation Therapy) ^,Singapore Institute of Technology,2021,3000,3500,3500.0,500,0.14285714285714285
-Bachelor of Science (Radiation Therapy) ^,Singapore Institute of Technology,2022,3500,4060,3775.0,560,0.14834437086092717
+Bachelor of Science (Project and Facilities Management),National University of Singapore,2023,3650,4299,3855.0,649,0.16835278858625163
+Bachelor of Science (Radiation Therapy),Singapore Institute of Technology,2021,3000,3500,3500.0,500,0.14285714285714285
+Bachelor of Science (Radiation Therapy),Singapore Institute of Technology,2022,3500,4060,3775.0,560,0.14834437086092717
 Bachelor of Science (Real Estate),National University of Singapore,2013,2600,3179,2900.0,579,0.1996551724137931
 Bachelor of Science (Real Estate),National University of Singapore,2014,2750,3300,3000.0,550,0.18333333333333332
 Bachelor of Science (Real Estate),National University of Singapore,2015,2810,3500,3100.0,690,0.22258064516129034
@@ -792,11 +758,9 @@ Bachelor of Science (Real Estate),National University of Singapore,2020,3200,400
 Bachelor of Science (Real Estate),National University of Singapore,2021,3400,4000,3700.0,600,0.16216216216216217
 Bachelor of Science (Real Estate),National University of Singapore,2022,3600,4400,3850.0,800,0.2077922077922078
 Bachelor of Science (Real Estate),National University of Singapore,2023,3800,4500,4000.0,700,0.175
-Bachelor of Science ^,National University of Singapore,2022,3500,4000,3600.0,500,0.1388888888888889
-"Bachelor of Science in Business
-Analytics",Singapore University of Social Sciences,2023,4300,5200,4800.0,900,0.1875
 Bachelor of Science in Business Analytics,Singapore University of Social Sciences,2021,3350,4900,3800.0,1550,0.40789473684210525
 Bachelor of Science in Business Analytics,Singapore University of Social Sciences,2022,4000,5000,4660.0,1000,0.2145922746781116
+Bachelor of Science in Business Analytics,Singapore University of Social Sciences,2023,4300,5200,4800.0,900,0.1875
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2014,2950,3755,3200.0,805,0.2515625
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2015,2800,3200,2950.0,400,0.13559322033898305
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2016,2500,3700,3130.0,1200,0.38338658146964855
@@ -806,18 +770,15 @@ Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,20
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2020,2815,3650,3175.0,835,0.262992125984252
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2021,3400,3865,3557.0,465,0.13072814169243746
 Bachelor of Science in Chemical Engineering,Singapore Institute of Technology,2022,3600,4300,3950.0,700,0.17721518987341772
-"Bachelor of Science in Computer
-Science and Game Design",Singapore Institute of Technology,2023,4400,5500,4900.0,1100,0.22448979591836735
 Bachelor of Science in Computer Science & Game Design,Singapore Institute of Technology,2014,2800,3075,2975.0,275,0.09243697478991597
 Bachelor of Science in Computer Science & Game Design,Singapore Institute of Technology,2016,3100,3500,3400.0,400,0.11764705882352941
-Bachelor of Science in Computer Science & Game Design ^,Singapore Institute of Technology,2017,2900,3600,3250.0,700,0.2153846153846154
+Bachelor of Science in Computer Science & Game Design,Singapore Institute of Technology,2017,2900,3600,3250.0,700,0.2153846153846154
+Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2018,3300,4000,3600.0,700,0.19444444444444445
+Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2019,3550,4000,3800.0,450,0.11842105263157894
 Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2020,3500,4200,4000.0,700,0.175
 Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2021,3700,4968,4000.0,1268,0.317
 Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2022,4250,5200,4490.0,950,0.21158129175946547
-Bachelor of Science in Computer Science and Game Design ^,Singapore Institute of Technology,2018,3300,4000,3600.0,700,0.19444444444444445
-Bachelor of Science in Computer Science and Game Design ^,Singapore Institute of Technology,2019,3550,4000,3800.0,450,0.11842105263157894
-"Bachelor of Science in Computer Science in Real-Time Interactive
-Simulation",Singapore Institute of Technology,2023,4700,5700,5000.0,1000,0.2
+Bachelor of Science in Computer Science and Game Design,Singapore Institute of Technology,2023,4400,5500,4900.0,1100,0.22448979591836735
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2014,2700,3300,3000.0,600,0.2
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2015,3000,3500,3233.0,500,0.15465511908444168
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2016,3500,4200,4000.0,700,0.175
@@ -827,6 +788,7 @@ Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Sing
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2020,3880,4500,4200.0,620,0.14761904761904762
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2021,4300,5175,4600.0,875,0.19021739130434784
 Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2022,4700,6656,5500.0,1956,0.35563636363636364
+Bachelor of Science in Computer Science in Real-Time Interactive Simulation,Singapore Institute of Technology,2023,4700,5700,5000.0,1000,0.2
 Bachelor of Science in Early Childhood Education,Singapore Institute of Technology,2014,2475,2613,2600.0,138,0.05307692307692308
 Bachelor of Science in Early Childhood Education,Singapore Institute of Technology,2015,2608,3000,2700.0,392,0.1451851851851852
 Bachelor of Science in Early Childhood Education,Singapore Institute of Technology,2016,2600,2850,2700.0,250,0.09259259259259259
@@ -838,34 +800,31 @@ Bachelor of Science in Electrical Engineering & Information Technology,Singapore
 Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,2017,3000,4000,3400.0,1000,0.29411764705882354
 Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,2018,3300,4000,3500.0,700,0.2
 Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,2020,3350,4000,3600.0,650,0.18055555555555555
-Bachelor of Science in Electrical Engineering & Information Technology ^,Singapore Institute of Technology,2021,3250,4265,3700.0,1015,0.2743243243243243
-Bachelor of Science in Electrical Engineering & Information Technology ^,Singapore Institute of Technology,2022,4000,4800,4280.0,800,0.18691588785046728
+Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,2021,3250,4265,3700.0,1015,0.2743243243243243
+Bachelor of Science in Electrical Engineering & Information Technology,Singapore Institute of Technology,2022,4000,4800,4280.0,800,0.18691588785046728
 Bachelor of Science in Finance,Singapore University of Social Sciences,2018,3200,3500,3400.0,300,0.08823529411764706
 Bachelor of Science in Finance,Singapore University of Social Sciences,2019,3085,3750,3450.0,665,0.1927536231884058
+Bachelor of Science in Finance,Singapore University of Social Sciences,2020,2850,4466,3163.0,1616,0.5109073664242807
 Bachelor of Science in Finance,Singapore University of Social Sciences,2021,3300,4350,3500.0,1050,0.3
 Bachelor of Science in Finance,Singapore University of Social Sciences,2022,3800,5250,4000.0,1450,0.3625
 Bachelor of Science in Finance,Singapore University of Social Sciences,2023,4000,5200,4500.0,1200,0.26666666666666666
-Bachelor of Science in Finance ^,Singapore University of Social Sciences,2020,2850,4466,3163.0,1616,0.5109073664242807
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2018,2650,3245,3000.0,595,0.19833333333333333
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2019,2800,3400,3000.0,600,0.2
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2020,2750,3520,2900.0,770,0.2655172413793103
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2021,2820,3600,3275.0,780,0.2381679389312977
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2022,3220,4100,3600.0,880,0.24444444444444444
 Bachelor of Science in Marketing,Singapore University of Social Sciences,2023,3400,4040,3600.0,640,0.17777777777777778
-"Bachelor of Science in Supply Chain
-Management",Singapore University of Social Sciences,2023,3600,4363,4000.0,763,0.19075
+Bachelor of Science in Supply Chain Management,Singapore University of Social Sciences,2020,2950,3500,3185.0,550,0.1726844583987441
 Bachelor of Science in Supply Chain Management,Singapore University of Social Sciences,2021,3025,3500,3300.0,475,0.14393939393939395
 Bachelor of Science in Supply Chain Management,Singapore University of Social Sciences,2022,3300,3900,3500.0,600,0.17142857142857143
-Bachelor of Science in Supply Chain Management ^,Singapore University of Social Sciences,2020,2950,3500,3185.0,550,0.1726844583987441
+Bachelor of Science in Supply Chain Management,Singapore University of Social Sciences,2023,3600,4363,4000.0,763,0.19075
 Bachelor of Science with Honours,National University of Singapore,2017,3600,4875,4083.0,1275,0.31227038941954444
+Bachelor of Science with Honours,National University of Singapore,2018,3600,6435,4800.0,2835,0.590625
+Bachelor of Science with Honours,National University of Singapore,2019,4150,9967,5000.0,5817,1.1634
+Bachelor of Science with Honours,National University of Singapore,2020,4225,6485,5350.0,2260,0.4224299065420561
 Bachelor of Science with Honours,National University of Singapore,2021,3800,5650,4500.0,1850,0.4111111111111111
 Bachelor of Science with Honours,National University of Singapore,2022,4500,9000,6038.0,4500,0.7452798940046373
 Bachelor of Science with Honours,National University of Singapore,2023,4100,6372,4600.0,2272,0.49391304347826087
-Bachelor of Science with Honours ^,National University of Singapore,2018,3600,6435,4800.0,2835,0.590625
-Bachelor of Science with Honours ^,National University of Singapore,2019,4150,9967,5000.0,5817,1.1634
-Bachelor of Science with Honours ^,National University of Singapore,2020,4225,6485,5350.0,2260,0.4224299065420561
-"Bachelor of Science with Honours in
-Physiotherapy",Singapore Institute of Technology,2023,3660,4050,3850.0,390,0.1012987012987013
 Bachelor of Science with Honours in Air Transport Management,Singapore Institute of Technology,2023,3472,4100,3720.0,628,0.16881720430107527
 Bachelor of Science with Honours in Computing Science,Singapore Institute of Technology,2015,3152,3400,3300.0,248,0.07515151515151515
 Bachelor of Science with Honours in Computing Science,Singapore Institute of Technology,2016,3400,3900,3600.0,500,0.1388888888888889
@@ -876,9 +835,8 @@ Bachelor of Science with Honours in Computing Science,Singapore Institute of Tec
 Bachelor of Science with Honours in Computing Science,Singapore Institute of Technology,2022,4800,5500,5000.0,700,0.14
 Bachelor of Science with Honours in Computing Science,Singapore Institute of Technology,2023,4500,5000,4800.0,500,0.10416666666666667
 Bachelor of Science with Honours in Diagnostic Radiography,Singapore Institute of Technology,2023,3900,4300,4050.0,400,0.09876543209876543
-Bachelor of Science with Honours in Dietetics and Nutrition^,Singapore Institute of Technology,2023,3500,3850,3575.0,350,0.0979020979020979
-"Bachelor of Science with Honours in Digital Communications and
-Integrated Media",Singapore Institute of Technology,2023,3500,4126,3780.0,626,0.16560846560846562
+Bachelor of Science with Honours in Dietetics and Nutrition,Singapore Institute of Technology,2023,3500,3850,3575.0,350,0.0979020979020979
+Bachelor of Science with Honours in Digital Communications and Integrated Media,Singapore Institute of Technology,2023,3500,4126,3780.0,626,0.16560846560846562
 Bachelor of Science with Honours in Food & Human Nutrition,Singapore Institute of Technology,2014,2500,3170,2800.0,670,0.2392857142857143
 Bachelor of Science with Honours in Food & Human Nutrition,Singapore Institute of Technology,2015,2475,3050,2700.0,575,0.21296296296296297
 Bachelor of Science with Honours in Food & Human Nutrition,Singapore Institute of Technology,2016,2420,2800,2600.0,380,0.14615384615384616
@@ -895,8 +853,8 @@ Bachelor of Science with Honours in Nursing Practice,Singapore Institute of Tech
 Bachelor of Science with Honours in Nursing Practice,Singapore Institute of Technology,2016,3400,3750,3600.0,350,0.09722222222222222
 Bachelor of Science with Honours in Nursing Practice,Singapore Institute of Technology,2017,3600,3900,3650.0,300,0.0821917808219178
 Bachelor of Science with Honours in Occupational Therapy,Singapore Institute of Technology,2023,3700,3900,3800.0,200,0.05263157894736842
-Bachelor of Science with Honours in Radiation Therapy^,Singapore Institute of Technology,2023,3850,4235,3850.0,385,0.1
-Bachelor of Science^,National University of Singapore,2023,3650,4800,4250.0,1150,0.27058823529411763
+Bachelor of Science with Honours in Physiotherapy,Singapore Institute of Technology,2023,3660,4050,3850.0,390,0.1012987012987013
+Bachelor of Science with Honours in Radiation Therapy,Singapore Institute of Technology,2023,3850,4235,3850.0,385,0.1
 Bachelor of Social Sciences,National University of Singapore,2013,2800,3500,3200.0,700,0.21875
 Bachelor of Social Sciences,National University of Singapore,2014,3000,3600,3250.0,600,0.18461538461538463
 Bachelor of Social Sciences,National University of Singapore,2015,3000,3686,3310.0,686,0.20725075528700906
@@ -929,20 +887,19 @@ Biological Sciences,Nanyang Technological University,2018,3035,3650,3250.0,615,0
 Biological Sciences,Nanyang Technological University,2019,3100,3600,3300.0,500,0.15151515151515152
 Biological Sciences,Nanyang Technological University,2020,3200,3650,3325.0,450,0.13533834586466165
 Biological Sciences / Biomedical Sciences,Nanyang Technological University,2021,3260,3800,3500.0,540,0.15428571428571428
-Biological Sciences and Psychology ^,Nanyang Technological University,2022,3700,4300,4050.0,600,0.14814814814814814
+Biological Sciences and Psychology,Nanyang Technological University,2022,3700,4300,4050.0,600,0.14814814814814814
 Biological and Biomedical Sciences,Nanyang Technological University,2022,3400,4100,3600.0,700,0.19444444444444445
 Biological and Biomedical Sciences,Nanyang Technological University,2023,3575,4300,3980.0,725,0.18216080402010051
-Biomedical Science (Traditional Chinese Medicine) #,Nanyang Technological University,2014,2786,3400,2900.0,614,0.21172413793103448
-Biomedical Science (Traditional Chinese Medicine) #,Nanyang Technological University,2015,2500,3105,2800.0,605,0.21607142857142858
-Biomedical Sciences & Chinese Medicine #,Nanyang Technological University,2016,2150,2800,2500.0,650,0.26
-Biomedical Sciences & Chinese Medicine # ^,Nanyang Technological University,2018,2700,3100,3000.0,400,0.13333333333333333
-Biomedical Sciences & Chinese Medicine # ^,Nanyang Technological University,2019,2780,3200,3000.0,420,0.14
-Biomedical Sciences (Traditional Chinese Medicine) #,Nanyang Technological University,2013,2700,3000,2807.0,300,0.10687566797292483
-"Biomedical Sciences and Chinese
-Medicine#^",Nanyang Technological University,2023,3200,3600,3350.0,400,0.11940298507462686
-Biomedical Sciences and Chinese Medicine # ^,Nanyang Technological University,2020,2800,3150,3000.0,350,0.11666666666666667
-Biomedical Sciences and Chinese Medicine # ^,Nanyang Technological University,2021,2890,3300,3100.0,410,0.13225806451612904
-Biomedical Sciences and Chinese Medicine # ^,Nanyang Technological University,2022,3080,3300,3175.0,220,0.06929133858267716
+Biomedical Science (Traditional Chinese Medicine),Nanyang Technological University,2014,2786,3400,2900.0,614,0.21172413793103448
+Biomedical Science (Traditional Chinese Medicine),Nanyang Technological University,2015,2500,3105,2800.0,605,0.21607142857142858
+Biomedical Sciences & Chinese Medicine,Nanyang Technological University,2016,2150,2800,2500.0,650,0.26
+Biomedical Sciences & Chinese Medicine,Nanyang Technological University,2018,2700,3100,3000.0,400,0.13333333333333333
+Biomedical Sciences & Chinese Medicine,Nanyang Technological University,2019,2780,3200,3000.0,420,0.14
+Biomedical Sciences (Traditional Chinese Medicine),Nanyang Technological University,2013,2700,3000,2807.0,300,0.10687566797292483
+Biomedical Sciences and Chinese Medicine,Nanyang Technological University,2020,2800,3150,3000.0,350,0.11666666666666667
+Biomedical Sciences and Chinese Medicine,Nanyang Technological University,2021,2890,3300,3100.0,410,0.13225806451612904
+Biomedical Sciences and Chinese Medicine,Nanyang Technological University,2022,3080,3300,3175.0,220,0.06929133858267716
+Biomedical Sciences and Chinese Medicine,Nanyang Technological University,2023,3200,3600,3350.0,400,0.11940298507462686
 Business,Nanyang Technological University,2016,3000,3800,3300.0,800,0.24242424242424243
 Business,Nanyang Technological University,2018,3200,4000,3500.0,800,0.22857142857142856
 Business,Nanyang Technological University,2019,3200,4000,3600.0,800,0.2222222222222222
@@ -978,8 +935,8 @@ Business and Computing,Nanyang Technological University,2013,3000,4100,3400.0,11
 Business and Computing,Nanyang Technological University,2014,3232,4000,3450.0,768,0.22260869565217392
 Business and Computing,Nanyang Technological University,2015,3800,4876,4583.0,1076,0.23478071132445996
 Business and Computing,Nanyang Technological University,2016,3800,5000,4600.0,1200,0.2608695652173913
-Business and Computing ^,Nanyang Technological University,2018,4200,4900,4575.0,700,0.15300546448087432
-Business and Computing ^,Nanyang Technological University,2019,3600,5000,4833.0,1400,0.28967515001034555
+Business and Computing,Nanyang Technological University,2018,4200,4900,4575.0,700,0.15300546448087432
+Business and Computing,Nanyang Technological University,2019,3600,5000,4833.0,1400,0.28967515001034555
 Chemical & Biomolecular Engineering,Nanyang Technological University,2018,3300,4200,3600.0,900,0.25
 Chemical And Biomolecular Engineering,Nanyang Technological University,2015,3000,3600,3300.0,600,0.18181818181818182
 Chemical And Biomolecular Engineering,Nanyang Technological University,2016,3200,3800,3400.0,600,0.17647058823529413
@@ -1051,23 +1008,20 @@ Computer Science,Nanyang Technological University,2021,4200,5450,4800.0,1250,0.2
 Computer Science,Nanyang Technological University,2022,4900,6420,5500.0,1520,0.27636363636363637
 Computer Science,Nanyang Technological University,2023,4800,6000,5200.0,1200,0.23076923076923078
 Computer Science,Singapore Management University,2023,5100,6500,5800.0,1400,0.2413793103448276
-Cum Laude and above,Singapore Management University,2023,3700,7752,4854.0,4052,0.8347754429336629
-Cum Laude and above#,Singapore Management University,2023,6200,7000,7000.0,800,0.11428571428571428
+Cum Laude and above,Singapore Management University,2023,3700,7752,4875.0,4052,0.8311794871794872
+Data Science and Artificial Intelligence,Nanyang Technological University,2022,5000,7500,5625.0,2500,0.4444444444444444
 Data Science and Artificial Intelligence,Nanyang Technological University,2023,4600,6250,5250.0,1650,0.3142857142857143
-Data Science and Artificial Intelligence ^,Nanyang Technological University,2022,5000,7500,5625.0,2500,0.4444444444444444
 Double Degree in Bachelor of Accountancy (Hons) and Bachelor of Business (Hons),Nanyang Technological University,2017,3013,4317,3600.0,1304,0.3622222222222222
 Double Degree in Bachelor of Business (Hons) and Bachelor of Engineering (Hons) (Computer Science),Nanyang Technological University,2017,4000,5362,5000.0,1362,0.2724
-Double Degree in Bachelor of Science (Hons) in Biomedical Sciences and Bachelor of Medicine (Chinese Medicine) #,Nanyang Technological University,2017,2500,3035,2950.0,535,0.18135593220338983
-"Double Degree in Business and Computer
-Engineering/Computing",Nanyang Technological University,2023,5500,7000,6210.0,1500,0.24154589371980675
+Double Degree in Bachelor of Science (Hons) in Biomedical Sciences and Bachelor of Medicine (Chinese Medicine),Nanyang Technological University,2017,2500,3035,2950.0,535,0.18135593220338983
 Double Degree in Business and Computer Engineering/Computing,Nanyang Technological University,2020,5000,5750,5400.0,750,0.1388888888888889
 Double Degree in Business and Computer Engineering/Computing,Nanyang Technological University,2021,5250,8225,6300.0,2975,0.4722222222222222
 Double Degree in Business and Computer Engineering/Computing,Nanyang Technological University,2022,6000,7500,6500.0,1500,0.23076923076923078
-"Double Degree in Engineering and
-Economics^",Nanyang Technological University,2023,4900,6500,5405.0,1600,0.2960222016651249
-Double Degree in Engineering and Economics ^,Nanyang Technological University,2020,3825,5050,4450.0,1225,0.2752808988764045
-Double Degree in Engineering and Economics ^,Nanyang Technological University,2021,4530,4900,4583.0,370,0.08073314422867117
-Double Degree in Engineering and Economics ^,Nanyang Technological University,2022,4700,5815,5000.0,1115,0.223
+Double Degree in Business and Computer Engineering/Computing,Nanyang Technological University,2023,5500,7000,6210.0,1500,0.24154589371980675
+Double Degree in Engineering and Economics,Nanyang Technological University,2020,3825,5050,4450.0,1225,0.2752808988764045
+Double Degree in Engineering and Economics,Nanyang Technological University,2021,4530,4900,4583.0,370,0.08073314422867117
+Double Degree in Engineering and Economics,Nanyang Technological University,2022,4700,5815,5000.0,1115,0.223
+Double Degree in Engineering and Economics,Nanyang Technological University,2023,4900,6500,5405.0,1600,0.2960222016651249
 Economics,Nanyang Technological University,2013,2800,3545,3000.0,745,0.24833333333333332
 Economics,Nanyang Technological University,2014,3000,3500,3200.0,500,0.15625
 Economics,Nanyang Technological University,2015,3000,3800,3300.0,800,0.24242424242424243
@@ -1120,11 +1074,11 @@ English,Nanyang Technological University,2021,3000,3600,3500.0,600,0.17142857142
 English,Nanyang Technological University,2022,3200,4200,3748.0,1000,0.26680896478121663
 English,Nanyang Technological University,2023,3300,4180,3775.0,880,0.23311258278145697
 Environmental Earth Systems Science,Nanyang Technological University,2023,3750,4650,4138.0,900,0.21749637506041566
-Environmental Earth Systems Sciences ^,Nanyang Technological University,2018,3150,3900,3440.0,750,0.2180232558139535
-Environmental Earth Systems Sciences ^,Nanyang Technological University,2019,3200,3500,3500.0,300,0.08571428571428572
-Environmental Earth Systems Sciences ^,Nanyang Technological University,2020,3400,3764,3550.0,364,0.10253521126760563
-Environmental Earth Systems Sciences ^,Nanyang Technological University,2021,3500,4300,3950.0,800,0.20253164556962025
-Environmental Earth Systems Sciences ^,Nanyang Technological University,2022,3600,4959,4023.0,1359,0.3378076062639821
+Environmental Earth Systems Sciences,Nanyang Technological University,2018,3150,3900,3440.0,750,0.2180232558139535
+Environmental Earth Systems Sciences,Nanyang Technological University,2019,3200,3500,3500.0,300,0.08571428571428572
+Environmental Earth Systems Sciences,Nanyang Technological University,2020,3400,3764,3550.0,364,0.10253521126760563
+Environmental Earth Systems Sciences,Nanyang Technological University,2021,3500,4300,3950.0,800,0.20253164556962025
+Environmental Earth Systems Sciences,Nanyang Technological University,2022,3600,4959,4023.0,1359,0.3378076062639821
 Environmental Engineering,Nanyang Technological University,2013,3000,3300,3000.0,300,0.1
 Environmental Engineering,Nanyang Technological University,2014,3000,3500,3000.0,500,0.16666666666666666
 Environmental Engineering,Nanyang Technological University,2015,3000,3835,3300.0,835,0.25303030303030305
@@ -1173,31 +1127,31 @@ Information Systems Management (4-years programme) Cum Laude and above,Singapore
 Information Systems Management Cum Laude and above,Singapore Management University,2015,3500,4166,3800.0,666,0.17526315789473684
 Information Systems Management Cum Laude and above,Singapore Management University,2016,3800,4750,4167.0,950,0.22798176145908328
 Information Systems Management Cum Laude and above,Singapore Management University,2017,4000,4750,4334.0,750,0.17305029995385326
-Inter-Disciplinary Double Major ^,Nanyang Technological University,2020,3200,4500,3854.0,1300,0.33731188375713544
-Inter-Disciplinary Double Major ^,Nanyang Technological University,2021,3450,4180,3650.0,730,0.2
+Inter-Disciplinary Double Major,Nanyang Technological University,2020,3200,4500,3854.0,1300,0.33731188375713544
+Inter-Disciplinary Double Major,Nanyang Technological University,2021,3450,4180,3650.0,730,0.2
 Inter-Disciplinary Double Major8,Nanyang Technological University,2022,3650,4750,4271.0,1100,0.2575509248419574
 Interdisciplinary Double Major,Nanyang Technological University,2023,3500,4300,4000.0,800,0.2
-Law #,Singapore Management University,2015,4350,5800,4731.0,1450,0.30648911435214543
-Law #,Singapore Management University,2016,4200,5800,4850.0,1600,0.32989690721649484
-Law #,Singapore Management University,2017,4000,5840,5000.0,1840,0.368
-Law #,Singapore Management University,2018,4050,5600,4500.0,1550,0.34444444444444444
-Law #,Singapore Management University,2019,4200,5800,4900.0,1600,0.32653061224489793
-Law #,Singapore Management University,2020,4000,5600,4588.0,1600,0.34873583260680036
-Law #,Singapore Management University,2021,4500,6000,5600.0,1500,0.26785714285714285
-Law #,Singapore Management University,2022,5500,6800,6375.0,1300,0.20392156862745098
-Law (4-year programme) #,Singapore Management University,2014,4600,5950,5025.0,1350,0.26865671641791045
-Law (4-year programme) Cum Laude and above #,Singapore Management University,2014,4800,6000,5800.0,1200,0.20689655172413793
-Law (4-years programme) #,Singapore Management University,2013,4500,6000,5000.0,1500,0.3
-Law (4-years programme) Cum Laude and above #,Singapore Management University,2013,4750,6400,5547.0,1650,0.29745808545159547
-Law (Cum Laude and above) #,Singapore Management University,2018,4500,6000,5513.0,1500,0.27208416470161434
-Law (Cum Laude and above) #,Singapore Management University,2019,4500,6000,5550.0,1500,0.2702702702702703
-Law (Cum Laude and above) #,Singapore Management University,2020,4500,5735,5000.0,1235,0.247
-Law (Cum Laude and above) #,Singapore Management University,2021,5025,6000,5800.0,975,0.16810344827586207
-Law (Cum Laude and above) #,Singapore Management University,2022,6000,7000,6400.0,1000,0.15625
-Law Cum Laude and above #,Singapore Management University,2015,4500,5995,5000.0,1495,0.299
-Law Cum Laude and above #,Singapore Management University,2016,4500,5800,5300.0,1300,0.24528301886792453
-Law Cum Laude and above #,Singapore Management University,2017,4200,6000,5600.0,1800,0.32142857142857145
-Law#,Singapore Management University,2023,5800,7000,7000.0,1200,0.17142857142857143
+Law,Singapore Management University,2015,4350,5800,4731.0,1450,0.30648911435214543
+Law,Singapore Management University,2016,4200,5800,4850.0,1600,0.32989690721649484
+Law,Singapore Management University,2017,4000,5840,5000.0,1840,0.368
+Law,Singapore Management University,2018,4050,5600,4500.0,1550,0.34444444444444444
+Law,Singapore Management University,2019,4200,5800,4900.0,1600,0.32653061224489793
+Law,Singapore Management University,2020,4000,5600,4588.0,1600,0.34873583260680036
+Law,Singapore Management University,2021,4500,6000,5600.0,1500,0.26785714285714285
+Law,Singapore Management University,2022,5500,6800,6375.0,1300,0.20392156862745098
+Law,Singapore Management University,2023,5800,7000,7000.0,1200,0.17142857142857143
+Law (4-year programme),Singapore Management University,2014,4600,5950,5025.0,1350,0.26865671641791045
+Law (4-year programme) Cum Laude and above,Singapore Management University,2014,4800,6000,5800.0,1200,0.20689655172413793
+Law (4-years programme),Singapore Management University,2013,4500,6000,5000.0,1500,0.3
+Law (4-years programme) Cum Laude and above,Singapore Management University,2013,4750,6400,5547.0,1650,0.29745808545159547
+Law (Cum Laude and above),Singapore Management University,2018,4500,6000,5513.0,1500,0.27208416470161434
+Law (Cum Laude and above),Singapore Management University,2019,4500,6000,5550.0,1500,0.2702702702702703
+Law (Cum Laude and above),Singapore Management University,2020,4500,5735,5000.0,1235,0.247
+Law (Cum Laude and above),Singapore Management University,2021,5025,6000,5800.0,975,0.16810344827586207
+Law (Cum Laude and above),Singapore Management University,2022,6000,7000,6400.0,1000,0.15625
+Law Cum Laude and above,Singapore Management University,2015,4500,5995,5000.0,1495,0.299
+Law Cum Laude and above,Singapore Management University,2016,4500,5800,5300.0,1300,0.24528301886792453
+Law Cum Laude and above,Singapore Management University,2017,4200,6000,5600.0,1800,0.32142857142857145
 Linguistics & Multilingual Studies,Nanyang Technological University,2018,2900,3500,3200.0,600,0.1875
 Linguistics And Multilingual Studies,Nanyang Technological University,2015,2800,3600,3000.0,800,0.26666666666666666
 Linguistics And Multilingual Studies,Nanyang Technological University,2016,2960,3500,3365.0,540,0.16047548291233285
@@ -1254,16 +1208,16 @@ Mechanical Engineering,Nanyang Technological University,2020,3500,4432,3850.0,93
 Mechanical Engineering,Nanyang Technological University,2021,3570,4400,3800.0,830,0.21842105263157896
 Mechanical Engineering,Nanyang Technological University,2022,3944,5000,4500.0,1056,0.23466666666666666
 Mechanical Engineering,Nanyang Technological University,2023,4000,4864,4400.0,864,0.19636363636363635
-Medicine #,Nanyang Technological University,2019,5200,6092,5700.0,892,0.15649122807017543
-Medicine #,Nanyang Technological University,2020,5000,5900,5250.0,900,0.17142857142857143
-Medicine #,Nanyang Technological University,2021,5200,5800,5500.0,600,0.10909090909090909
-Medicine #,Nanyang Technological University,2022,5199,6000,5600.0,801,0.1430357142857143
+Medicine,Nanyang Technological University,2019,5200,6092,5700.0,892,0.15649122807017543
+Medicine,Nanyang Technological University,2020,5000,5900,5250.0,900,0.17142857142857143
+Medicine,Nanyang Technological University,2021,5200,5800,5500.0,600,0.10909090909090909
+Medicine,Nanyang Technological University,2022,5199,6000,5600.0,801,0.1430357142857143
 Philosophy,Nanyang Technological University,2018,2550,3500,3000.0,950,0.31666666666666665
+Philosophy,Nanyang Technological University,2019,3300,3584,3500.0,284,0.08114285714285714
 Philosophy,Nanyang Technological University,2020,3300,3850,3650.0,550,0.1506849315068493
 Philosophy,Nanyang Technological University,2021,2915,4480,3400.0,1565,0.4602941176470588
+Philosophy,Nanyang Technological University,2022,3000,3700,3450.0,700,0.2028985507246377
 Philosophy,Nanyang Technological University,2023,3500,4550,4000.0,1050,0.2625
-Philosophy ^,Nanyang Technological University,2019,3300,3584,3500.0,284,0.08114285714285714
-Philosophy ^,Nanyang Technological University,2022,3000,3700,3450.0,700,0.2028985507246377
 Physics & Applied Physics,Nanyang Technological University,2018,3025,3800,3400.0,775,0.22794117647058823
 Physics & Applied Physics,Nanyang Technological University,2019,3300,4200,3500.0,900,0.2571428571428571
 Physics / Applied Physics,Nanyang Technological University,2013,2900,3400,3300.0,500,0.15151515151515152
@@ -1291,15 +1245,15 @@ Public Policy and Global Affairs,Nanyang Technological University,2021,3500,4524
 Public Policy and Global Affairs,Nanyang Technological University,2022,3650,4500,4123.0,850,0.20616056269706523
 Public Policy and Global Affairs,Nanyang Technological University,2023,3800,5124,4202.0,1324,0.3150880533079486
 Science (With Education),Nanyang Technological University,2018,3600,4000,3800.0,400,0.10526315789473684
-Science (and Education)^,Nanyang Technological University,2023,4000,4651,4300.0,651,0.15139534883720931
+Science (and Education),Nanyang Technological University,2023,4000,4651,4300.0,651,0.15139534883720931
 Science (with Education),Nanyang Technological University,2013,3300,3800,3498.0,500,0.1429388221841052
 Science (with Education),Nanyang Technological University,2014,3400,3750,3475.0,350,0.10071942446043165
 Science (with Education),Nanyang Technological University,2015,3500,3855,3504.0,355,0.10131278538812785
 Science (with Education),Nanyang Technological University,2016,3500,3850,3525.0,350,0.09929078014184398
 Science (with Education),Nanyang Technological University,2019,3660,3840,3800.0,180,0.04736842105263158
 Science (with Education),Nanyang Technological University,2020,3700,4000,3800.0,300,0.07894736842105263
-Science (with Education) ^,Nanyang Technological University,2021,3727,4000,3904.0,273,0.0699282786885246
-Science (with Education) ^,Nanyang Technological University,2022,4000,4470,4300.0,470,0.10930232558139535
+Science (with Education),Nanyang Technological University,2021,3727,4000,3904.0,273,0.0699282786885246
+Science (with Education),Nanyang Technological University,2022,4000,4470,4300.0,470,0.10930232558139535
 Social Sciences,Singapore Management University,2015,2980,3600,3200.0,620,0.19375
 Social Sciences,Singapore Management University,2016,3000,3500,3145.0,500,0.1589825119236884
 Social Sciences,Singapore Management University,2017,3000,3750,3300.0,750,0.22727272727272727
