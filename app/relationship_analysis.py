@@ -54,7 +54,7 @@ def ft_perm_vs_salary(
 
 
 def save_relationship_outputs(
-    csv_path: str = "../cleaned_fixed.csv",
+    csv_path: str = "../cleaned.csv",
     output_dir: str = "..",
     salary_col: str = "gross_monthly_median",
 ) -> pd.DataFrame:

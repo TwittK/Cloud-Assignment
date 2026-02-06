@@ -81,7 +81,7 @@ def get_years_for_university_degree(file_path, university, degree):
 # Script to generate the grouped salary analysis CSV (run once)
 if __name__ == '__main__':
     # Load the dataset
-    data = pd.read_csv('../cleaned_fixed.csv')
+    data = pd.read_csv('../cleaned.csv')
 
     # Group by degree, university, and year
     grouped_data = data.groupby(['degree', 'university', 'year']).agg({
