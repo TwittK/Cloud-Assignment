@@ -1,0 +1,17 @@
+# Ignore local caches and IDE clutter
+__pycache__/
+*.pyc
+*.pyo
+*.pytest_cache/
+
+# Optional: keep only the datasets needed by the app
+# Remove the next two lines if you want to ship all CSVs
+*.csv
+!cleaned.csv
+!function5_data.csv
+!grouped_salary_analysis.csv
+
+# Logs and misc
+*.log
+.DS_Store
+Thumbs.db
